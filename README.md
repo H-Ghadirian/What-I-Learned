@@ -1,1 +1,12 @@
 # WhatILearned
+
+
+SwiftUI
+
+1. [What's new in SwiftUI for iOS 16?](https://github.com/H-Ghadirian/Whats_New_in_SwiftUI)
+2. [Right way to hide an object](https://github.com/H-Ghadirian/Swiftui-Choosing-the-right-way-to-hide-a-view)
+3. [Layering content](https://github.com/H-Ghadirian/Layering-content)
+
+UIKit
+1. [View With Dynamic Height](https://github.com/H-Ghadirian/ViewWithDynamicHeight)
+2. 
