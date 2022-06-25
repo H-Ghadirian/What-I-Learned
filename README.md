@@ -14,4 +14,4 @@
 
 ## Misc
 
-1.[Shortcuts](https://github.com/H-Ghadirian/What-I-Learned/blob/main/Shortcuts.md)
+1. [Shortcuts](https://github.com/H-Ghadirian/What-I-Learned/blob/main/Shortcuts.md)
