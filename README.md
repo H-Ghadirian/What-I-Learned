@@ -1,6 +1,6 @@
 # WhatILearned
 
-##iOS
+## iOS
 
 ### SwiftUI
 
@@ -16,7 +16,7 @@
 ### Misc
 1. [Shortcuts](https://github.com/H-Ghadirian/What-I-Learned/blob/main/Shortcuts.md)
 
-##Android
+## Android
 
 ### Compose
 
