@@ -13,10 +13,10 @@
 ### UIKit
 1. [View With Dynamic Height](https://github.com/H-Ghadirian/ViewWithDynamicHeight)
 
-### Misc
-1. [Shortcuts](https://github.com/H-Ghadirian/What-I-Learned/blob/main/Shortcuts.md)
-
 ## Android
 
 ### Compose
 
+
+## Misc
+1. [Shortcuts](https://github.com/H-Ghadirian/What-I-Learned/blob/main/Shortcuts.md)
