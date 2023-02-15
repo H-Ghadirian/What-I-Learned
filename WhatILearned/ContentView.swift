@@ -15,8 +15,9 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("This is my resume App")
             Text("This app is all about what I learned!")
-            Text("You can find the code on My Github")
-            
+            Text("You can find the code on")
+            Link("My Github", destination: URL(string: "https://github.com/H-Ghadirian/What-I-Learned")!)
+
         }
         .padding()
     }
