@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            NavigationLink(
+                value: "I've Navigated",
+                label: { Text("Test Navigating") }
+            )
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -20,6 +24,10 @@ struct ContentView: View {
 
         }
         .padding()
+        // Add the destnation here
+        .navigationDestination(for: String.self) {
+            Text($0)
+        }
     }
 }
 
