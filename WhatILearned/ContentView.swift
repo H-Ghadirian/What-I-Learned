@@ -9,24 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            NavigationLink(
-                value: "I've Navigated",
-                label: { Text("Test Navigating") }
-            )
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("This is my resume App")
-            Text("This app is all about what I learned!")
-            Text("You can find the code on")
-            Link("My Github", destination: URL(string: "https://github.com/H-Ghadirian/What-I-Learned")!)
+        NavigationView {
+            VStack {
+                NavigationLink(destination: {
+                    Text("Second View")
+                        .navigationTitle("Second")
+                        .navigationBarTitleDisplayMode(.inline)
+                }, label: {
+                    Text("Open Second View!")
+                })
 
-        }
-        .padding()
-        // Add the destnation here
-        .navigationDestination(for: String.self) {
-            Text($0)
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("This is my resume App")
+                Text("This app is all about what I learned!")
+                Text("You can find the code on")
+                Link(
+                    "My Github",
+                    destination: URL(
+                        string: "https://github.com/H-Ghadirian/What-I-Learned"
+                    )!
+                )                
+            }
+            .padding()
+            .navigationBarTitle("Hamed Resume")
         }
     }
 }
