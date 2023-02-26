@@ -17,7 +17,7 @@ struct ContentView: View {
             }, label: {
                 Text("Open Second View!")
             })
-            
+
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -31,25 +31,34 @@ struct ContentView: View {
                 )!
             )
         }
+        .padding()
+        .tabItem {
+            Image(systemName: "2.circle")
+            Text("Second")
+        }
+        .tag(2)
     }
-    
+
+    private var firstTab: some View {
+        NavigationStack {
+            List {
+                Text("First View")
+            }
+            .navigationTitle("Navigation title")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .tabItem {
+            Image(systemName: "1.circle")
+            Text("First")
+        }
+        .tag(1)
+    }
+
     var body: some View {
         NavigationView {
             TabView {
-                Text("First View")
-                    .padding()
-                    .tabItem {
-                        Image(systemName: "1.circle")
-                        Text("First")
-                    }
-                    .tag(1)
+                firstTab
                 secondTab
-                    .padding()
-                    .tabItem {
-                        Image(systemName: "2.circle")
-                        Text("Second")
-                    }
-                    .tag(2)
             }
             .navigationBarTitle("Hamed Resume")
         }
