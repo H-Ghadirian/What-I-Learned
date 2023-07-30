@@ -17,6 +17,12 @@
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5D29AB82B80092D549 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5C29AB82B80092D549 /* Menu.swift */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
+		DAEF0EE22A691BCD006AAC66 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EE12A691BCD006AAC66 /* Navigation.swift */; };
+		DAEF0EE42A69220E006AAC66 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EE32A69220E006AAC66 /* MenuViewModel.swift */; };
+		DAEF0EE62A69221A006AAC66 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EE52A69221A006AAC66 /* MenuView.swift */; };
+		DAEF0EE82A692226006AAC66 /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EE72A692226006AAC66 /* MenuCoordinator.swift */; };
+		DAEF0EEE2A694534006AAC66 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EED2A694534006AAC66 /* HomeCoordinator.swift */; };
+		DAEF0EF02A6947A0006AAC66 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF0EEF2A6947A0006AAC66 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5C29AB82B80092D549 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
+		DAEF0EE12A691BCD006AAC66 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		DAEF0EE32A69220E006AAC66 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		DAEF0EE52A69221A006AAC66 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		DAEF0EE72A692226006AAC66 /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
+		DAEF0EED2A694534006AAC66 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		DAEF0EEF2A6947A0006AAC66 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +113,15 @@
 		2A7875E4299D7264001450F6 /* WhatILearned */ = {
 			isa = PBXGroup;
 			children = (
+				DAEF0EEB2A6944C0006AAC66 /* UI */,
+				DAEF0EE92A6944A5006AAC66 /* Models */,
 				2A9DED6129AB83640092D549 /* Assets */,
 				2A9DED6029AB834F0092D549 /* Extension */,
-				2A9DED5C29AB82B80092D549 /* Menu.swift */,
 				2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */,
 				2A7875E7299D7264001450F6 /* ContentView.swift */,
 				2A7875EB299D7265001450F6 /* WhatILearned.entitlements */,
 				2A7875EC299D7265001450F6 /* Preview Content */,
+				DAEF0EE12A691BCD006AAC66 /* Navigation.swift */,
 			);
 			path = WhatILearned;
 			sourceTree = "<group>";
@@ -152,6 +166,42 @@
 				2A9DED5A29AB7D200092D549 /* menu.json */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		DAEF0EE02A691BAC006AAC66 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DAEF0EE32A69220E006AAC66 /* MenuViewModel.swift */,
+				DAEF0EE52A69221A006AAC66 /* MenuView.swift */,
+				DAEF0EE72A692226006AAC66 /* MenuCoordinator.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DAEF0EE92A6944A5006AAC66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A9DED5C29AB82B80092D549 /* Menu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAEF0EEB2A6944C0006AAC66 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DAEF0EEC2A694527006AAC66 /* Home */,
+				DAEF0EE02A691BAC006AAC66 /* Menu */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DAEF0EEC2A694527006AAC66 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DAEF0EED2A694534006AAC66 /* HomeCoordinator.swift */,
+				DAEF0EEF2A6947A0006AAC66 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEF0EE62A69221A006AAC66 /* MenuView.swift in Sources */,
+				DAEF0EE82A692226006AAC66 /* MenuCoordinator.swift in Sources */,
 				2A9DED5D29AB82B80092D549 /* Menu.swift in Sources */,
+				DAEF0EF02A6947A0006AAC66 /* HomeView.swift in Sources */,
 				2A7875E8299D7264001450F6 /* ContentView.swift in Sources */,
+				DAEF0EEE2A694534006AAC66 /* HomeCoordinator.swift in Sources */,
+				DAEF0EE22A691BCD006AAC66 /* Navigation.swift in Sources */,
+				DAEF0EE42A69220E006AAC66 /* MenuViewModel.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 			);
@@ -457,7 +513,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -497,7 +553,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
