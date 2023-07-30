@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
-    
+
     private var secondTab: some View {
         VStack {
             NavigationLink(destination: {
@@ -19,7 +19,7 @@ struct ContentView: View {
             }, label: {
                 Text("Open Second View!")
             })
-            
+
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -40,7 +40,7 @@ struct ContentView: View {
         }
         .tag(2)
     }
-    
+
     private var firstTab: some View {
         NavigationStack {
             List {
@@ -63,7 +63,7 @@ struct ContentView: View {
         }
         .tag(1)
     }
-    
+
     var body: some View {
         NavigationView {
             TabView {
