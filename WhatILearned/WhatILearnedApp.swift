@@ -26,7 +26,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .red
+        appearance.backgroundColor = UIColor(Colors.primary)
 
         let attrs: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,

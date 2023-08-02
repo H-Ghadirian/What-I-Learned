@@ -50,7 +50,7 @@ struct ContentView: View {
                     ForEach(section.items) { item in
                         Text(item.name)
                             .padding()
-                            .background(.yellow)
+                            .background(Colors.secondary)
                     }
                 }
             }
