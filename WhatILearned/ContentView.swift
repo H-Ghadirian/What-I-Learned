@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
+
+    var selectedScheme: ColorScheme? {
+        guard let theme = SchemeType(rawValue: systemTheme) else { return nil }
+        switch theme {
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        default:
+            return nil
+        }
+    }
+
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
 
     private var secondTab: some View {
@@ -23,7 +37,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("This is my resume App")
+
+            Picker(selection: $systemTheme) {
+                ForEach(SchemeType.allCases) { item in
+                    Text(item.title)
+                        .tag(item.rawValue)
+                }
+            } label: {
+                Text("Pick a mode")
+            }
+
             Text("This app is all about what I learned!")
             Text("You can find the code on")
             Link(
@@ -36,9 +59,10 @@ struct ContentView: View {
         .padding()
         .tabItem {
             Image(systemName: "2.circle")
-            Text("Second")
+            Text("Setting")
         }
         .tag(2)
+        .preferredColorScheme(selectedScheme)
     }
 
     private var firstTab: some View {
@@ -59,9 +83,10 @@ struct ContentView: View {
         }
         .tabItem {
             Image(systemName: "1.circle")
-            Text("First")
+            Text("Home")
         }
         .tag(1)
+        .preferredColorScheme(selectedScheme)
     }
 
     var body: some View {
