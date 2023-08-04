@@ -24,18 +24,6 @@ struct SettingTab: View {
 
     var body: some View {
         VStack {
-//            NavigationLink(destination: {
-//                Text("Second View")
-//                    .navigationTitle("Second")
-//                    .navigationBarTitleDisplayMode(.inline)
-//            }, label: {
-//                Text("Open Second View!")
-//            })
-
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-
             Picker(selection: $systemTheme) {
                 ForEach(SchemeType.allCases) { item in
                     Text(item.title)
@@ -48,7 +36,7 @@ struct SettingTab: View {
             Text("This app is all about what I learned!")
             Text("You can find the code on")
             Link(
-                "My Github",
+                "Source Code(Github)",
                 destination: URL(
                     string: "https://github.com/H-Ghadirian/What-I-Learned"
                 )!
@@ -56,7 +44,7 @@ struct SettingTab: View {
         }
         .padding()
         .tabItem {
-            Image(systemName: "2.circle")
+            Image(systemName: "gear")
             Text("Setting")
         }
         .tag(2)
