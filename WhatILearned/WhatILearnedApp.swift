@@ -10,10 +10,16 @@ import SwiftUI
 @main
 struct WhatILearnedApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    let paths: [MenuItem]
+    let menuCoordinator: MenuCoordinator
+    init() {
+        paths = menu.flatMap { $0.items }
+        menuCoordinator = MenuCoordinator(allPaths: paths)
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView(coordinator: HomeCoordinator( menuCoordinator: menuCoordinator))
         }
     }
 }
