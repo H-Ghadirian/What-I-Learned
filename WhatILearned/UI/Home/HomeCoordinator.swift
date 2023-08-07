@@ -34,14 +34,15 @@ class HomeCoordinator: CoordinatorProtocol {
         switch state {
         case .menu:
             let viewModel = MenuViewModel(coordinator: menuCoordinator)
-            return AnyView(
-                NavigatorView(
-                    menuCoordinator,
-                    content: {
-                        return MenuView(viewModel: viewModel)
-                    }
-                )
-            )
+//            return AnyView(
+//                NavigatorView(
+//                    menuCoordinator,
+//                    content: {
+//                        return MenuView(viewModel: viewModel)
+//                    }
+//                )
+//            )
+            return AnyView(ChrisNavigation())
         case .profile:
             return AnyView(SettingTab())
         }
