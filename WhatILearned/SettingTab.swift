@@ -60,7 +60,7 @@ struct SettingTab: View {
         .tag(2)
         .preferredColorScheme(selectedScheme)
     }
-    
+
     var listOfButtonToPresentSheet: some View {
         VStack {
             Button("Add Article") {
@@ -101,33 +101,5 @@ struct SettingTab: View {
                 AddArticleView()
             }
         }
-    }
-}
-
-struct AddArticleView: View {
-    @Environment(\.dismiss) private var dismiss
-
-    @State var title: String = ""
-
-    var body: some View {
-        VStack(spacing: 10) {
-            Text("Add a new article")
-                .font(.title)
-            TextField(text: $title, prompt: Text("Title of the article")) {
-                Text("Title")
-            }
-
-            HStack {
-                Button("Cancel") {
-                    dismiss()
-                }
-                Spacer()
-                Button("Confirm") {
-                    dismiss()
-                }
-            }
-        }
-        .padding(20)
-        .frame(width: 300, height: 200)
     }
 }
