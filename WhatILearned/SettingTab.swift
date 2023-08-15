@@ -76,7 +76,8 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                AddArticleView()
+//                AddArticleView()
+                AsyncAwaitRequest()
             case .editArticle:
                 Text("EditArticleView()")
             case .articleCategory:

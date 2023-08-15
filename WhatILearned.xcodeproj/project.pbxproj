@@ -15,6 +15,9 @@
 		2A787602299D7265001450F6 /* WhatILearnedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787601299D7265001450F6 /* WhatILearnedUITests.swift */; };
 		2A787604299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */; };
 		2A8100222A8952820086B146 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100212A8952820086B146 /* AddArticleView.swift */; };
+		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
+		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
+		2A8100292A8C0BFB0086B146 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100282A8C0BFB0086B146 /* Message.swift */; };
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
@@ -68,6 +71,9 @@
 		2A787601299D7265001450F6 /* WhatILearnedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITests.swift; sourceTree = "<group>"; };
 		2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A8100212A8952820086B146 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
+		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
+		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
+		2A8100282A8C0BFB0086B146 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -185,6 +191,16 @@
 			path = WhatILearnedUITests;
 			sourceTree = "<group>";
 		};
+		2A8100252A8C0BC80086B146 /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */,
+				2A8100262A8C0BD90086B146 /* RemoteFile.swift */,
+				2A8100282A8C0BFB0086B146 /* Message.swift */,
+			);
+			name = AsyncAwait;
+			sourceTree = "<group>";
+		};
 		2A9DED6029AB834F0092D549 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +222,7 @@
 		2AFA7A4A2A7D963F0006BDDF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2A8100252A8C0BC80086B146 /* AsyncAwait */,
 				2AFA7A9C2A818E900006BDDF /* Setting */,
 				2AFA7A522A7D965A0006BDDF /* Home */,
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
@@ -545,10 +562,13 @@
 				2AFA7A5B2A7D96D50006BDDF /* Menu.swift in Sources */,
 				2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */,
 				2A7875E8299D7264001450F6 /* ContentView.swift in Sources */,
+				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
+				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* HomeCoordinator.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
+				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */,
 			);

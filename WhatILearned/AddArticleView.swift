@@ -51,7 +51,7 @@ struct AddArticleView: View {
       request.requestedScopes = [.fullName, .email]
 
       // 3
-      let controller = ASAuthorizationController(authorizationRequests: [request])
+        _ = ASAuthorizationController(authorizationRequests: [request])
     }
 
 }
