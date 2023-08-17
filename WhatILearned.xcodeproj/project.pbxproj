@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
+		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
+		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875E8299D7264001450F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E7299D7264001450F6 /* ContentView.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
+		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E7299D7264001450F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +155,22 @@
 				2AFA7A962A818E120006BDDF /* ChrisNavigation */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2A3AE1E52A8E61350024EDC0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2A3AE1E92A8E61780024EDC0 /* HapticTest */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */,
+			);
+			path = HapticTest;
 			sourceTree = "<group>";
 		};
 		2A7875D9299D7264001450F6 = {
@@ -313,6 +333,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
 				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
 				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
@@ -323,6 +344,7 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2A3AE1E52A8E61350024EDC0 /* Helpers */,
 				2A9DED6129AB83640092D549 /* Assets */,
 				2A9DED6029AB834F0092D549 /* Extension */,
 			);
@@ -587,11 +609,13 @@
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
+				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
 				2AFA7A5B2A7D96D50006BDDF /* Menu.swift in Sources */,
 				2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */,
 				2A7875E8299D7264001450F6 /* ContentView.swift in Sources */,
 				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
+				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,

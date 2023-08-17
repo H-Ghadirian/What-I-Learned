@@ -12,7 +12,7 @@ struct SettingTab: View {
     @State private var showingFirst = false
     @State private var showingSecond = false
     enum Sheet: String, Identifiable {
-        case addArticle, editArticle, articleCategory
+        case addArticle, hapticTest, asyncAwaitRequest
         var id: String { rawValue }
     }
 
@@ -66,22 +66,21 @@ struct SettingTab: View {
             Button("Add Article") {
                 presentedSheet = .addArticle
             }
-            Button("Edit Article") {
-                presentedSheet = .editArticle
+            Button("Test Haptic") {
+                presentedSheet = .hapticTest
             }
             Button("Article Category") {
-                presentedSheet = .articleCategory
+                presentedSheet = .asyncAwaitRequest
             }
         }
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-//                AddArticleView()
+                AddArticleView()
+            case .hapticTest:
+                HapticTestView()
+            case .asyncAwaitRequest:
                 AsyncAwaitRequest()
-            case .editArticle:
-                Text("EditArticleView()")
-            case .articleCategory:
-                Text("ArticleCategoryView()")
             }
         })
         .padding()
