@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875E8299D7264001450F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E7299D7264001450F6 /* ContentView.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E7299D7264001450F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3AE1E02A8DF1580024EDC0 /* ApiRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2A8100252A8C0BC80086B146 /* AsyncAwaitRequest */,
+			);
+			path = ApiRequest;
+			sourceTree = "<group>";
+		};
+		2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */ = {
+			isa = PBXGroup;
+			children = (
+				2A8100212A8952820086B146 /* AddArticleView.swift */,
+			);
+			path = SignInWithApple;
+			sourceTree = "<group>";
+		};
+		2A3AE1E42A8DF3B10024EDC0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2AFA7A962A818E120006BDDF /* ChrisNavigation */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
@@ -191,14 +217,16 @@
 			path = WhatILearnedUITests;
 			sourceTree = "<group>";
 		};
-		2A8100252A8C0BC80086B146 /* AsyncAwait */ = {
+		2A8100252A8C0BC80086B146 /* AsyncAwaitRequest */ = {
 			isa = PBXGroup;
 			children = (
 				2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */,
 				2A8100262A8C0BD90086B146 /* RemoteFile.swift */,
 				2A8100282A8C0BFB0086B146 /* Message.swift */,
+				2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */,
 			);
-			name = AsyncAwait;
+			name = AsyncAwaitRequest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		2A9DED6029AB834F0092D549 /* Extension */ = {
@@ -222,7 +250,6 @@
 		2AFA7A4A2A7D963F0006BDDF /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2A8100252A8C0BC80086B146 /* AsyncAwait */,
 				2AFA7A9C2A818E900006BDDF /* Setting */,
 				2AFA7A522A7D965A0006BDDF /* Home */,
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
@@ -279,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				2AFA7A5C2A7D99600006BDDF /* SettingTab.swift */,
-				2A8100212A8952820086B146 /* AddArticleView.swift */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -287,7 +313,9 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				2AFA7A962A818E120006BDDF /* ChrisNavigation */,
+				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
+				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
+				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -566,6 +594,7 @@
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
+				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* HomeCoordinator.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
