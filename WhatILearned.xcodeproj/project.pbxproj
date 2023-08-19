@@ -25,6 +25,10 @@
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
+		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
+		2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */; };
+		2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6012A91728D0001A30E /* View+toastView.swift */; };
+		2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */; };
 		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
 		2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A442A7AC1610006BDDF /* Colors.swift */; };
 		2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A482A7C31E80006BDDF /* SchemeType.swift */; };
@@ -86,6 +90,10 @@
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
+		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
+		2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastModifier.swift; sourceTree = "<group>"; };
+		2AE0F6012A91728D0001A30E /* View+toastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+toastView.swift"; sourceTree = "<group>"; };
+		2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewExample.swift; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2AFA7A482A7C31E80006BDDF /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
 		2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -276,6 +284,10 @@
 			children = (
 				2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */,
 				2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */,
+				2AE0F5FD2A9170540001A30E /* FancyToast.swift */,
+				2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */,
+				2AE0F6012A91728D0001A30E /* View+toastView.swift */,
+				2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */,
 			);
 			path = Toast;
 			sourceTree = "<group>";
@@ -620,9 +632,11 @@
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* Navigation.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
+				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
+				2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
@@ -634,8 +648,10 @@
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
+				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* HomeCoordinator.swift in Sources */,
+				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,

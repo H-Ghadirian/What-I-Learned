@@ -1,25 +1,29 @@
 import SwiftUI
 
 struct FancyToastView: View {
+    var type: FancyToastStyle
+    var title: String
+    var message: String
+    var onCancelTapped: (() -> Void)
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Image(systemName: "info.circle.fill")
-                    .foregroundColor(Color.red)
-                
+                Image(systemName: type.iconFileName)
+                    .foregroundColor(type.themeColor)
+
                 VStack(alignment: .leading) {
-                    Text("Error")
+                    Text(title)
                         .font(.system(size: 14, weight: .semibold))
-                    
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+
+                    Text(message)
                         .font(.system(size: 12))
                         .foregroundColor(Color.black.opacity(0.6))
                 }
-                
+
                 Spacer(minLength: 10)
-                
+
                 Button {
-                    //TODO
+                    onCancelTapped()
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color.black)
@@ -30,7 +34,7 @@ struct FancyToastView: View {
         .background(Color.white)
         .overlay(
             Rectangle()
-                .fill(Color.red)
+                .fill(type.themeColor)
                 .frame(width: 6)
                 .clipped()
             , alignment: .leading
@@ -40,4 +44,20 @@ struct FancyToastView: View {
         .shadow(color: Color.black.opacity(0.25), radius: 4, x: 0, y: 1)
         .padding(.horizontal, 16)
     }
+}
+
+struct FancyToastView_Previews: PreviewProvider {
+  static var previews: some View {
+    VStack {
+        FancyToastView(
+            type: .error,
+            title: "Error",
+            message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ") {}
+
+        FancyToastView(
+            type: .info,
+            title: "Info",
+            message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ") {}
+    }
+  }
 }
