@@ -94,6 +94,7 @@
 		2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastModifier.swift; sourceTree = "<group>"; };
 		2AE0F6012A91728D0001A30E /* View+toastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+toastView.swift"; sourceTree = "<group>"; };
 		2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewExample.swift; sourceTree = "<group>"; };
+		2AE0F6052A940D9C0001A30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2AFA7A482A7C31E80006BDDF /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
 		2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		2A7875E4299D7264001450F6 /* WhatILearned */ = {
 			isa = PBXGroup;
 			children = (
+				2AE0F6052A940D9C0001A30E /* Info.plist */,
 				2AFA7AA02A818FBC0006BDDF /* Shared */,
 				2AFA7A9F2A818F820006BDDF /* Projects */,
 				2AFA7A592A7D96C90006BDDF /* Models */,
@@ -816,6 +818,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatILearned/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -859,6 +862,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatILearned/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
