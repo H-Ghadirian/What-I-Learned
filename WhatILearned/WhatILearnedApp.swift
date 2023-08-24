@@ -11,6 +11,8 @@ import SwiftUI
 struct WhatILearnedApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    @State private var toast: FancyToast? = nil
+
     let paths: [MenuItem]
     let menuCoordinator: MenuCoordinator
     init() {
@@ -20,6 +22,22 @@ struct WhatILearnedApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView(coordinator: HomeCoordinator( menuCoordinator: menuCoordinator))
+                .onOpenURL { url in
+                    // you can test from simulator:
+                    // xcrun simctl openurl booted "whatIlearned://test?id=123"
+                    print(url.absoluteString)
+                    print(url.scheme ?? "")
+                    if url.scheme == "whatIlearned" {
+                        // Parse the query parameters
+                        let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+                        print(components ?? "")
+                        print(components?.queryItems ?? "")
+                        if let productId = components?.queryItems?.first(where: { $0.name == "id" })?.value {
+                            toast = FancyToast(type: .info, title: "Toast info", message: productId)
+                        }
+                    }
+                }
+                .toastView(toast: $toast)
         }
     }
 }

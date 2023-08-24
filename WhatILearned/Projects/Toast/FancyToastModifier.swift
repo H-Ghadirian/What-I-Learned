@@ -4,7 +4,7 @@ import SwiftUI
 struct FancyToastModifier: ViewModifier {
     @Binding var toast: FancyToast?
     @State private var workItem: DispatchWorkItem?
-    
+
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -18,7 +18,7 @@ struct FancyToastModifier: ViewModifier {
                 showToast()
             }
     }
-    
+
     @ViewBuilder func mainToastView() -> some View {
         if let toast = toast {
             VStack {
