@@ -11,7 +11,7 @@ import SwiftUI
 struct WhatILearnedApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
-    @State private var toast: FancyToast? = nil
+    @State private var toast: FancyToast?
 
     let paths: [MenuItem]
     let menuCoordinator: MenuCoordinator
@@ -38,6 +38,7 @@ struct WhatILearnedApp: App {
                     }
                 }
                 .toastView(toast: $toast)
+                .environment(\.locale, .init(identifier: "en"))
         }
     }
 }

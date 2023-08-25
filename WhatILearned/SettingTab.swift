@@ -41,6 +41,7 @@ struct SettingTab: View {
                 Text("Pick a mode")
             }
 
+            Text(LocalizedStringKey("Welcome"))
             Text("This app is all about what I learned!")
             Text("You can find the code on")
             Link(

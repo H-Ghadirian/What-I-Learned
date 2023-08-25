@@ -29,6 +29,7 @@
 		2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */; };
 		2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6012A91728D0001A30E /* View+toastView.swift */; };
 		2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */; };
+		2AE0F60F2A9958D40001A30E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0F6112A9958D40001A30E /* Localizable.strings */; };
 		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
 		2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A442A7AC1610006BDDF /* Colors.swift */; };
 		2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A482A7C31E80006BDDF /* SchemeType.swift */; };
@@ -95,6 +96,8 @@
 		2AE0F6012A91728D0001A30E /* View+toastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+toastView.swift"; sourceTree = "<group>"; };
 		2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewExample.swift; sourceTree = "<group>"; };
 		2AE0F6052A940D9C0001A30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2AE0F6102A9958D40001A30E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2AE0F6152A995A680001A30E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2AFA7A482A7C31E80006BDDF /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
 		2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -294,6 +297,14 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		2AE0F60C2A9958940001A30E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0F6112A9958D40001A30E /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2AFA7A4A2A7D963F0006BDDF /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +383,7 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2AE0F60C2A9958940001A30E /* Supporting Files */,
 				2A3AE1E52A8E61350024EDC0 /* Helpers */,
 				2A9DED6129AB83640092D549 /* Assets */,
 				2A9DED6029AB834F0092D549 /* Extension */,
@@ -495,6 +507,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 2A7875D9299D7264001450F6;
 			packageReferences = (
@@ -517,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9DED5B29AB7D200092D549 /* menu.json in Resources */,
+				2AE0F60F2A9958D40001A30E /* Localizable.strings in Resources */,
 				2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */,
 				2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */,
 			);
@@ -692,6 +706,18 @@
 			targetProxy = 2A7875FE299D7265001450F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AE0F6112A9958D40001A30E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AE0F6102A9958D40001A30E /* de */,
+				2AE0F6152A995A680001A30E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2A787605299D7265001450F6 /* Debug */ = {
