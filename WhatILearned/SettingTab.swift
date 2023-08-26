@@ -12,6 +12,7 @@ struct SettingTab: View {
     @State private var showingFirst = false
     @State private var showingSecond = false
     @State private var isPresented = false
+    @State private var showHalfSheet = false
 
     enum Sheet: String, Identifiable {
         case addArticle, hapticTest, asyncAwaitRequest
@@ -44,6 +45,16 @@ struct SettingTab: View {
             }
 
             Text(LocalizedStringKey("Welcome"))
+
+            Button("Show Half Sheet") {
+                showHalfSheet = true
+            }
+            .sheet(isPresented: $showHalfSheet) {
+                Text("Content")
+                    .presentationDetents([.height(200), .medium, .large])
+                    .presentationDragIndicator(.automatic)
+            }
+            .font(.title).bold()
 
             Button("Present fullscreen cover!") {
                 isPresented.toggle()
