@@ -11,6 +11,8 @@ struct SettingTab: View {
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
     @State private var showingFirst = false
     @State private var showingSecond = false
+    @State private var isPresented = false
+
     enum Sheet: String, Identifiable {
         case addArticle, hapticTest, asyncAwaitRequest
         var id: String { rawValue }
@@ -42,6 +44,12 @@ struct SettingTab: View {
             }
 
             Text(LocalizedStringKey("Welcome"))
+
+            Button("Present fullscreen cover!") {
+                isPresented.toggle()
+            }
+            .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
+
             Text("This app is all about what I learned!")
             Text("You can find the code on")
             Link(
@@ -101,6 +109,19 @@ struct SettingTab: View {
             }
             .sheet(isPresented: $showingSecond) {
                 AddArticleView()
+            }
+        }
+    }
+}
+
+struct FullScreenModalView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        ZStack {
+            Color.primary.edgesIgnoringSafeArea(.all)
+            Button("Dismiss Modal") {
+                dismiss()
             }
         }
     }
