@@ -8,20 +8,12 @@
 import Foundation
 import SwiftUI
 
-enum HomeTabItem: String, Hashable, Identifiable, CaseIterable {
-    var id: String {
-        self.rawValue
-    }
-    case menu
-    case profile
-}
-
-class HomeCoordinator: CoordinatorProtocol {
+class AppCoordinator: CoordinatorProtocol {
 
     @Published var activePath: String?
-    @Published var activeSheetPath: HomeTabItem?
-    var allPaths: [HomeTabItem] {
-        HomeTabItem.allCases
+    @Published var activeSheetPath: AppTabItem?
+    var allPaths: [AppTabItem] {
+        AppTabItem.allCases
     }
 
     let menuCoordinator: MenuCoordinator
@@ -30,7 +22,7 @@ class HomeCoordinator: CoordinatorProtocol {
         self.menuCoordinator = menuCoordinator
     }
 
-    func view(for state: HomeTabItem) -> AnyView {
+    func view(for state: AppTabItem) -> AnyView {
         switch state {
         case .menu:
             let viewModel = MenuViewModel(coordinator: menuCoordinator)

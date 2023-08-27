@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct HomeView: View {
-    private let coordinator: HomeCoordinator
-    init(coordinator: HomeCoordinator) {
+struct AppView: View {
+    private let coordinator: AppCoordinator
+    init(coordinator: AppCoordinator) {
         self.coordinator = coordinator
     }
 
