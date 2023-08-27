@@ -35,40 +35,14 @@ struct SettingTab: View {
 
     var body: some View {
         VStack {
-            Picker(selection: $systemTheme) {
-                ForEach(SchemeType.allCases) { item in
-                    Text(item.title)
-                        .tag(item.rawValue)
-                }
-            } label: {
-                Text("Pick a mode")
-            }
+            lightDarkSystemModePicker
 
             Text(LocalizedStringKey("Welcome"))
 
-            Button("Show Half Sheet") {
-                showHalfSheet = true
-            }
-            .sheet(isPresented: $showHalfSheet) {
-                Text("Content")
-                    .presentationDetents([.height(200), .medium, .large])
-                    .presentationDragIndicator(.automatic)
-            }
-            .font(.title).bold()
+            halfSheetButton
+            fullScreenButton
 
-            Button("Present fullscreen cover!") {
-                isPresented.toggle()
-            }
-            .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
-
-            Text("This app is all about what I learned!")
-            Text("You can find the code on")
-            Link(
-                "Source Code(Github)",
-                destination: URL(
-                    string: "https://github.com/H-Ghadirian/What-I-Learned"
-                )!
-            )
+            linkToMyGithub
             listOfButtonToPresentSheet
             buttonToPresentSheet
         }
@@ -123,17 +97,47 @@ struct SettingTab: View {
             }
         }
     }
-}
 
-struct FullScreenModalView: View {
-    @Environment(\.dismiss) var dismiss
+    var halfSheetButton: some View {
+        Button("Show Half Sheet") {
+            showHalfSheet = true
+        }
+        .sheet(isPresented: $showHalfSheet) {
+            Text("Content")
+                .presentationDetents([.height(200), .medium, .large])
+                .presentationDragIndicator(.automatic)
+        }
+        .font(.title).bold()
+    }
 
-    var body: some View {
-        ZStack {
-            Color.primary.edgesIgnoringSafeArea(.all)
-            Button("Dismiss Modal") {
-                dismiss()
+    var fullScreenButton: some View {
+        Button("Present fullscreen cover!") {
+            isPresented.toggle()
+        }
+        .fullScreenCover(isPresented: $isPresented, content: AddArticleView.init)
+    }
+
+    var lightDarkSystemModePicker: some View {
+        Picker(selection: $systemTheme) {
+            ForEach(SchemeType.allCases) { item in
+                Text(item.title)
+                    .tag(item.rawValue)
             }
+        } label: {
+            Text("Pick a mode")
+        }
+    }
+
+    var linkToMyGithub: some View {
+        VStack {
+            Text("This app is all about what I learned!")
+            Text("You can find the code on")
+            Link(
+                "Source Code(Github)",
+                destination: URL(
+                    string: "https://github.com/H-Ghadirian/What-I-Learned"
+                )!
+            )
         }
     }
 }
