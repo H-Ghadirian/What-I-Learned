@@ -70,7 +70,8 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                ToastViewExample()
+                MapView()
+//                ToastViewExample()
 //                AddArticleView()
             case .hapticTest:
                 HapticTestView()
