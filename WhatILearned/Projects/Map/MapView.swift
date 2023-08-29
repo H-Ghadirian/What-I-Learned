@@ -15,7 +15,11 @@ struct MapView: View {
         )
     )
 
-    let locationManager = CLLocationManager()
+    private let locationManager = CLLocationManager()
+
+    private func getHeight(from height: CGFloat) -> CGFloat {
+        height > 50 ? height - 50 : 0
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -26,7 +30,7 @@ struct MapView: View {
                     showsUserLocation: true,
                     userTrackingMode: .constant(.follow)
                 )
-                .frame(height: geometry.size.height - 50)
+                .frame(height: getHeight(from: geometry.size.height))
                 .onAppear {
                     locationManager.requestWhenInUseAuthorization()
                 }
