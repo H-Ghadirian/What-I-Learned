@@ -36,6 +36,7 @@
 		2AE0F61E2A9BF8AD0001A30E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F61D2A9BF8AD0001A30E /* CoordinatorProtocol.swift */; };
 		2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6222A9D3D480001A30E /* MapView.swift */; };
 		2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */; };
+		2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6282A9F558C0001A30E /* TestTabView.swift */; };
 		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
 		2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A442A7AC1610006BDDF /* Colors.swift */; };
 		2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A482A7C31E80006BDDF /* SchemeType.swift */; };
@@ -110,6 +111,7 @@
 		2AE0F61D2A9BF8AD0001A30E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		2AE0F6222A9D3D480001A30E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
+		2AE0F6282A9F558C0001A30E /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2AFA7A482A7C31E80006BDDF /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
 		2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -339,6 +341,14 @@
 			path = PhotosPicker;
 			sourceTree = "<group>";
 		};
+		2AE0F6272A9F556F0001A30E /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0F6282A9F558C0001A30E /* TestTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		2AFA7A4A2A7D963F0006BDDF /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +411,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AE0F6272A9F556F0001A30E /* TabView */,
 				2AE0F6242A9F52380001A30E /* PhotosPicker */,
 				2AE0F6212A9D3D380001A30E /* Map */,
 				2AE0F5F82A916F730001A30E /* Toast */,
@@ -684,6 +695,7 @@
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
+				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
