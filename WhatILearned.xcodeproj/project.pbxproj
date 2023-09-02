@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
@@ -163,6 +165,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E641B2AA352E1004D4498 /* TourArch1 */,
+			);
+			path = Pointfree;
+			sourceTree = "<group>";
+		};
+		2A1E641B2AA352E1004D4498 /* TourArch1 */ = {
+			isa = PBXGroup;
+			children = (
+				2A1E641C2AA35CF3004D4498 /* CounterApp.swift */,
+			);
+			path = TourArch1;
+			sourceTree = "<group>";
+		};
 		2A3AE1E02A8DF1580024EDC0 /* ApiRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +429,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A1E641A2AA352CC004D4498 /* Pointfree */,
 				2AE0F6272A9F556F0001A30E /* TabView */,
 				2AE0F6242A9F52380001A30E /* PhotosPicker */,
 				2AE0F6212A9D3D380001A30E /* Map */,
@@ -723,6 +742,7 @@
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
+				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */,
 				2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */,
 			);
