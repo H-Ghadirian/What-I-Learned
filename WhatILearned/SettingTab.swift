@@ -1,10 +1,4 @@
-//
-//  SettingTab.swift
-//  WhatILearned
-//
-//  Created by Ghadirian, Hamed, HSE DE on 04.08.23.
-//
-
+import ComposableArchitecture
 import SwiftUI
 
 struct SettingTab: View {
@@ -70,7 +64,15 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                TestTabView()
+                CounterAppView(
+                    store: Store(
+                        initialState: CounterFeature.State(),
+                        reducer: {
+                            CounterFeature()
+                        }
+                    )
+                )
+//                TestTabView()
 //                PhotoPickerView()
 //                MapView()
 //                ToastViewExample()

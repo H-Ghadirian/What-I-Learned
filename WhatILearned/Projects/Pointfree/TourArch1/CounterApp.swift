@@ -1,6 +1,6 @@
 import ComposableArchitecture
 import SwiftUI
-
+// 18:44
 struct CounterFeature: Reducer {
     struct State: Equatable {
         var count = 0
@@ -35,30 +35,44 @@ struct CounterFeature: Reducer {
     }
 }
 
-struct SwiftUIView: View {
+struct CounterAppView: View {
 //    let store: Store<CounterFeature.State, CounterFeature.Action>
     let store: StoreOf<CounterFeature>
 
     var body: some View {
         WithViewStore(
             self.store,
-            observe: { $0 }
+            observe: {
+                $0
+            }
         ) { viewStore in
             Form {
                 Section {
-                    Button("T") {
-                        print("Hello")
+                    Text("\(viewStore.count)")
+                    Button("Decrement") {
+                        viewStore.send(.decrementButtonTapped)
                     }
-                    VStack {
-                        Text("Hello, World!")
+                    Button("Increment") {
+                        viewStore.send(.incrementButtonTapped)
                     }
                 }
                 Section {
-                    VStack {
-                        Text("Hello, World!")
-                    }
-                    Button("T") {
+                    Button("Get Fact") {
                         print("Hello")
+                    }
+                    if let fact = viewStore.fact {
+                        Text(fact)
+                    }
+                }
+                Section {
+                    if viewStore.isTimerOn {
+                        Button("Stop") {
+                            viewStore.send(.toggleButtonTimerTapped)
+                        }
+                    } else {
+                        Button("Start") {
+                            viewStore.send(.toggleButtonTimerTapped)
+                        }
                     }
                 }
             }
@@ -68,6 +82,13 @@ struct SwiftUIView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-//        SwiftUIView(store: <#StoreOf<CounterFeature>#>)
+        CounterAppView(
+            store: Store(
+                initialState: CounterFeature.State(),
+                reducer: {
+                    CounterFeature()
+                }
+            )
+        )
     }
 }
