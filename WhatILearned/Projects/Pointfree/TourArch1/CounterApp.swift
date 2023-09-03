@@ -24,8 +24,14 @@ struct CounterFeature: Reducer {
             case .decrementButtonTapped:
                 state.count -= 1
             case .getFactButtonTapped:
-                // TODO: perform network request
-                break
+                return .run { [count = state.count] send in
+                    let (data, response) = try await URLSession.shared.data(
+                        from: URL(string: "http://numbersapi.com/\(count)")!
+                    )
+                    print(response)
+                    let fact = String(data: data, encoding: .utf8)
+                    print(fact)
+                }
             case .toggleButtonTimerTapped:
                 state.isTimerOn.toggle()
                 // start timer
@@ -58,7 +64,7 @@ struct CounterAppView: View {
                 }
                 Section {
                     Button("Get Fact") {
-                        print("Hello")
+                        viewStore.send(.getFactButtonTapped)
                     }
                     if let fact = viewStore.fact {
                         Text(fact)
@@ -87,6 +93,7 @@ struct SwiftUIView_Previews: PreviewProvider {
                 initialState: CounterFeature.State(),
                 reducer: {
                     CounterFeature()
+                    ._printChanges()
                 }
             )
         )
