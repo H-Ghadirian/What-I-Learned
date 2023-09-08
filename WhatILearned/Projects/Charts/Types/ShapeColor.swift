@@ -3,7 +3,7 @@ import SwiftUI
 
 enum ShapeColor: String, CaseIterable, ChartDescribable {
     case green = "💚", blue = "💙", purple = "💜", orange = "🧡"
-    
+
     var color: Color {
         switch self {
         case .green:

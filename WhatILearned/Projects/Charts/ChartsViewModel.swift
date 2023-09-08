@@ -5,10 +5,11 @@ import Charts
 class ChartsViewModel: ObservableObject {
 
     // MARK: - Properties
-
+    @Published var chosenMarkType: MarkType = .bar
     @Published var chosenShapeStyle: ShapeColor = .green
     @Published var shapeCornerRadius: Double = 0
     @Published var showsAvarageLine: Bool = false
+    @Published var chosenAxisType: AxisType = .vertical
 
     private var cancellables = Set<AnyCancellable>()
 

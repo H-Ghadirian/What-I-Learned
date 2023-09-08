@@ -21,7 +21,7 @@ struct ChartsView: View {
         VStack(spacing: Constant.stackSpacing) {
             title
             ChartContainerView(viewModel: viewModel)
-//            ControlsView(viewModel: viewModel)
+            ControlsView(viewModel: viewModel)
         }
         .padding(.horizontal, Constant.horizontalPadding)
     }

@@ -29,6 +29,9 @@
 		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
 		2AAF65512AAB692A00B86F64 /* ChartDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */; };
 		2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65532AAB696F00B86F64 /* ChartsView.swift */; };
+		2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65552AAB6DFA00B86F64 /* ControlsView.swift */; };
+		2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65572AAB75DD00B86F64 /* AxisType.swift */; };
+		2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65592AAB761800B86F64 /* MarkType.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -108,6 +111,9 @@
 		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
 		2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDescribable.swift; sourceTree = "<group>"; };
 		2AAF65532AAB696F00B86F64 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		2AAF65552AAB6DFA00B86F64 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		2AAF65572AAB75DD00B86F64 /* AxisType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisType.swift; sourceTree = "<group>"; };
+		2AAF65592AAB761800B86F64 /* MarkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkType.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -325,8 +331,9 @@
 		2AAF65482AAB67BF00B86F64 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				2AAF65522AAB696500B86F64 /* Views */,
+				2AAF65532AAB696F00B86F64 /* ChartsView.swift */,
 				2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */,
+				2AAF65522AAB696500B86F64 /* SubViews */,
 				2AAF654B2AAB68B800B86F64 /* Types */,
 			);
 			path = Charts;
@@ -337,17 +344,19 @@
 			children = (
 				2AAF654E2AAB690900B86F64 /* ShapeColor.swift */,
 				2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */,
+				2AAF65572AAB75DD00B86F64 /* AxisType.swift */,
+				2AAF65592AAB761800B86F64 /* MarkType.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
 		};
-		2AAF65522AAB696500B86F64 /* Views */ = {
+		2AAF65522AAB696500B86F64 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
 				2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */,
-				2AAF65532AAB696F00B86F64 /* ChartsView.swift */,
+				2AAF65552AAB6DFA00B86F64 /* ControlsView.swift */,
 			);
-			path = Views;
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
@@ -753,6 +762,7 @@
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
+				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
@@ -762,6 +772,8 @@
 				2AE0F6172A9BF5750001A30E /* AppTabItem.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
 				2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */,
+				2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */,
+				2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
