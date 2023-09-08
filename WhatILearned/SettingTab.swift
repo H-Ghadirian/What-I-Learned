@@ -64,14 +64,15 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                CounterAppView(
-                    store: Store(
-                        initialState: CounterFeature.State(),
-                        reducer: {
-                            CounterFeature()
-                        }
-                    )
-                )
+                ChartsView()
+//                CounterAppView(
+//                    store: Store(
+//                        initialState: CounterFeature.State(),
+//                        reducer: {
+//                            CounterFeature()
+//                        }
+//                    )
+//                )
 //                TestTabView()
 //                PhotoPickerView()
 //                MapView()
@@ -131,6 +132,7 @@ struct SettingTab: View {
         } label: {
             Text("Pick a mode")
         }
+        .pickerStyle(.segmented)
     }
 
     var linkToMyGithub: some View {

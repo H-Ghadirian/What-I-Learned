@@ -24,6 +24,11 @@
 		2A8100292A8C0BFB0086B146 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100282A8C0BFB0086B146 /* Message.swift */; };
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
+		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
+		2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */; };
+		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
+		2AAF65512AAB692A00B86F64 /* ChartDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */; };
+		2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65532AAB696F00B86F64 /* ChartsView.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -98,6 +103,11 @@
 		2A8100282A8C0BFB0086B146 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
+		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
+		2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
+		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
+		2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDescribable.swift; sourceTree = "<group>"; };
+		2AAF65532AAB696F00B86F64 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -312,6 +322,34 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		2AAF65482AAB67BF00B86F64 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65522AAB696500B86F64 /* Views */,
+				2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */,
+				2AAF654B2AAB68B800B86F64 /* Types */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		2AAF654B2AAB68B800B86F64 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF654E2AAB690900B86F64 /* ShapeColor.swift */,
+				2AAF65502AAB692A00B86F64 /* ChartDescribable.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		2AAF65522AAB696500B86F64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */,
+				2AAF65532AAB696F00B86F64 /* ChartsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +467,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF65482AAB67BF00B86F64 /* Charts */,
 				2A1E641A2AA352CC004D4498 /* Pointfree */,
 				2AE0F6272A9F556F0001A30E /* TabView */,
 				2AE0F6242A9F52380001A30E /* PhotosPicker */,
@@ -712,6 +751,7 @@
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
+				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
@@ -734,16 +774,20 @@
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
+				2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */,
 				2AE0F6192A9BF5920001A30E /* AppDelegate.swift in Sources */,
 				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
+				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
+				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */,
+				2AAF65512AAB692A00B86F64 /* ChartDescribable.swift in Sources */,
 				2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
