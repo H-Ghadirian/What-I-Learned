@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct ToastViewExample: View {
-    @State private var toast: FancyToast? = nil
+    @State private var toast: FancyToast?
     var body: some View {
         VStack {
             Button {
