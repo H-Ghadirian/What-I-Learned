@@ -64,19 +64,20 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
+                ContinuationContentView()
 //                FakeNewsFeedView()
 //                PlaceholderView()
 //                LottieContentView()
 //                UsersView()
 //                ChartsView()
-                CounterAppView(
-                    store: Store(
-                        initialState: CounterFeature.State(),
-                        reducer: {
-                            CounterFeature()
-                        }
-                    )
-                )
+//                CounterAppView(
+//                    store: Store(
+//                        initialState: CounterFeature.State(),
+//                        reducer: {
+//                            CounterFeature()
+//                        }
+//                    )
+//                )
 //                TestTabView()
 //                PhotoPickerView()
 //                MapView()

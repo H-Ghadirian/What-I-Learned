@@ -53,6 +53,7 @@
 		2AAF658A2AAF4D7E00B86F64 /* FakeNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65892AAF4D7E00B86F64 /* FakeNewsViewModel.swift */; };
 		2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF658B2AAF4DB100B86F64 /* MessageView.swift */; };
 		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
+		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -154,6 +155,7 @@
 		2AAF65892AAF4D7E00B86F64 /* FakeNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewsViewModel.swift; sourceTree = "<group>"; };
 		2AAF658B2AAF4DB100B86F64 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
+		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -473,6 +475,14 @@
 			path = "Shimmer Lib";
 			sourceTree = "<group>";
 		};
+		2AAF65902AAFA27900B86F64 /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65912AAFA29F00B86F64 /* Continuation.swift */,
+			);
+			path = AsyncAwait;
+			sourceTree = "<group>";
+		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +600,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2AAF656A2AAF35F500B86F64 /* Lottie */,
 				2AAF655B2AACDD9D00B86F64 /* Pagination */,
@@ -894,6 +905,7 @@
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,
+				2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */,
 				2AE0F6172A9BF5750001A30E /* AppTabItem.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
 				2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */,
