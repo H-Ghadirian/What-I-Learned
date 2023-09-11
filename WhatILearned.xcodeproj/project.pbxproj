@@ -40,6 +40,19 @@
 		2AAF65692AAF35EA00B86F64 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2AAF65682AAF35EA00B86F64 /* Lottie */; };
 		2AAF656C2AAF376200B86F64 /* dancing.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF656B2AAF376200B86F64 /* dancing.json */; };
 		2AAF65702AAF37A000B86F64 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF656F2AAF37A000B86F64 /* LottieView.swift */; };
+		2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65722AAF3FFE00B86F64 /* PlaceholderView.swift */; };
+		2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65742AAF408800B86F64 /* ShimmeringView.swift */; };
+		2AAF65772AAF475400B86F64 /* CollectionLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65762AAF475400B86F64 /* CollectionLoadingView.swift */; };
+		2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF657A2AAF47DD00B86F64 /* CollectionLoadingState.swift */; };
+		2AAF657D2AAF486800B86F64 /* ShimmerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF657C2AAF486800B86F64 /* ShimmerConfiguration.swift */; };
+		2AAF657F2AAF48B600B86F64 /* View+shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF657E2AAF48B600B86F64 /* View+shimmer.swift */; };
+		2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65802AAF48E600B86F64 /* ShimmerModifier.swift */; };
+		2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65822AAF4CBB00B86F64 /* FakeNewsList.swift */; };
+		2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65842AAF4CD700B86F64 /* FakeNewsFeedView.swift */; };
+		2AAF65882AAF4D5D00B86F64 /* FakeNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65872AAF4D5D00B86F64 /* FakeNewsService.swift */; };
+		2AAF658A2AAF4D7E00B86F64 /* FakeNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65892AAF4D7E00B86F64 /* FakeNewsViewModel.swift */; };
+		2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF658B2AAF4DB100B86F64 /* MessageView.swift */; };
+		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -128,6 +141,19 @@
 		2AAF65622AACE2CB00B86F64 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		2AAF656B2AAF376200B86F64 /* dancing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dancing.json; sourceTree = "<group>"; };
 		2AAF656F2AAF37A000B86F64 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		2AAF65722AAF3FFE00B86F64 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		2AAF65742AAF408800B86F64 /* ShimmeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmeringView.swift; sourceTree = "<group>"; };
+		2AAF65762AAF475400B86F64 /* CollectionLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLoadingView.swift; sourceTree = "<group>"; };
+		2AAF657A2AAF47DD00B86F64 /* CollectionLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLoadingState.swift; sourceTree = "<group>"; };
+		2AAF657C2AAF486800B86F64 /* ShimmerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerConfiguration.swift; sourceTree = "<group>"; };
+		2AAF657E2AAF48B600B86F64 /* View+shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+shimmer.swift"; sourceTree = "<group>"; };
+		2AAF65802AAF48E600B86F64 /* ShimmerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerModifier.swift; sourceTree = "<group>"; };
+		2AAF65822AAF4CBB00B86F64 /* FakeNewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewsList.swift; sourceTree = "<group>"; };
+		2AAF65842AAF4CD700B86F64 /* FakeNewsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewsFeedView.swift; sourceTree = "<group>"; };
+		2AAF65872AAF4D5D00B86F64 /* FakeNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewsService.swift; sourceTree = "<group>"; };
+		2AAF65892AAF4D7E00B86F64 /* FakeNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNewsViewModel.swift; sourceTree = "<group>"; };
+		2AAF658B2AAF4DB100B86F64 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -403,6 +429,50 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
+		2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65862AAF4D0A00B86F64 /* Shimmer Lib */,
+				2AAF65792AAF47AA00B86F64 /* Simple */,
+				2AAF65782AAF47A000B86F64 /* Advance */,
+			);
+			path = "Shimmer Effect";
+			sourceTree = "<group>";
+		};
+		2AAF65782AAF47A000B86F64 /* Advance */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF658D2AAF4E7600B86F64 /* newsItems.json */,
+				2AAF65822AAF4CBB00B86F64 /* FakeNewsList.swift */,
+				2AAF65842AAF4CD700B86F64 /* FakeNewsFeedView.swift */,
+				2AAF65872AAF4D5D00B86F64 /* FakeNewsService.swift */,
+				2AAF65892AAF4D7E00B86F64 /* FakeNewsViewModel.swift */,
+				2AAF658B2AAF4DB100B86F64 /* MessageView.swift */,
+			);
+			path = Advance;
+			sourceTree = "<group>";
+		};
+		2AAF65792AAF47AA00B86F64 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65722AAF3FFE00B86F64 /* PlaceholderView.swift */,
+				2AAF65742AAF408800B86F64 /* ShimmeringView.swift */,
+				2AAF657E2AAF48B600B86F64 /* View+shimmer.swift */,
+				2AAF65802AAF48E600B86F64 /* ShimmerModifier.swift */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		2AAF65862AAF4D0A00B86F64 /* Shimmer Lib */ = {
+			isa = PBXGroup;
+			children = (
+				2AAF65762AAF475400B86F64 /* CollectionLoadingView.swift */,
+				2AAF657C2AAF486800B86F64 /* ShimmerConfiguration.swift */,
+				2AAF657A2AAF47DD00B86F64 /* CollectionLoadingState.swift */,
+			);
+			path = "Shimmer Lib";
+			sourceTree = "<group>";
+		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +590,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2AAF656A2AAF35F500B86F64 /* Lottie */,
 				2AAF655B2AACDD9D00B86F64 /* Pagination */,
 				2AAF65482AAB67BF00B86F64 /* Charts */,
@@ -693,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9DED5B29AB7D200092D549 /* menu.json in Resources */,
+				2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */,
 				2AE0F60F2A9958D40001A30E /* Localizable.strings in Resources */,
 				2AAF656C2AAF376200B86F64 /* dancing.json in Resources */,
 				2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */,
@@ -812,6 +884,7 @@
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
+				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
 				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
@@ -824,17 +897,24 @@
 				2AE0F6172A9BF5750001A30E /* AppTabItem.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
 				2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */,
+				2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */,
+				2AAF657D2AAF486800B86F64 /* ShimmerConfiguration.swift in Sources */,
 				2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */,
+				2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */,
 				2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
 				2AFA7A5B2A7D96D50006BDDF /* MenuItem.swift in Sources */,
+				2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */,
 				2AAF65612AACE29F00B86F64 /* UsersView.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
+				2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */,
 				2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */,
+				2AAF65772AAF475400B86F64 /* CollectionLoadingView.swift in Sources */,
 				2AE0F61E2A9BF8AD0001A30E /* CoordinatorProtocol.swift in Sources */,
 				2AAF65702AAF37A000B86F64 /* LottieView.swift in Sources */,
+				2AAF658A2AAF4D7E00B86F64 /* FakeNewsViewModel.swift in Sources */,
 				2A7875E8299D7264001450F6 /* ContentView.swift in Sources */,
 				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
@@ -847,11 +927,15 @@
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
+				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
+				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
 				2AAF65632AACE2CB00B86F64 /* UsersViewModel.swift in Sources */,
+				2AAF65882AAF4D5D00B86F64 /* FakeNewsService.swift in Sources */,
+				2AAF657F2AAF48B600B86F64 /* View+shimmer.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */,

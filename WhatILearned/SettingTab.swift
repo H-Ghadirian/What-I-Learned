@@ -64,7 +64,9 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                LottieContentView()
+                FakeNewsFeedView()
+//                PlaceholderView()
+//                LottieContentView()
 //                UsersView()
 //                ChartsView()
 //                CounterAppView(
