@@ -47,6 +47,8 @@ struct ChrisNavigation: View {
 
                     Button("Navigate to person") {
                         path.append(Person.examples[1])
+                        path.append(Person.examples[0])
+                        path.append(Article.examples[0])
                     }
                 }
             }

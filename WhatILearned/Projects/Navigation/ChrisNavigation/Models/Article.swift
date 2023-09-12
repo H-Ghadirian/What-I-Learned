@@ -2,7 +2,7 @@ import Foundation
 
 struct Article: Identifiable, Hashable {
     let id = UUID()
-    
+
     let title: String
     let author: String
 }
