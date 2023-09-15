@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A047BCF2AB5084F00492C0A /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
@@ -107,6 +108,7 @@
 /* Begin PBXFileReference section */
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -225,6 +227,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A047BCD2AB5082A00492C0A /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +610,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A047BCD2AB5082A00492C0A /* Overlay */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2AAF656A2AAF35F500B86F64 /* Lottie */,
@@ -910,6 +921,7 @@
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
 				2AE0F6042A9172BE0001A30E /* ToastViewExample.swift in Sources */,
 				2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */,
+				2A047BCF2AB5084F00492C0A /* BackgroundOverlay.swift in Sources */,
 				2AAF657D2AAF486800B86F64 /* ShimmerConfiguration.swift in Sources */,
 				2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */,
 				2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */,
