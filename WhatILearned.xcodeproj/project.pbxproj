@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A047BCF2AB5084F00492C0A /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */; };
+		2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A047BD12AB661F900492C0A /* CollectionViewContent.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
@@ -109,6 +110,7 @@
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
+		2A047BD12AB661F900492C0A /* CollectionViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContent.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -233,6 +235,14 @@
 				2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */,
 			);
 			path = Overlay;
+			sourceTree = "<group>";
+		};
+		2A047BD02AB661DD00492C0A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2A047BD12AB661F900492C0A /* CollectionViewContent.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
@@ -610,6 +620,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A047BD02AB661DD00492C0A /* CollectionView */,
 				2A047BCD2AB5082A00492C0A /* Overlay */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
@@ -915,6 +926,7 @@
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
+				2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,
 				2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */,
 				2AE0F6172A9BF5750001A30E /* AppTabItem.swift in Sources */,
