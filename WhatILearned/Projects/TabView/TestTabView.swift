@@ -13,3 +13,10 @@ struct TestTabView: View {
         .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
+
+struct TestTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        TestTabView()
+            .border(.red)
+    }
+}
