@@ -30,11 +30,11 @@ class UsersViewModel: ObservableObject {
 
         AF.request(apiUrl).responseDecodable(of: Users.self, decoder: decoder) { [weak self] (response) in
             switch response.result {
-                case .success(let users):
-                    self?.totalPages = users.totalPages
-                    self?.users.append(contentsOf: users.data)
-                case .failure(let afError):
-                    print("Error : \(afError)")
+            case .success(let users):
+                self?.totalPages = users.totalPages
+                self?.users.append(contentsOf: users.data)
+            case .failure(let afError):
+                print("Error : \(afError)")
             }
         }
     }

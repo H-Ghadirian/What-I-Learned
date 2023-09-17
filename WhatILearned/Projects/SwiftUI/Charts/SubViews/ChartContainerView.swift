@@ -6,7 +6,7 @@
 //
 
 import Charts
-import Combine
+//import Combine
 import SwiftUI
 
 struct ChartContainerView: View {

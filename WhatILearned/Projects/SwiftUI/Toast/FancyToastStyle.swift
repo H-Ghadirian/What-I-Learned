@@ -17,7 +17,7 @@ extension FancyToastStyle {
         case .success: return Color.green
         }
     }
-    
+
     var iconFileName: String {
         switch self {
         case .info: return "info.circle.fill"

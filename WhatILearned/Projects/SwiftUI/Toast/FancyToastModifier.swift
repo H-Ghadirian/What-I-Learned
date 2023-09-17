@@ -33,29 +33,28 @@ struct FancyToastModifier: ViewModifier {
             .transition(.move(edge: .bottom))
         }
     }
-    
+
     private func showToast() {
         guard let toast = toast else { return }
-        
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        
+
         if toast.duration > 0 {
             workItem?.cancel()
-            
+
             let task = DispatchWorkItem {
                dismissToast()
             }
-            
+
             workItem = task
             DispatchQueue.main.asyncAfter(deadline: .now() + toast.duration, execute: task)
         }
     }
-    
+
     private func dismissToast() {
         withAnimation {
             toast = nil
         }
-        
+
         workItem?.cancel()
         workItem = nil
     }

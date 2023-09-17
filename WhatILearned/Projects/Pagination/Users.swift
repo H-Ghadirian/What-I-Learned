@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct Users : Decodable{
-    let page : Int
-    let perPage : Int
+struct Users: Decodable{
+    let page: Int
+    let perPage: Int
     let total: Int
-    let totalPages : Int
-    let data : [User]
+    let totalPages: Int
+    let data: [User]
 }
 
-struct User : Decodable, Hashable{
-    let id : Int
-    let email : String
-    let firstName : String
-    let lastName : String
-    let avatar : URL
+struct User: Decodable, Hashable{
+    let id: Int
+    let email: String
+    let firstName: String
+    let lastName: String
+    let avatar: URL
 }

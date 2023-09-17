@@ -245,6 +245,20 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
+				2AE0F5F82A916F730001A30E /* Toast */,
+				2AAF65482AAB67BF00B86F64 /* Charts */,
+				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
+				2A047BCD2AB5082A00492C0A /* Overlay */,
+				2A047BD02AB661DD00492C0A /* CollectionView */,
+				2AE0F6272A9F556F0001A30E /* TabView */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,19 +634,13 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				2A047BD02AB661DD00492C0A /* CollectionView */,
-				2A047BCD2AB5082A00492C0A /* Overlay */,
+				2A047BD32AB6B5AB00492C0A /* SwiftUI */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
-				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2AAF656A2AAF35F500B86F64 /* Lottie */,
 				2AAF655B2AACDD9D00B86F64 /* Pagination */,
-				2AAF65482AAB67BF00B86F64 /* Charts */,
 				2A1E641A2AA352CC004D4498 /* Pointfree */,
-				2AE0F6272A9F556F0001A30E /* TabView */,
 				2AE0F6242A9F52380001A30E /* PhotosPicker */,
 				2AE0F6212A9D3D380001A30E /* Map */,
-				2AE0F5F82A916F730001A30E /* Toast */,
-				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
 				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
 				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
