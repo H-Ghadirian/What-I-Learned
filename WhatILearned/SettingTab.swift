@@ -8,6 +8,8 @@ struct SettingTab: View {
     @State private var isPresented = false
     @State private var showHalfSheet = false
 
+    let viewModel = SettingTabViewModel()
+
     enum Sheet: String, Identifiable {
         case addArticle, hapticTest, asyncAwaitRequest
         var id: String { rawValue }
@@ -53,6 +55,7 @@ struct SettingTab: View {
         VStack {
             Button("Add Article") {
                 presentedSheet = .addArticle
+                viewModel.printMyMacro()
             }
             Button("Test Haptic") {
                 presentedSheet = .hapticTest

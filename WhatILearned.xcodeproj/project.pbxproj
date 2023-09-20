@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,6 +56,9 @@
 		2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF658B2AAF4DB100B86F64 /* MessageView.swift */; };
 		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
 		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
+		2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */; };
+		2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B32ABB8CBB008979F6 /* MyMacro */; };
+		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -160,6 +163,8 @@
 		2AAF658B2AAF4DB100B86F64 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
 		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
+		2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewModel.swift; sourceTree = "<group>"; };
+		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -203,8 +208,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */,
 				2AAF65662AACE6C500B86F64 /* Alamofire in Frameworks */,
 				2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */,
+				2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */,
 				F100A27B9BF15FDD64DA5AA7 /* Pods_WhatILearned.framework in Frameworks */,
 				2AAF65692AAF35EA00B86F64 /* Lottie in Frameworks */,
 			);
@@ -340,6 +347,7 @@
 		2A7875E4299D7264001450F6 /* WhatILearned */ = {
 			isa = PBXGroup;
 			children = (
+				2AB238B22ABB8C94008979F6 /* MyMacro */,
 				2AE0F6052A940D9C0001A30E /* Info.plist */,
 				2AFA7AA02A818FBC0006BDDF /* Shared */,
 				2AFA7A9F2A818F820006BDDF /* Projects */,
@@ -626,6 +634,7 @@
 		2AFA7A9C2A818E900006BDDF /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */,
 				2AFA7A5C2A7D99600006BDDF /* SettingTab.swift */,
 			);
 			name = Setting;
@@ -707,6 +716,8 @@
 				2AFA7A422A79280B0006BDDF /* ComposableArchitecture */,
 				2AAF65652AACE6C500B86F64 /* Alamofire */,
 				2AAF65682AAF35EA00B86F64 /* Lottie */,
+				2AB238B32ABB8CBB008979F6 /* MyMacro */,
+				2AB238B52ABB8CBB008979F6 /* MyMacroClient */,
 			);
 			productName = WhatILearned;
 			productReference = 2A7875E2299D7264001450F6 /* WhatILearned.app */;
@@ -787,6 +798,7 @@
 				2AFA7A412A79280B0006BDDF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				2AAF65642AACE6C500B86F64 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2AAF65672AAF35EA00B86F64 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				2AB238B12ABB8C29008979F6 /* XCLocalSwiftPackageReference "../MyMacro" */,
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
@@ -971,6 +983,7 @@
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
+				2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
@@ -1365,6 +1378,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		2AB238B12ABB8C29008979F6 /* XCLocalSwiftPackageReference "../MyMacro" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../MyMacro;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		2AAF65642AACE6C500B86F64 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1402,6 +1422,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AAF65672AAF35EA00B86F64 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		2AB238B32ABB8CBB008979F6 /* MyMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacro;
+		};
+		2AB238B52ABB8CBB008979F6 /* MyMacroClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacroClient;
 		};
 		2AFA7A422A79280B0006BDDF /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
