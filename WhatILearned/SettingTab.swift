@@ -67,7 +67,8 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                ContinuationContentView()
+                TestMyViewModifiersView()
+//                ContinuationContentView()
 //                FakeNewsFeedView()
 //                PlaceholderView()
 //                LottieContentView()

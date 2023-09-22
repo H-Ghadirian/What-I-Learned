@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2A047BCF2AB5084F00492C0A /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */; };
 		2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A047BD12AB661F900492C0A /* CollectionViewContent.swift */; };
+		2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */; };
+		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
@@ -114,6 +116,8 @@
 		07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatILearned_WhatILearnedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		2A047BD12AB661F900492C0A /* CollectionViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContent.swift; sourceTree = "<group>"; };
+		2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOnTapModifier.swift; sourceTree = "<group>"; };
+		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -264,6 +268,22 @@
 				2AE0F6272A9F556F0001A30E /* TabView */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		2A05DC9B2ABE3D1000C78FCF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */,
+			);
+			path = TestMyViewModifiers;
 			sourceTree = "<group>";
 		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
@@ -643,6 +663,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */,
 				2A047BD32AB6B5AB00492C0A /* SwiftUI */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
 				2AAF656A2AAF35F500B86F64 /* Lottie */,
@@ -660,6 +681,7 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2A05DC9B2ABE3D1000C78FCF /* ViewModifiers */,
 				2AE0F61A2A9BF8750001A30E /* Navigation */,
 				2AFA7A482A7C31E80006BDDF /* SchemeType.swift */,
 				2AFA7A522A7D965A0006BDDF /* MainApp */,
@@ -935,6 +957,7 @@
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
+				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
@@ -945,6 +968,7 @@
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
+				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
 				2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,
