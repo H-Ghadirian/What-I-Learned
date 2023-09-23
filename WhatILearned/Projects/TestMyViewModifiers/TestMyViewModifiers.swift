@@ -17,7 +17,8 @@ struct TestMyViewModifiersView: View {
                 .scaleOnTap(scaleAmount: 2)
             Text("Hello, world!")
         }
-        .padding() // ViewModifier
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .withGradient(startColor: .blue, endColor: .green)
     }
 }
 
