@@ -16,6 +16,7 @@ struct TestMyViewModifiersView: View {
                 .foregroundColor(.accentColor) // ViewModifier
                 .scaleOnTap(scaleAmount: 2)
             Text("Hello, world!")
+                .withStrokeBorder(strokeColor: .black)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .withGradient(startColor: .blue, endColor: .green)

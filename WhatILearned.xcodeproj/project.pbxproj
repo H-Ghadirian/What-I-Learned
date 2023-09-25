@@ -59,6 +59,7 @@
 		2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF658B2AAF4DB100B86F64 /* MessageView.swift */; };
 		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
 		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
+		2AB20FD82AC2393B00AAC150 /* StrokeBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */; };
 		2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */; };
 		2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B32ABB8CBB008979F6 /* MyMacro */; };
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
@@ -169,6 +170,7 @@
 		2AAF658B2AAF4DB100B86F64 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
 		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
+		2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBorderModifier.swift; sourceTree = "<group>"; };
 		2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewModel.swift; sourceTree = "<group>"; };
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			children = (
 				2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */,
 				2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */,
+				2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -975,6 +978,7 @@
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
 				2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,
+				2AB20FD82AC2393B00AAC150 /* StrokeBorderModifier.swift in Sources */,
 				2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */,
 				2AE0F6172A9BF5750001A30E /* AppTabItem.swift in Sources */,
 				2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */,
