@@ -16,6 +16,8 @@ struct TestMyViewModifiersView: View {
                 .foregroundColor(.accentColor) // ViewModifier
                 .scaleOnTap(scaleAmount: 2)
             Text("Hello, world!")
+                .addPulsatingNeonGlow(pulseDuration: 0.5)
+                .padding()
                 .withStrokeBorder(strokeColor: .black)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

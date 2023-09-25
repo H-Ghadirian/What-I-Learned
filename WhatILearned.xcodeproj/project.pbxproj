@@ -60,6 +60,7 @@
 		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
 		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
 		2AB20FD82AC2393B00AAC150 /* StrokeBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */; };
+		2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */; };
 		2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */; };
 		2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B32ABB8CBB008979F6 /* MyMacro */; };
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
@@ -171,6 +172,7 @@
 		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
 		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
 		2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBorderModifier.swift; sourceTree = "<group>"; };
+		2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingNeonGlowModifier.swift; sourceTree = "<group>"; };
 		2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewModel.swift; sourceTree = "<group>"; };
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */,
 				2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */,
 				2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */,
+				2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -973,6 +976,7 @@
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
+				2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
