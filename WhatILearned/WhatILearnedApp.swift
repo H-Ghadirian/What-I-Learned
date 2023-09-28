@@ -19,6 +19,7 @@ struct WhatILearnedApp: App {
         paths = menu.flatMap { $0.items }
         menuCoordinator = MenuCoordinator(allPaths: paths)
     }
+
     var body: some Scene {
         WindowGroup {
             AppView(coordinator: AppCoordinator( menuCoordinator: menuCoordinator))

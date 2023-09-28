@@ -17,7 +17,6 @@
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
-		2A7875E8299D7264001450F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E7299D7264001450F6 /* ContentView.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
 		2A7875F8299D7265001450F6 /* WhatILearnedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875F7299D7265001450F6 /* WhatILearnedTests.swift */; };
@@ -32,6 +31,8 @@
 		2A95C3502AC4DD0000E2DABD /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C34F2AC4DD0000E2DABD /* FirebaseAnalyticsSwift */; };
 		2A95C3522AC4DD0000E2DABD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C3512AC4DD0000E2DABD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		2A95C3542AC4DD0000E2DABD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C3532AC4DD0000E2DABD /* FirebaseAppCheck */; };
+		2A95C3572AC5A30800E2DABD /* JsonMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */; };
+		2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */; };
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
@@ -133,7 +134,6 @@
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
-		2A7875E7299D7264001450F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7875EB299D7265001450F6 /* WhatILearned.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatILearned.entitlements; sourceTree = "<group>"; };
 		2A7875ED299D7265001450F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -146,6 +146,8 @@
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
 		2A8100282A8C0BFB0086B146 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMenuListView.swift; sourceTree = "<group>"; };
+		2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondJsonMenuListView.swift; sourceTree = "<group>"; };
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A95C3552AC5A2FA00E2DABD /* JsonMenuList */,
 				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
 				2AE0F5F82A916F730001A30E /* Toast */,
 				2AAF65482AAB67BF00B86F64 /* Charts */,
@@ -391,7 +394,6 @@
 				2AFA7AA02A818FBC0006BDDF /* Shared */,
 				2AFA7A9F2A818F820006BDDF /* Projects */,
 				2AFA7A4A2A7D963F0006BDDF /* Tabs */,
-				2A7875E7299D7264001450F6 /* ContentView.swift */,
 				2A7875EB299D7265001450F6 /* WhatILearned.entitlements */,
 				2A7875EC299D7265001450F6 /* Preview Content */,
 			);
@@ -433,6 +435,15 @@
 			);
 			name = AsyncAwaitRequest;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A95C3552AC5A2FA00E2DABD /* JsonMenuList */ = {
+			isa = PBXGroup;
+			children = (
+				2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */,
+				2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */,
+			);
+			path = JsonMenuList;
 			sourceTree = "<group>";
 		};
 		2A9DED6029AB834F0092D549 /* Extension */ = {
@@ -1018,11 +1029,11 @@
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
 				2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */,
 				2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */,
+				2A95C3572AC5A30800E2DABD /* JsonMenuListView.swift in Sources */,
 				2AAF65772AAF475400B86F64 /* CollectionLoadingView.swift in Sources */,
 				2AE0F61E2A9BF8AD0001A30E /* CoordinatorProtocol.swift in Sources */,
 				2AAF65702AAF37A000B86F64 /* LottieView.swift in Sources */,
 				2AAF658A2AAF4D7E00B86F64 /* FakeNewsViewModel.swift in Sources */,
-				2A7875E8299D7264001450F6 /* ContentView.swift in Sources */,
 				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
@@ -1047,6 +1058,7 @@
 				2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
+				2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */,
 				2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */,
 				2AAF65512AAB692A00B86F64 /* ChartDescribable.swift in Sources */,
 				2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */,
