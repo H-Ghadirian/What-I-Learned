@@ -1,6 +1,15 @@
 import SwiftUI
 
-struct TestMacro: View {
+struct TestMacro: View, ProjectProtocol {
+    private static let instance = TestMacro()
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
     @State var resultNumber: Int = 0
     @State var resultString: String = ""
 

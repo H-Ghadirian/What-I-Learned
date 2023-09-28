@@ -1,7 +1,15 @@
 import SwiftUI
 
-struct TestSheets: View {
-    @State private var showHalfSheet = false
+struct TestSheets: View, ProjectProtocol {
+    static func project() -> any ProjectProtocol {
+        myView
+    }
+    static func run() -> AnyView {
+        AnyView(myView)
+    }
+    private static let myView = TestSheets()
+
+    @State private var showHalfSheet: Bool = false
     @State private var isPresented = false
 
     var body: some View {

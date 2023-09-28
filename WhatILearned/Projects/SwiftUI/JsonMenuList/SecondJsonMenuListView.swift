@@ -7,7 +7,17 @@
 
  import SwiftUI
 
- struct SecondJsonMenuListView: View {
+struct SecondJsonMenuListView: View, ProjectProtocol {
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
+    private static let instance = SecondJsonMenuListView()
+
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
 
     private var secondTab: some View {

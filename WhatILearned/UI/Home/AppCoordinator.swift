@@ -25,7 +25,7 @@ class AppCoordinator: CoordinatorProtocol {
     func view(for state: AppTabItem) -> AnyView {
         switch state {
         case .menu:
-            let viewModel = MenuViewModel(coordinator: menuCoordinator)
+//            let viewModel = MenuViewModel(coordinator: menuCoordinator)
 //            return AnyView(
 //                NavigatorView(
 //                    menuCoordinator,
@@ -34,7 +34,8 @@ class AppCoordinator: CoordinatorProtocol {
 //                    }
 //                )
 //            )
-            return AnyView(ChrisNavigation())
+//            return AnyView(ChrisNavigation())
+            return AnyView(SearchableListView())
         case .profile:
             return AnyView(SettingTab())
         }

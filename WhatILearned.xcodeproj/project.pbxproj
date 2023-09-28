@@ -35,6 +35,8 @@
 		2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */; };
 		2A95C35C2AC5A9DA00E2DABD /* TestMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */; };
 		2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */; };
+		2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3612AC5C43500E2DABD /* SearchableList.swift */; };
+		2A95C3652AC5E77C00E2DABD /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3642AC5E77C00E2DABD /* Projects.swift */; };
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
@@ -69,7 +71,7 @@
 		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
 		2AB20FD82AC2393B00AAC150 /* StrokeBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */; };
 		2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */; };
-		2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */; };
+		2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */; };
 		2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B32ABB8CBB008979F6 /* MyMacro */; };
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
@@ -152,6 +154,8 @@
 		2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondJsonMenuListView.swift; sourceTree = "<group>"; };
 		2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMacro.swift; sourceTree = "<group>"; };
 		2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSheets.swift; sourceTree = "<group>"; };
+		2A95C3612AC5C43500E2DABD /* SearchableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableList.swift; sourceTree = "<group>"; };
+		2A95C3642AC5E77C00E2DABD /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
@@ -184,7 +188,7 @@
 		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
 		2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBorderModifier.swift; sourceTree = "<group>"; };
 		2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingNeonGlowModifier.swift; sourceTree = "<group>"; };
-		2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTabViewModel.swift; sourceTree = "<group>"; };
+		2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroViewModel.swift; sourceTree = "<group>"; };
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
@@ -453,7 +457,7 @@
 		2A95C35A2AC5A9C900E2DABD /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */,
+				2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */,
 				2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */,
 			);
 			path = Macro;
@@ -465,6 +469,22 @@
 				2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */,
 			);
 			path = Sheet;
+			sourceTree = "<group>";
+		};
+		2A95C3602AC5C41700E2DABD /* Searchable List */ = {
+			isa = PBXGroup;
+			children = (
+				2A95C3612AC5C43500E2DABD /* SearchableList.swift */,
+			);
+			name = "Searchable List";
+			sourceTree = "<group>";
+		};
+		2A95C3632AC5E76500E2DABD /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				2A95C3642AC5E77C00E2DABD /* Projects.swift */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 		2A9DED6029AB834F0092D549 /* Extension */ = {
@@ -654,6 +674,7 @@
 		2AFA7A4A2A7D963F0006BDDF /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				2A95C3602AC5C41700E2DABD /* Searchable List */,
 				2AFA7A9C2A818E900006BDDF /* Setting */,
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
 			);
@@ -733,6 +754,7 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2A95C3632AC5E76500E2DABD /* Project */,
 				2A05DC9B2ABE3D1000C78FCF /* ViewModifiers */,
 				2AE0F61A2A9BF8750001A30E /* Navigation */,
 				2AFA7A482A7C31E80006BDDF /* SchemeType.swift */,
@@ -1024,6 +1046,7 @@
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
 				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
+				2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */,
@@ -1066,10 +1089,11 @@
 				2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */,
 				2AE0F6192A9BF5920001A30E /* AppDelegate.swift in Sources */,
 				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
+				2A95C3652AC5E77C00E2DABD /* Projects.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
-				2AB238AE2ABB81C0008979F6 /* SettingTabViewModel.swift in Sources */,
+				2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
