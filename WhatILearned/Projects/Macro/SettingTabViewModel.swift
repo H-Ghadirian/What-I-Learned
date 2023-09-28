@@ -8,14 +8,11 @@
 import Foundation
 import MyMacro
 
-struct SettingTabViewModel {
-    func printMyMacro() {
+struct MacroViewModel {
+    func printMyMacro() -> (Int, String) {
         let numberOne = 3
         let numberTwo = 2
 
-        let (result, resultString) = #stringify(numberOne + numberTwo)
-
-        print(resultString)
-        print(result * 2)
+        return #stringify(numberOne + numberTwo)
     }
 }

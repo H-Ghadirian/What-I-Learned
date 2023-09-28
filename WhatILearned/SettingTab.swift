@@ -5,10 +5,6 @@ struct SettingTab: View {
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
     @State private var showingFirst = false
     @State private var showingSecond = false
-    @State private var isPresented = false
-    @State private var showHalfSheet = false
-
-    let viewModel = SettingTabViewModel()
 
     enum Sheet: String, Identifiable {
         case addArticle, hapticTest, asyncAwaitRequest
@@ -35,9 +31,6 @@ struct SettingTab: View {
 
             Text(LocalizedStringKey("Welcome"))
 
-            halfSheetButton
-            fullScreenButton
-
             linkToMyGithub
             listOfButtonToPresentSheet
             buttonToPresentSheet
@@ -55,7 +48,6 @@ struct SettingTab: View {
         VStack {
             Button("Add Article") {
                 presentedSheet = .addArticle
-                viewModel.printMyMacro()
             }
             Button("Test Haptic") {
                 presentedSheet = .hapticTest
@@ -67,7 +59,9 @@ struct SettingTab: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                SecondJsonMenuListView()
+                TestSheets()
+//                TestMacro()
+//                SecondJsonMenuListView()
 //                JsonMenuListView()
 //                TestMyViewModifiersView()
 //                ContinuationContentView()
@@ -113,25 +107,6 @@ struct SettingTab: View {
                 AddArticleView()
             }
         }
-    }
-
-    var halfSheetButton: some View {
-        Button("Show Half Sheet") {
-            showHalfSheet = true
-        }
-        .sheet(isPresented: $showHalfSheet) {
-            Text("Content")
-                .presentationDetents([.height(200), .medium, .large])
-                .presentationDragIndicator(.automatic)
-        }
-        .font(.title).bold()
-    }
-
-    var fullScreenButton: some View {
-        Button("Present fullscreen cover!") {
-            isPresented.toggle()
-        }
-        .fullScreenCover(isPresented: $isPresented, content: AddArticleView.init)
     }
 
     var lightDarkSystemModePicker: some View {

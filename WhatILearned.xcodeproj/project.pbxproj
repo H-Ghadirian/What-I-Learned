@@ -33,6 +33,8 @@
 		2A95C3542AC4DD0000E2DABD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C3532AC4DD0000E2DABD /* FirebaseAppCheck */; };
 		2A95C3572AC5A30800E2DABD /* JsonMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */; };
 		2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */; };
+		2A95C35C2AC5A9DA00E2DABD /* TestMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */; };
+		2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */; };
 		2A9DED5B29AB7D200092D549 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A9DED5A29AB7D200092D549 /* menu.json */; };
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
@@ -148,6 +150,8 @@
 		2A8100282A8C0BFB0086B146 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMenuListView.swift; sourceTree = "<group>"; };
 		2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondJsonMenuListView.swift; sourceTree = "<group>"; };
+		2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMacro.swift; sourceTree = "<group>"; };
+		2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSheets.swift; sourceTree = "<group>"; };
 		2A9DED5A29AB7D200092D549 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
@@ -446,6 +450,23 @@
 			path = JsonMenuList;
 			sourceTree = "<group>";
 		};
+		2A95C35A2AC5A9C900E2DABD /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */,
+				2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		2A95C35D2AC5B16F00E2DABD /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				2A95C35E2AC5B18D00E2DABD /* TestSheets.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
 		2A9DED6029AB834F0092D549 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,7 +705,6 @@
 		2AFA7A9C2A818E900006BDDF /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				2AB238AD2ABB81C0008979F6 /* SettingTabViewModel.swift */,
 				2AFA7A5C2A7D99600006BDDF /* SettingTab.swift */,
 			);
 			name = Setting;
@@ -693,6 +713,8 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A95C35D2AC5B16F00E2DABD /* Sheet */,
+				2A95C35A2AC5A9C900E2DABD /* Macro */,
 				2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */,
 				2A047BD32AB6B5AB00492C0A /* SwiftUI */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
@@ -996,6 +1018,7 @@
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
+				2A95C35C2AC5A9DA00E2DABD /* TestMacro.swift in Sources */,
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
@@ -1038,6 +1061,7 @@
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
+				2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
 				2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */,
 				2AE0F6192A9BF5920001A30E /* AppDelegate.swift in Sources */,

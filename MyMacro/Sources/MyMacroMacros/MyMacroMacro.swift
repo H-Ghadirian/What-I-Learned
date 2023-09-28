@@ -28,6 +28,6 @@ public struct StringifyMacro: ExpressionMacro {
 @main
 struct MyMacroPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
-        StringifyMacro.self,
+        StringifyMacro.self
     ]
 }
