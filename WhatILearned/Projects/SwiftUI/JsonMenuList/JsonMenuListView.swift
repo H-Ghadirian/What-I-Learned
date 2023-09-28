@@ -1,7 +1,16 @@
 import Foundation
 import SwiftUI
 
-struct JsonMenuListView: View {
+struct JsonMenuListView: View, ProjectProtocol {
+    static private let jsonMenuListView = JsonMenuListView()
+    static func project() -> any ProjectProtocol {
+        jsonMenuListView
+    }
+
+    static func run() -> AnyView {
+        AnyView(jsonMenuListView)
+    }
+
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
 
     var selectedScheme: ColorScheme? {

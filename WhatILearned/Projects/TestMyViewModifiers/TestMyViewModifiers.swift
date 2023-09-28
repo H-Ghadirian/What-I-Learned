@@ -8,7 +8,16 @@
 import Foundation
 import SwiftUI
 
-struct TestMyViewModifiersView: View {
+struct TestMyViewModifiersView: View, ProjectProtocol {
+    static private let instance =  TestMyViewModifiersView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     var body: some View {
         VStack {
             Image(systemName: "globe")

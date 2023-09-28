@@ -1,6 +1,15 @@
 import SwiftUI
 
-struct BackgroundOverlayView: View {
+struct BackgroundOverlayView: View, ProjectProtocol {
+    static private let instance = BackgroundOverlayView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     @State private var currentScaleAmount = 0.0
     @State private var finalScaleAmount = 1.0
 

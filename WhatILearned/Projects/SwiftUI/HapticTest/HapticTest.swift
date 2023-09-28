@@ -1,6 +1,15 @@
 import SwiftUI
 
-struct HapticTestView: View {
+struct HapticTestView: View, ProjectProtocol {
+    static private let instance = HapticTestView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     var body: some View {
         VStack(spacing: 10) {
             Button("light") {

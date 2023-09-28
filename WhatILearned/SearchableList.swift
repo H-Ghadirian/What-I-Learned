@@ -9,11 +9,11 @@ struct SearchableListView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(searchResults, id: \.self) { project in
+                ForEach(searchResults.indices, id: \.self) { index in
                     NavigationLink {
-                        project.view
+                        projects[index].view
                     } label: {
-                        Text(project.name)
+                        Text("\(index + 1) -" + projects[index].name)
                     }
                 }
             }

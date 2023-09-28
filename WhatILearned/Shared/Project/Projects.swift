@@ -23,7 +23,14 @@ extension ProjectProtocol {
 enum Projects: CaseIterable {
     case sheets
     case macro
+    case jsonMenuListView
     case secondJsonMenuListView
+    case viewModifiersView
+    case hapticTestView
+    case chartsView
+    case backgroundOverlayView
+    case collectionViewContent
+    case testTabView
 
     var view: AnyView {
         switch self {
@@ -33,6 +40,20 @@ enum Projects: CaseIterable {
             return TestMacro.run()
         case .secondJsonMenuListView:
             return SecondJsonMenuListView.run()
+        case .viewModifiersView:
+            return TestMyViewModifiersView.run()
+        case .jsonMenuListView:
+            return JsonMenuListView.run()
+        case .hapticTestView:
+            return HapticTestView.run()
+        case .chartsView:
+            return ChartsView.run()
+        case .backgroundOverlayView:
+            return BackgroundOverlayView.run()
+        case .collectionViewContent:
+            return CollectionViewContent.run()
+        case .testTabView:
+            return TestTabView.run()
         }
     }
 
@@ -48,6 +69,20 @@ enum Projects: CaseIterable {
             return TestMacro.project()
         case .secondJsonMenuListView:
             return SecondJsonMenuListView.project()
+        case .viewModifiersView:
+            return TestMyViewModifiersView.project()
+        case .jsonMenuListView:
+            return JsonMenuListView.project()
+        case .hapticTestView:
+            return HapticTestView.project()
+        case .chartsView:
+            return ChartsView.project()
+        case .backgroundOverlayView:
+            return BackgroundOverlayView.project()
+        case .collectionViewContent:
+            return CollectionViewContent.project()
+        case .testTabView:
+            return TestTabView.project()
         }
     }
 }

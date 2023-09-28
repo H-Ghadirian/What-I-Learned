@@ -1,6 +1,15 @@
 import SwiftUI
 
-struct TestTabView: View {
+struct TestTabView: View, ProjectProtocol {
+    static private let instance = TestTabView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     @State var selectedTab = 0
 
     var body: some View {

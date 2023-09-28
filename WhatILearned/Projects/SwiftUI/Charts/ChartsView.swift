@@ -1,6 +1,14 @@
 import SwiftUI
 
-struct ChartsView: View {
+struct ChartsView: View, ProjectProtocol {
+    static private let instance = ChartsView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
 
     // MARK: - UI
 
