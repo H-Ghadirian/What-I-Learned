@@ -8,7 +8,52 @@
 import Foundation
 import SwiftUI
 
-struct MenuView<ViewModel: MenuViewModelProtocol>: View {
+struct MainAppFactory {
+    static var singletonsStore: [String: AnyObject] = [:]
+}
+
+struct MenuView<ViewModel: MenuViewModelProtocol>: View { // }, ProjectProtocol {
+//    static private var instance: MenuView<ViewModel>?
+//    static func project() -> any ProjectProtocol {
+//        return AnyView(
+//            NavigatorView(
+//                menuCoordinator,
+//                content: {
+//                    return AnyView(instance)
+//                }
+//            )
+//        )
+//    }
+//
+//    static func run() -> AnyView {
+//        if let instance = instance {
+//            return AnyView(instance)
+//        }
+//        let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+//        var paths = menu.flatMap { $0.items }
+//        var menuCoordinator = MenuCoordinator(allPaths: paths)
+//        let viewModel = MenuViewModel(coordinator: menuCoordinator)
+//        instance = MenuView(viewModel: viewModel)
+//        return AnyView(instance)
+//    }
+
+    static var shared: MenuView<ViewModel>? {
+        let storeKey = String(describing: ViewModel.self)
+        if let singleton = MainAppFactory.singletonsStore[storeKey] as? MenuView<ViewModel> {
+            return singleton
+        } else {
+            let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+            var paths = menu.flatMap { $0.items }
+            var menuCoordinator = MenuCoordinator(allPaths: paths)
+            if let viewModel = MenuViewModel(coordinator: menuCoordinator) as? ViewModel {
+                let newSingleton = MenuView<ViewModel>(viewModel: viewModel)
+                MainAppFactory.singletonsStore[storeKey] = newSingleton as AnyObject
+                return newSingleton
+            }
+        }
+        return nil
+    }
+
     @ObservedObject private var viewModel: ViewModel
 
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue

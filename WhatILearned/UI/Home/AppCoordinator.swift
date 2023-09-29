@@ -16,31 +16,19 @@ class AppCoordinator: CoordinatorProtocol {
         AppTabItem.allCases
     }
 
-    let menuCoordinator: MenuCoordinator
-
-    init(menuCoordinator: MenuCoordinator) {
-        self.menuCoordinator = menuCoordinator
-    }
-
     func view(for state: AppTabItem) -> AnyView {
         switch state {
         case .menu:
-//            let viewModel = MenuViewModel(coordinator: menuCoordinator)
-//            return AnyView(
-//                NavigatorView(
-//                    menuCoordinator,
-//                    content: {
-//                        return MenuView(viewModel: viewModel)
-//                    }
-//                )
-//            )
-//            return AnyView(ChrisNavigation())
-            return AnyView(SearchableListView())
+            if let menu: MenuView<MenuViewModel> = MenuView.shared {
+                return AnyView(menu)
+            } else {
+                return AnyView(SearchableListView())
+            }
+
         case .profile:
             return AnyView(SettingTab())
         }
     }
 
-    func start() {
-    }
+    func start() {}
 }

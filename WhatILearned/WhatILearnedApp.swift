@@ -13,16 +13,9 @@ struct WhatILearnedApp: App {
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
     @State private var toast: FancyToast?
 
-    let paths: [MenuItem]
-    let menuCoordinator: MenuCoordinator
-    init() {
-        paths = menu.flatMap { $0.items }
-        menuCoordinator = MenuCoordinator(allPaths: paths)
-    }
-
     var body: some Scene {
         WindowGroup {
-            AppView(coordinator: AppCoordinator( menuCoordinator: menuCoordinator))
+            AppView(coordinator: AppCoordinator())
                 .onOpenURL { url in
                     handle(url)
                 }
