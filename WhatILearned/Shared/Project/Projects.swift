@@ -31,6 +31,7 @@ enum Projects: CaseIterable {
     case backgroundOverlayView
     case collectionViewContent
     case testTabView
+    case lottieView
 
     var view: AnyView {
         switch self {
@@ -54,6 +55,8 @@ enum Projects: CaseIterable {
             return CollectionViewContent.run()
         case .testTabView:
             return TestTabView.run()
+        case .lottieView:
+            return LottieContentView.run()
         }
     }
 
@@ -83,6 +86,8 @@ enum Projects: CaseIterable {
             return CollectionViewContent.project()
         case .testTabView:
             return TestTabView.project()
+        case .lottieView:
+            return LottieContentView.project()
         }
     }
 }

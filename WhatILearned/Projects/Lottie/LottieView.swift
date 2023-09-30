@@ -2,6 +2,7 @@ import Lottie
 import SwiftUI
 
 struct LottieView: UIViewRepresentable {
+
     let loopMode: LottieLoopMode
 
     func updateUIView(_ uiView: UIViewType, context: Context) {
@@ -17,7 +18,16 @@ struct LottieView: UIViewRepresentable {
     }
 }
 
-struct LottieContentView: View {
+struct LottieContentView: View, ProjectProtocol {
+    static private let instance = LottieContentView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     var body: some View {
         LottieView(loopMode: .loop)
             .scaleEffect(0.4)
