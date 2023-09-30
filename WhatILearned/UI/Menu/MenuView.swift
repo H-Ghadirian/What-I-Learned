@@ -8,34 +8,18 @@
 import Foundation
 import SwiftUI
 
-struct MainAppFactory {
+private struct MainAppFactory {
     static var singletonsStore: [String: AnyObject] = [:]
 }
 
-struct MenuView<ViewModel: MenuViewModelProtocol>: View { // }, ProjectProtocol {
-//    static private var instance: MenuView<ViewModel>?
-//    static func project() -> any ProjectProtocol {
-//        return AnyView(
-//            NavigatorView(
-//                menuCoordinator,
-//                content: {
-//                    return AnyView(instance)
-//                }
-//            )
-//        )
-//    }
-//
-//    static func run() -> AnyView {
-//        if let instance = instance {
-//            return AnyView(instance)
-//        }
-//        let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
-//        var paths = menu.flatMap { $0.items }
-//        var menuCoordinator = MenuCoordinator(allPaths: paths)
-//        let viewModel = MenuViewModel(coordinator: menuCoordinator)
-//        instance = MenuView(viewModel: viewModel)
-//        return AnyView(instance)
-//    }
+struct MenuView<ViewModel: MenuViewModelProtocol>: View, ProjectProtocol {
+    static func project() -> any ProjectProtocol {
+        return shared!
+    }
+
+    static func run() -> AnyView {
+        AnyView(shared)
+    }
 
     static var shared: MenuView<ViewModel>? {
         let storeKey = String(describing: ViewModel.self)

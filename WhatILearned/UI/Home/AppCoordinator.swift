@@ -19,11 +19,6 @@ class AppCoordinator: CoordinatorProtocol {
     func view(for state: AppTabItem) -> AnyView {
         switch state {
         case .menu:
-//            if let menu: MenuView<MenuViewModel> = MenuView.shared {
-//                return AnyView(menu)
-//            } else {
-//                return
-//            }
             return AnyView(SearchableListView())
         case .profile:
             return AnyView(SettingTab())

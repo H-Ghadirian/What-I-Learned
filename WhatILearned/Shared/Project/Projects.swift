@@ -32,6 +32,7 @@ enum Projects: CaseIterable {
     case collectionViewContent
     case testTabView
     case lottieView
+    case menuView
 
     var view: AnyView {
         switch self {
@@ -57,6 +58,8 @@ enum Projects: CaseIterable {
             return TestTabView.run()
         case .lottieView:
             return LottieContentView.run()
+        case .menuView:
+            return MenuView<MenuViewModel>.run()
         }
     }
 
@@ -88,6 +91,8 @@ enum Projects: CaseIterable {
             return TestTabView.project()
         case .lottieView:
             return LottieContentView.project()
+        case .menuView:
+            return MenuView<MenuViewModel>.project()
         }
     }
 }
