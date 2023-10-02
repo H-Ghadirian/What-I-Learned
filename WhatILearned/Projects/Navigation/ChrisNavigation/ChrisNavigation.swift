@@ -56,6 +56,18 @@ struct ChrisNavigation: View {
     }
 }
 
+extension ChrisNavigation: ProjectProtocol {
+    private static let instance = ChrisNavigation()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}
+
 struct ChrisNavigation_Previews: PreviewProvider {
     static var previews: some View {
         ChrisNavigation()

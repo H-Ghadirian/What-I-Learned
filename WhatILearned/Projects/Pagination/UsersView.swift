@@ -21,3 +21,15 @@ struct UsersView: View {
         }
     }
 }
+
+extension UsersView: ProjectProtocol {
+    private static let instance = UsersView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}

@@ -35,6 +35,18 @@ struct AsyncAwaitRequest: View {
     }
 }
 
+extension AsyncAwaitRequest: ProjectProtocol {
+    private static let instance = AsyncAwaitRequest()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}
+
 struct AsyncAwaitRequest_Previews: PreviewProvider {
     static var previews: some View {
         AsyncAwaitRequest()

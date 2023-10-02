@@ -1,13 +1,6 @@
 import SwiftUI
 
-struct TestSheets: View, ProjectProtocol {
-    static func project() -> any ProjectProtocol {
-        myView
-    }
-    static func run() -> AnyView {
-        AnyView(myView)
-    }
-    private static let myView = TestSheets()
+struct TestSheets: View {
 
     @State private var showHalfSheet: Bool = false
     @State private var isPresented = false
@@ -37,4 +30,14 @@ struct TestSheets: View, ProjectProtocol {
         }
         .fullScreenCover(isPresented: $isPresented, content: AddArticleView.init)
     }
+}
+
+extension TestSheets: ProjectProtocol {
+    static func project() -> any ProjectProtocol {
+        myView
+    }
+    static func run() -> AnyView {
+        AnyView(myView)
+    }
+    private static let myView = TestSheets()
 }

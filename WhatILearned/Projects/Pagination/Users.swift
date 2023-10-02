@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Users: Decodable{
+struct Users: Decodable {
     let page: Int
     let perPage: Int
     let total: Int
@@ -15,7 +15,7 @@ struct Users: Decodable{
     let data: [User]
 }
 
-struct User: Decodable, Hashable{
+struct User: Decodable, Hashable {
     let id: Int
     let email: String
     let firstName: String

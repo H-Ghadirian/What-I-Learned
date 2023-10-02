@@ -88,6 +88,25 @@ struct CounterAppView: View {
     }
 }
 
+extension CounterAppView: ProjectProtocol {
+    private static let instance = CounterAppView(
+        store: Store(
+            initialState: CounterFeature.State(),
+            reducer: {
+                CounterFeature()
+            }
+        )
+    )
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}
+
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         CounterAppView(

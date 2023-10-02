@@ -12,7 +12,7 @@ private struct MainAppFactory {
     static var singletonsStore: [String: AnyObject] = [:]
 }
 
-struct MenuView<ViewModel: MenuViewModelProtocol>: View, ProjectProtocol {
+extension MenuView: ProjectProtocol {
     static func project() -> any ProjectProtocol {
         return shared!
     }
@@ -27,8 +27,8 @@ struct MenuView<ViewModel: MenuViewModelProtocol>: View, ProjectProtocol {
             return singleton
         } else {
             let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
-            var paths = menu.flatMap { $0.items }
-            var menuCoordinator = MenuCoordinator(allPaths: paths)
+            let paths = menu.flatMap { $0.items }
+            let menuCoordinator = MenuCoordinator(allPaths: paths)
             if let viewModel = MenuViewModel(coordinator: menuCoordinator) as? ViewModel {
                 let newSingleton = MenuView<ViewModel>(viewModel: viewModel)
                 MainAppFactory.singletonsStore[storeKey] = newSingleton as AnyObject
@@ -37,6 +37,9 @@ struct MenuView<ViewModel: MenuViewModelProtocol>: View, ProjectProtocol {
         }
         return nil
     }
+}
+
+struct MenuView<ViewModel: MenuViewModelProtocol>: View {
 
     @ObservedObject private var viewModel: ViewModel
 

@@ -676,7 +676,6 @@
 			children = (
 				2A95C3602AC5C41700E2DABD /* Searchable List */,
 				2AFA7A9C2A818E900006BDDF /* Setting */,
-				2AFA7A4B2A7D96480006BDDF /* Menu */,
 			);
 			name = Tabs;
 			sourceTree = "<group>";
@@ -690,6 +689,7 @@
 				2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */,
 			);
 			name = Menu;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2AFA7A522A7D965A0006BDDF /* MainApp */ = {
@@ -746,6 +746,7 @@
 				2AE0F6212A9D3D380001A30E /* Map */,
 				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
 				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
+				2AFA7A4B2A7D96480006BDDF /* Menu */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
 			);
 			path = Projects;

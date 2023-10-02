@@ -1,7 +1,16 @@
 import Foundation
 import SwiftUI
 
-struct FakeNewsFeedView: View {
+struct FakeNewsFeedView: View, ProjectProtocol {
+    static let instance = FakeNewsFeedView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
     @StateObject var viewModel = FakeNewsViewModel()
     var body: some View {
         VStack {

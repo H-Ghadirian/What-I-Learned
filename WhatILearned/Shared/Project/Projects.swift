@@ -21,6 +21,8 @@ extension ProjectProtocol {
 }
 
 enum Projects: CaseIterable {
+    case asyncAwaitRequest
+    case addArticleView
     case sheets
     case macro
     case jsonMenuListView
@@ -33,6 +35,13 @@ enum Projects: CaseIterable {
     case testTabView
     case lottieView
     case menuView
+    case fakeNewsFeedView
+    case continuationContentView
+    case usersView
+    case counterAppView
+    case photoPickerView
+    case mapView
+    case chrisNavigation
 
     var view: AnyView {
         switch self {
@@ -60,6 +69,24 @@ enum Projects: CaseIterable {
             return LottieContentView.run()
         case .menuView:
             return MenuView<MenuViewModel>.run()
+        case .fakeNewsFeedView:
+            return FakeNewsFeedView.run()
+        case .continuationContentView:
+            return ContinuationContentView.run()
+        case .usersView:
+            return UsersView.run()
+        case .counterAppView:
+            return CounterAppView.run()
+        case .photoPickerView:
+            return PhotoPickerView.run()
+        case .mapView:
+            return MapView.run()
+        case .chrisNavigation:
+            return ChrisNavigation.run()
+        case .addArticleView:
+            return AddArticleView.run()
+        case .asyncAwaitRequest:
+            return AsyncAwaitRequest.run()
         }
     }
 
@@ -93,6 +120,24 @@ enum Projects: CaseIterable {
             return LottieContentView.project()
         case .menuView:
             return MenuView<MenuViewModel>.project()
+        case .fakeNewsFeedView:
+            return FakeNewsFeedView.project()
+        case .continuationContentView:
+            return ContinuationContentView.project()
+        case .usersView:
+            return UsersView.project()
+        case .counterAppView:
+            return CounterAppView.project()
+        case .photoPickerView:
+            return PhotoPickerView.project()
+        case .mapView:
+            return MapView.project()
+        case .chrisNavigation:
+            return ChrisNavigation.project()
+        case .addArticleView:
+            return AddArticleView.project()
+        case .asyncAwaitRequest:
+            return AsyncAwaitRequest.project()
         }
     }
 }

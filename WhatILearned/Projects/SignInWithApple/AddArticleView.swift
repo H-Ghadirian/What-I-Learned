@@ -55,3 +55,15 @@ struct AddArticleView: View {
     }
 
 }
+
+extension AddArticleView: ProjectProtocol {
+    private static let instance = AddArticleView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}

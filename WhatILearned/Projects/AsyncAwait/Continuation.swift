@@ -30,6 +30,18 @@ struct ContinuationContentView: View {
     }
 }
 
+extension ContinuationContentView: ProjectProtocol {
+    private static let instance = ContinuationContentView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}
+
 struct ContinuationContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContinuationContentView()

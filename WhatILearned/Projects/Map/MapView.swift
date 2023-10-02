@@ -54,3 +54,15 @@ struct MapView: View {
         }
     }
 }
+
+extension MapView: ProjectProtocol {
+    private static let instance = MapView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}

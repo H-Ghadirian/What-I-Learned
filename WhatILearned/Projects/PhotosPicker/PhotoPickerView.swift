@@ -32,3 +32,15 @@ struct PhotoPickerView: View {
         }
     }
 }
+
+extension PhotoPickerView: ProjectProtocol {
+    private static let instance = PhotoPickerView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}

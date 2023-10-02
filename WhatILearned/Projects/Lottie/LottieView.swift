@@ -18,19 +18,22 @@ struct LottieView: UIViewRepresentable {
     }
 }
 
-struct LottieContentView: View, ProjectProtocol {
-    static private let instance = LottieContentView()
+struct LottieContentView: View {
+    var body: some View {
+        LottieView(loopMode: .loop)
+            .scaleEffect(0.4)
+    }
+}
+
+extension LottieContentView: ProjectProtocol {
+    private static let instance = LottieContentView()
+
     static func project() -> any ProjectProtocol {
         instance
     }
 
     static func run() -> AnyView {
         AnyView(instance)
-    }
-
-    var body: some View {
-        LottieView(loopMode: .loop)
-            .scaleEffect(0.4)
     }
 }
 

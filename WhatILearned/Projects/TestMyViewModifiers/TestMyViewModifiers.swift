@@ -8,15 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct TestMyViewModifiersView: View, ProjectProtocol {
-    static private let instance =  TestMyViewModifiersView()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
+struct TestMyViewModifiersView: View {
 
     var body: some View {
         VStack {
@@ -37,5 +29,17 @@ struct TestMyViewModifiersView: View, ProjectProtocol {
 struct TestMyViewModifiersView_Previews: PreviewProvider {
     static var previews: some View {
         TestMyViewModifiersView()
+    }
+}
+
+extension TestMyViewModifiersView: ProjectProtocol {
+    private static let instance = TestMyViewModifiersView()
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
     }
 }
