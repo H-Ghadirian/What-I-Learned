@@ -5,9 +5,21 @@ struct SearchableListView: View {
     let projects: [Projects] = Projects.allCases
 
     @State private var searchText = ""
+    @State private var showHalfSheet: Bool = false
 
     var body: some View {
         NavigationStack {
+            Button {
+                showHalfSheet = true
+            } label: {
+                Text("Select Tags")
+            }
+            .sheet(isPresented: $showHalfSheet) {
+                Text("Content")
+                    .presentationDetents([.height(200), .medium, .large])
+                    .presentationDragIndicator(.automatic)
+            }
+            .font(.title).bold()
             List {
                 ForEach(searchResults.indices, id: \.self) { index in
                     NavigationLink {
@@ -17,7 +29,7 @@ struct SearchableListView: View {
                     }
                 }
             }
-            .navigationTitle("Contacts")
+            .navigationTitle("Projects \(projects.count)")
         }
         .searchable(text: $searchText) {
             ForEach(searchResults, id: \.self) { result in
