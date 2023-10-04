@@ -6,14 +6,7 @@ struct SettingTab: View {
     @State private var showingFirst = false
     @State private var showingSecond = false
 
-    enum Sheet: String, Identifiable {
-        case addArticle, hapticTest, asyncAwaitRequest
-        var id: String { rawValue }
-    }
-
-    @State var presentedSheet: Sheet?
-
-    var selectedScheme: ColorScheme? {
+    private var selectedScheme: ColorScheme? {
         guard let theme = SchemeType(rawValue: systemTheme) else { return nil }
         switch theme {
         case .light:
@@ -28,12 +21,7 @@ struct SettingTab: View {
     var body: some View {
         VStack {
             lightDarkSystemModePicker
-
-            Text(LocalizedStringKey("Welcome"))
-
             linkToMyGithub
-            listOfButtonToPresentSheet
-            buttonToPresentSheet
         }
         .padding()
         .tabItem {
@@ -44,72 +32,7 @@ struct SettingTab: View {
         .preferredColorScheme(selectedScheme)
     }
 
-    var listOfButtonToPresentSheet: some View {
-        VStack {
-            Button("Add Article") {
-                presentedSheet = .addArticle
-            }
-            Button("Test Haptic") {
-                presentedSheet = .hapticTest
-            }
-            Button("Article Category") {
-                presentedSheet = .asyncAwaitRequest
-            }
-        }
-        .sheet(item: $presentedSheet, content: { sheet in
-            switch sheet {
-            case .addArticle:
-                TestSheets()
-//                TestMacro()
-//                SecondJsonMenuListView()
-//                JsonMenuListView()
-//                TestMyViewModifiersView()
-//                ContinuationContentView()
-//                FakeNewsFeedView()
-//                PlaceholderView()
-//                LottieContentView()
-//                UsersView()
-//                ChartsView()
-//                CounterAppView(
-//                    store: Store(
-//                        initialState: CounterFeature.State(),
-//                        reducer: {
-//                            CounterFeature()
-//                        }
-//                    )
-//                )
-//                TestTabView()
-//                PhotoPickerView()
-//                MapView()
-//                ToastViewExample()
-//                AddArticleView()
-            case .hapticTest:
-                HapticTestView()
-            case .asyncAwaitRequest:
-                AsyncAwaitRequest()
-            }
-        })
-        .padding()
-        .frame(width: 400, height: 300)
-    }
-
-    var buttonToPresentSheet: some View {
-        VStack {
-            Button("Show First Sheet") {
-                showingFirst = true
-            }
-        }
-        .sheet(isPresented: $showingFirst) {
-            Button("Show Second Sheet") {
-                showingSecond = true
-            }
-            .sheet(isPresented: $showingSecond) {
-                AddArticleView()
-            }
-        }
-    }
-
-    var lightDarkSystemModePicker: some View {
+    private var lightDarkSystemModePicker: some View {
         Picker(selection: $systemTheme) {
             ForEach(SchemeType.allCases) { item in
                 Text(item.title)
@@ -121,8 +44,9 @@ struct SettingTab: View {
         .pickerStyle(.segmented)
     }
 
-    var linkToMyGithub: some View {
+    private var linkToMyGithub: some View {
         VStack {
+            Text(LocalizedStringKey("Welcome"))
             Text("This app is all about what I learned!")
             Text("You can find the code on")
             Link(

@@ -21,6 +21,7 @@ extension ProjectProtocol {
 }
 
 enum Projects: CaseIterable {
+    case sheetNavigation
     case asyncAwaitRequest
     case addArticleView
     case sheets
@@ -87,6 +88,8 @@ enum Projects: CaseIterable {
             return AddArticleView.run()
         case .asyncAwaitRequest:
             return AsyncAwaitRequest.run()
+        case .sheetNavigation:
+            return SheetNavigation.run()
         }
     }
 
@@ -138,6 +141,8 @@ enum Projects: CaseIterable {
             return AddArticleView.project()
         case .asyncAwaitRequest:
             return AsyncAwaitRequest.project()
+        case .sheetNavigation:
+            return SheetNavigation.project()
         }
     }
 }

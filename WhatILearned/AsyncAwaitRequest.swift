@@ -47,8 +47,6 @@ extension AsyncAwaitRequest: ProjectProtocol {
     }
 }
 
-struct AsyncAwaitRequest_Previews: PreviewProvider {
-    static var previews: some View {
-        AsyncAwaitRequest()
-    }
+#Preview {
+    AsyncAwaitRequest()
 }
