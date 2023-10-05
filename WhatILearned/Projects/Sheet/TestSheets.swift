@@ -7,6 +7,7 @@ struct TestSheets: View {
 
     var body: some View {
         VStack(spacing: 10) {
+            Text("Hello ") + Text("World!")
             halfSheetButton
             fullScreenButton
         }
