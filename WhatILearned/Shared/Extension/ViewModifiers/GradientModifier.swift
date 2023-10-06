@@ -8,7 +8,12 @@ struct GradientModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(
-                LinearGradient(gradient: Gradient(colors: [startColor, endColor]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(
+                    gradient: Gradient(
+                        colors: [startColor, endColor]
+                    ),
+                    startPoint: .topLeading, endPoint: .bottomTrailing
+                )
             )
     }
 }

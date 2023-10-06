@@ -22,6 +22,7 @@ struct SettingTab: View {
         VStack {
             lightDarkSystemModePicker
             linkToMyGithub
+                .show(isVisible: false)
         }
         .padding()
         .tabItem {
