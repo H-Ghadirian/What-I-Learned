@@ -91,6 +91,8 @@
 		2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6282A9F558C0001A30E /* TestTabView.swift */; };
 		2AED33402ACF65D4003FE39F /* View+ .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED333F2ACF65D4003FE39F /* View+ .swift */; };
 		2AED33442AD0B9AF003FE39F /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33432AD0B9AF003FE39F /* Show.swift */; };
+		2AED33612AD4A2B1003FE39F /* BookmarkTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33602AD4A2B1003FE39F /* BookmarkTip.swift */; };
+		2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */; };
 		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
 		2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A442A7AC1610006BDDF /* Colors.swift */; };
 		2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A482A7C31E80006BDDF /* SchemeType.swift */; };
@@ -212,6 +214,8 @@
 		2AE0F6282A9F558C0001A30E /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
 		2AED333F2ACF65D4003FE39F /* View+ .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ .swift"; sourceTree = "<group>"; };
 		2AED33432AD0B9AF003FE39F /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		2AED33602AD4A2B1003FE39F /* BookmarkTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTip.swift; sourceTree = "<group>"; };
+		2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectProtocol.swift; sourceTree = "<group>"; };
 		2AFA7A442A7AC1610006BDDF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2AFA7A482A7C31E80006BDDF /* SchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeType.swift; sourceTree = "<group>"; };
 		2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewModel.swift; path = UI/Menu/MenuViewModel.swift; sourceTree = "<group>"; };
@@ -491,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				2A95C3642AC5E77C00E2DABD /* Projects.swift */,
+				2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -681,6 +686,14 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		2AED335F2AD4A230003FE39F /* Tipps */ = {
+			isa = PBXGroup;
+			children = (
+				2AED33602AD4A2B1003FE39F /* BookmarkTip.swift */,
+			);
+			path = Tipps;
+			sourceTree = "<group>";
+		};
 		2AFA7A4A2A7D963F0006BDDF /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -744,6 +757,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AED335F2AD4A230003FE39F /* Tipps */,
 				2A95C35D2AC5B16F00E2DABD /* Sheet */,
 				2A95C35A2AC5A9C900E2DABD /* Macro */,
 				2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */,
@@ -1059,6 +1073,7 @@
 				2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
+				2AED33612AD4A2B1003FE39F /* BookmarkTip.swift in Sources */,
 				2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
@@ -1114,6 +1129,7 @@
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
 				2AAF65632AACE2CB00B86F64 /* UsersViewModel.swift in Sources */,
+				2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */,
 				2AAF65882AAF4D5D00B86F64 /* FakeNewsService.swift in Sources */,
 				2AAF657F2AAF48B600B86F64 /* View+shimmer.swift in Sources */,
 				2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */,

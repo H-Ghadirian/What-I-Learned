@@ -8,19 +8,8 @@
 import Foundation
 import SwiftUI
 
-protocol ProjectProtocol: Identifiable {
-    var id: UUID { get }
-    var name: String { get }
-    static func project() -> any ProjectProtocol
-    static func run() -> AnyView
-}
-
-extension ProjectProtocol {
-    var name: String { "\(Self.self)" }
-    var id: UUID { UUID() }
-}
-
 enum Projects: CaseIterable {
+    case bookmarkTipView
     case sheetNavigation
     case asyncAwaitRequest
     case addArticleView
@@ -90,6 +79,12 @@ enum Projects: CaseIterable {
             return AsyncAwaitRequest.run()
         case .sheetNavigation:
             return SheetNavigation.run()
+        case .bookmarkTipView:
+            if #available(iOS 17.0, *) {
+                return BookmarkTipView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         }
     }
 
@@ -143,6 +138,12 @@ enum Projects: CaseIterable {
             return AsyncAwaitRequest.project()
         case .sheetNavigation:
             return SheetNavigation.project()
+        case .bookmarkTipView:
+            if #available(iOS 17.0, *) {
+                return BookmarkTipView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         }
     }
 }

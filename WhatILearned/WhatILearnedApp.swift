@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct WhatILearnedApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
     @State private var toast: FancyToast?
+
+    init() {
+        // Configure and load all tips in the app.
+        // For testing we always reset them
+        if #available(iOS 17.0, *) {
+            try? Tips.resetDatastore()
+            try? Tips.configure()
+        } else {
+            // Fallback on earlier versions
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
