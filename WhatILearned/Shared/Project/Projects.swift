@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum Projects: CaseIterable {
+    case keychainView
     case bookmarkTipView
     case sheetNavigation
     case asyncAwaitRequest
@@ -85,6 +86,8 @@ enum Projects: CaseIterable {
             } else {
                 fatalError("WError: lower iOS version")
             }
+        case .keychainView:
+            return KeychainView.run()
         }
     }
 
@@ -144,6 +147,8 @@ enum Projects: CaseIterable {
             } else {
                 fatalError("WError: lower iOS version")
             }
+        case .keychainView:
+            return KeychainView.project()
         }
     }
 }

@@ -75,6 +75,8 @@
 		2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */; };
 		2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B32ABB8CBB008979F6 /* MyMacro */; };
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
+		2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */; };
+		2ABCEB7C2AD58EAF003028A8 /* KeychainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -196,6 +198,8 @@
 		2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingNeonGlowModifier.swift; sourceTree = "<group>"; };
 		2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroViewModel.swift; sourceTree = "<group>"; };
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
+		2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewModel.swift; sourceTree = "<group>"; };
+		2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainView.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -631,6 +635,15 @@
 			path = AsyncAwait;
 			sourceTree = "<group>";
 		};
+		2ABCEB782AD58E49003028A8 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */,
+				2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +770,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2ABCEB782AD58E49003028A8 /* Keychain */,
 				2AED335F2AD4A230003FE39F /* Tipps */,
 				2A95C35D2AC5B16F00E2DABD /* Sheet */,
 				2A95C35A2AC5A9C900E2DABD /* Macro */,
@@ -1058,6 +1072,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */,
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
@@ -1111,6 +1126,7 @@
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */,
+				2ABCEB7C2AD58EAF003028A8 /* KeychainView.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
 				2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */,
 				2AE0F6192A9BF5920001A30E /* AppDelegate.swift in Sources */,
