@@ -13,6 +13,9 @@
 		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
+		2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */; };
+		2A2E16A72AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2E16A52AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib */; };
+		2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A92AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift */; };
 		2A357C242ACDF3230048A059 /* SheetNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A357C232ACDF3230048A059 /* SheetNavigation.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
@@ -140,6 +143,9 @@
 		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModifier.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
+		2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSwiftUIViewController.swift; sourceTree = "<group>"; };
+		2A2E16A52AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentSwiftUIViewController.xib; sourceTree = "<group>"; };
+		2A2E16A92AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheUIViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		2A357C232ACDF3230048A059 /* SheetNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigation.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
@@ -345,6 +351,16 @@
 				2A1E641C2AA35CF3004D4498 /* CounterApp.swift */,
 			);
 			path = TourArch1;
+			sourceTree = "<group>";
+		};
+		2A2E16A82AD89BE900A7FBA2 /* PresentSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */,
+				2A2E16A52AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib */,
+				2A2E16A92AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift */,
+			);
+			path = PresentSwiftUI;
 			sourceTree = "<group>";
 		};
 		2A3AE1E02A8DF1580024EDC0 /* ApiRequest */ = {
@@ -770,6 +786,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A2E16A82AD89BE900A7FBA2 /* PresentSwiftUI */,
 				2ABCEB782AD58E49003028A8 /* Keychain */,
 				2AED335F2AD4A230003FE39F /* Tipps */,
 				2A95C35D2AC5B16F00E2DABD /* Sheet */,
@@ -962,6 +979,7 @@
 				2AAF656C2AAF376200B86F64 /* dancing.json in Resources */,
 				2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */,
 				2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */,
+				2A2E16A72AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,6 +1101,7 @@
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
+				2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */,
 				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */,
@@ -1092,6 +1111,7 @@
 				2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
+				2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
 				2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,

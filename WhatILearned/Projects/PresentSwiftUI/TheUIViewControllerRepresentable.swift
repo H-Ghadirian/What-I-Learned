@@ -1,0 +1,51 @@
+//
+//  TheUIViewControllerRepresentable.swift
+//  WhatILearned
+//
+//  Created by Ghadirian, Hamed, HSE DE on 12.10.23.
+//
+
+import SwiftUI
+import UIKit
+
+struct TheUIViewControllerRepresentable: View {
+    @State var isPresented = false
+
+    var body: some View {
+        Button("This a SwiftUI View") {
+            isPresented = true
+        }
+        .sheet(isPresented: $isPresented) {
+            MyView()
+        }
+    }
+}
+
+extension TheUIViewControllerRepresentable: ProjectProtocol {
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
+    static let instance = TheUIViewControllerRepresentable()
+}
+
+#Preview {
+    TheUIViewControllerRepresentable()
+}
+
+struct MyView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = PresentSwiftUIViewController
+
+    func makeUIViewController(context: Context) -> PresentSwiftUIViewController {
+        let vc = PresentSwiftUIViewController()
+        return vc
+    }
+
+    func updateUIViewController(_ uiViewController: PresentSwiftUIViewController, context: Context) {
+        // Updates the state of the specified view controller with new information from SwiftUI.
+    }
+}
