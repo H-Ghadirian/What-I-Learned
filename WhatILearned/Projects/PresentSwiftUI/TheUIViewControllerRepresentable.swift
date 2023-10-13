@@ -12,11 +12,14 @@ struct TheUIViewControllerRepresentable: View {
     @State var isPresented = false
 
     var body: some View {
-        Button("This a SwiftUI View") {
-            isPresented = true
-        }
-        .sheet(isPresented: $isPresented) {
-            MyView()
+        VStack {
+            Text("This a SwiftUI View")
+            Button("Present a ViewController") {
+                isPresented = true
+            }
+            .sheet(isPresented: $isPresented) {
+                MyView()
+            }
         }
     }
 }
