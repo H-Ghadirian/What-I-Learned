@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum Projects: CaseIterable {
+    case userDefaultsView
     case theUIViewControllerRepresentable
     case keychainView
     case bookmarkTipView
@@ -91,6 +92,8 @@ enum Projects: CaseIterable {
             return KeychainView.run()
         case .theUIViewControllerRepresentable:
             return TheUIViewControllerRepresentable.run()
+        case .userDefaultsView:
+            return UserDefaultsView.run()
         }
     }
 
@@ -154,6 +157,8 @@ enum Projects: CaseIterable {
             return KeychainView.project()
         case .theUIViewControllerRepresentable:
             return TheUIViewControllerRepresentable.project()
+        case .userDefaultsView:
+            return UserDefaultsView.project()
         }
     }
 }
