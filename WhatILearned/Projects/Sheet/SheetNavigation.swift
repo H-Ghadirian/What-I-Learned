@@ -27,7 +27,11 @@ struct SheetNavigation: View {
         .sheet(item: $presentedSheet, content: { sheet in
             switch sheet {
             case .addArticle:
-                TestSheets()
+                if #available(iOS 16.0, *) {
+                    TestSheets()
+                } else {
+                    // Fallback on earlier versions
+                }
             case .hapticTest:
                 HapticTestView()
             case .asyncAwaitRequest:

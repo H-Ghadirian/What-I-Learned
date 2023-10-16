@@ -39,21 +39,41 @@ enum Projects: CaseIterable {
     var view: AnyView {
         switch self {
         case .sheets:
-            return TestSheets.run()
+            if #available(iOS 16.0, *) {
+                return TestSheets.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .macro:
             return TestMacro.run()
         case .secondJsonMenuListView:
-            return SecondJsonMenuListView.run()
+            if #available(iOS 16.0, *) {
+                return SecondJsonMenuListView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .viewModifiersView:
             return TestMyViewModifiersView.run()
         case .jsonMenuListView:
-            return JsonMenuListView.run()
+            if #available(iOS 16.0, *) {
+                return JsonMenuListView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .hapticTestView:
             return HapticTestView.run()
         case .chartsView:
-            return ChartsView.run()
+            if #available(iOS 16.0, *) {
+                return ChartsView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .backgroundOverlayView:
-            return BackgroundOverlayView.run()
+            if #available(iOS 17.0, *) {
+                return BackgroundOverlayView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .collectionViewContent:
             return CollectionViewContent.run()
         case .testTabView:
@@ -65,19 +85,35 @@ enum Projects: CaseIterable {
         case .fakeNewsFeedView:
             return FakeNewsFeedView.run()
         case .continuationContentView:
-            return ContinuationContentView.run()
+            if #available(iOS 15.0, *) {
+                return ContinuationContentView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .usersView:
             return UsersView.run()
         case .counterAppView:
             return CounterAppView.run()
         case .photoPickerView:
-            return PhotoPickerView.run()
+            if #available(iOS 16.0, *) {
+                return PhotoPickerView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .mapView:
             return MapView.run()
         case .chrisNavigation:
-            return ChrisNavigation.run()
+            if #available(iOS 16.0, *) {
+                return ChrisNavigation.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .addArticleView:
-            return AddArticleView.run()
+            if #available(iOS 15.0, *) {
+                return AddArticleView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .asyncAwaitRequest:
             return AsyncAwaitRequest.run()
         case .sheetNavigation:
@@ -104,21 +140,41 @@ enum Projects: CaseIterable {
     private var create: any ProjectProtocol {
         switch self {
         case .sheets:
-            return TestSheets.project()
+            if #available(iOS 16.0, *) {
+                return TestSheets.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .macro:
             return TestMacro.project()
         case .secondJsonMenuListView:
-            return SecondJsonMenuListView.project()
+            if #available(iOS 16.0, *) {
+                return SecondJsonMenuListView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .viewModifiersView:
             return TestMyViewModifiersView.project()
         case .jsonMenuListView:
-            return JsonMenuListView.project()
+            if #available(iOS 16.0, *) {
+                return JsonMenuListView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .hapticTestView:
             return HapticTestView.project()
         case .chartsView:
-            return ChartsView.project()
+            if #available(iOS 16.0, *) {
+                return ChartsView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .backgroundOverlayView:
-            return BackgroundOverlayView.project()
+            if #available(iOS 17.0, *) {
+                return BackgroundOverlayView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .collectionViewContent:
             return CollectionViewContent.project()
         case .testTabView:
@@ -130,19 +186,35 @@ enum Projects: CaseIterable {
         case .fakeNewsFeedView:
             return FakeNewsFeedView.project()
         case .continuationContentView:
-            return ContinuationContentView.project()
+            if #available(iOS 15.0, *) {
+                return ContinuationContentView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .usersView:
             return UsersView.project()
         case .counterAppView:
             return CounterAppView.project()
         case .photoPickerView:
-            return PhotoPickerView.project()
+            if #available(iOS 16.0, *) {
+                return PhotoPickerView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .mapView:
             return MapView.project()
         case .chrisNavigation:
-            return ChrisNavigation.project()
+            if #available(iOS 16.0, *) {
+                return ChrisNavigation.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .addArticleView:
-            return AddArticleView.project()
+            if #available(iOS 15.0, *) {
+                return AddArticleView.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         case .asyncAwaitRequest:
             return AsyncAwaitRequest.project()
         case .sheetNavigation:

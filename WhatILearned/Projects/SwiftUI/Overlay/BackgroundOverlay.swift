@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct BackgroundOverlayView: View, ProjectProtocol {
     static private let instance = BackgroundOverlayView()
     static func project() -> any ProjectProtocol {
@@ -80,6 +81,7 @@ struct BackgroundOverlayView: View, ProjectProtocol {
     }
 }
 
+@available(iOS 17.0, *)
 struct BackgroundOverlayView_Previews: PreviewProvider {
     static var previews: some View {
         BackgroundOverlayView()

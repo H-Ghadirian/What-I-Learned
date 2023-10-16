@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct TestSheets: View {
 
     @State private var showHalfSheet: Bool = false
@@ -18,11 +19,21 @@ struct TestSheets: View {
             showHalfSheet = true
         }
         .sheet(isPresented: $showHalfSheet) {
-            Text("Content")
+            ratingScreen
                 .presentationDetents([.height(200), .medium, .large])
                 .presentationDragIndicator(.automatic)
         }
         .font(.title).bold()
+    }
+
+    var ratingScreen: some View {
+        VStack {
+            List {
+                ForEach(0..<100) { number in
+                    Text("\(number)")
+                }
+            }
+        }
     }
 
     var fullScreenButton: some View {
@@ -33,6 +44,7 @@ struct TestSheets: View {
     }
 }
 
+@available(iOS 16.0, *)
 extension TestSheets: ProjectProtocol {
     static func project() -> any ProjectProtocol {
         myView

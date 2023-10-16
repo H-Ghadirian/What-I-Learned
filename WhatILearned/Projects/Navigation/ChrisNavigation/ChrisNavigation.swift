@@ -1,5 +1,6 @@
 import SwiftUI
 // source: https://www.youtube.com/watch?v=7dnTHrLyFLc
+@available(iOS 16.0, *)
 struct ChrisNavigation: View {
     @State private var path = NavigationPath()
 
@@ -56,6 +57,7 @@ struct ChrisNavigation: View {
     }
 }
 
+@available(iOS 16.0, *)
 extension ChrisNavigation: ProjectProtocol {
     private static let instance = ChrisNavigation()
 
@@ -68,6 +70,7 @@ extension ChrisNavigation: ProjectProtocol {
     }
 }
 
+@available(iOS 16.0, *)
 struct ChrisNavigation_Previews: PreviewProvider {
     static var previews: some View {
         ChrisNavigation()

@@ -7,6 +7,7 @@
 
  import SwiftUI
 
+@available(iOS 16.0, *)
 struct SecondJsonMenuListView: View, ProjectProtocol {
     static func project() -> any ProjectProtocol {
         instance
@@ -85,6 +86,7 @@ struct SecondJsonMenuListView: View, ProjectProtocol {
     }
  }
 
+@available(iOS 16.0, *)
 struct SecondJsonMenuListView_Previews: PreviewProvider {
     static var previews: some View {
         SecondJsonMenuListView()

@@ -1,6 +1,7 @@
 import Lottie
 import SwiftUI
 
+@available(iOS 15.0, *)
 class ContinuationViewModel {
     func fetchLatestNews(completion: @escaping ([String]) -> Void) {
         DispatchQueue.main.async {
@@ -18,6 +19,7 @@ class ContinuationViewModel {
     }
 }
 
+@available(iOS 15.0, *)
 struct ContinuationContentView: View {
     @State private var messages = [String]()
     let viewModel = ContinuationViewModel()
@@ -30,6 +32,7 @@ struct ContinuationContentView: View {
     }
 }
 
+@available(iOS 15.0, *)
 extension ContinuationContentView: ProjectProtocol {
     private static let instance = ContinuationContentView()
 
@@ -42,6 +45,7 @@ extension ContinuationContentView: ProjectProtocol {
     }
 }
 
+@available(iOS 15.0, *)
 struct ContinuationContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContinuationContentView()

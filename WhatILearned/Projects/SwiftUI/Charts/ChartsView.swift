@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct ChartsView: View, ProjectProtocol {
     static private let instance = ChartsView()
     static func project() -> any ProjectProtocol {

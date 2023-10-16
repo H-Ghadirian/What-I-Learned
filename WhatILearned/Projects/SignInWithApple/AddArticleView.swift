@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 import AuthenticationServices
 
+@available(iOS 15.0, *)
 struct AddArticleView: View {
     @Environment(\.dismiss) private var dismiss
 
@@ -56,6 +57,7 @@ struct AddArticleView: View {
 
 }
 
+@available(iOS 15.0, *)
 extension AddArticleView: ProjectProtocol {
     private static let instance = AddArticleView()
 

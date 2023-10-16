@@ -1,6 +1,7 @@
 import PhotosUI
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct PhotoPickerView: View {
     @State var wallpaper: PhotosPickerItem?
     @State private var image: Data?
@@ -33,6 +34,7 @@ struct PhotoPickerView: View {
     }
 }
 
+@available(iOS 16.0, *)
 extension PhotoPickerView: ProjectProtocol {
     private static let instance = PhotoPickerView()
 

@@ -6,9 +6,10 @@
 //
 
 import Charts
-//import Combine
+// import Combine
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct ChartContainerView: View {
 
     @ObservedObject var viewModel: ChartsViewModel
