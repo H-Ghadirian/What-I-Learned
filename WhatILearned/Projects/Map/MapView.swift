@@ -56,6 +56,14 @@ struct MapView: View {
 }
 
 extension MapView: ProjectProtocol {
+    var tags: [Tag] {
+        [.library]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     private static let instance = MapView()
 
     static func project() -> any ProjectProtocol {

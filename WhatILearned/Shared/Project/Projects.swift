@@ -136,6 +136,27 @@ enum Projects: CaseIterable {
         }
     }
 
+    var color: Color {
+        switch iOSVersion {
+        case .iOS14:
+            return .red
+        case .iOS15:
+            return .purple
+        case .iOS16:
+            return .green
+        case .iOS17:
+            return .yellow
+        }
+    }
+
+    var iOSVersion: IOSVersionTag {
+        create.version
+    }
+
+    var tags: [Tag] {
+        create.tags
+    }
+
     var name: String {
         create.name
     }

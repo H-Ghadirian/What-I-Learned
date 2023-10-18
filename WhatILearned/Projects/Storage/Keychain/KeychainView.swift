@@ -31,6 +31,14 @@ struct KeychainView: View {
 }
 
 extension KeychainView: ProjectProtocol {
+    var tags: [Tag] {
+        [.functionality]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     static let instance = KeychainView()
 
     static func project() -> any ProjectProtocol {

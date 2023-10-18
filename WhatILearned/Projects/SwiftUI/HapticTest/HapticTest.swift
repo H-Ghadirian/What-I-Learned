@@ -1,14 +1,6 @@
 import SwiftUI
 
-struct HapticTestView: View, ProjectProtocol {
-    static private let instance = HapticTestView()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
+struct HapticTestView: View {
 
     var body: some View {
         VStack(spacing: 10) {
@@ -31,5 +23,24 @@ struct HapticTestView: View, ProjectProtocol {
                 HapticFeedback().start(.warning)
             }
         }
+    }
+}
+
+extension HapticTestView: ProjectProtocol {
+    var tags: [Tag] {
+        [.functionality]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
+    static private let instance = HapticTestView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+    
+    static func run() -> AnyView {
+        AnyView(instance)
     }
 }

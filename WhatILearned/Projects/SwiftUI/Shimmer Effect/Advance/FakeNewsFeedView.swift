@@ -1,15 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct FakeNewsFeedView: View, ProjectProtocol {
-    static let instance = FakeNewsFeedView()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
+struct FakeNewsFeedView: View {
 
     @StateObject var viewModel = FakeNewsViewModel()
     var body: some View {
@@ -40,5 +32,24 @@ struct FakeNewsFeedView: View, ProjectProtocol {
             )
         }
         .onAppear { viewModel.reload() }
+    }
+}
+
+extension FakeNewsFeedView: ProjectProtocol {
+    var tags: [Tag] {
+        [.swiftui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
+    static let instance = FakeNewsFeedView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+    
+    static func run() -> AnyView {
+        AnyView(instance)
     }
 }

@@ -26,6 +26,14 @@ struct LottieContentView: View {
 }
 
 extension LottieContentView: ProjectProtocol {
+    var tags: [Tag] {
+        [.library]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     private static let instance = LottieContentView()
 
     static func project() -> any ProjectProtocol {

@@ -27,6 +27,7 @@ struct SearchableListView: View {
                         viewModel.projects[index].view
                     } label: {
                         Text("\(index + 1) -" + viewModel.projects[index].name)
+                            .foregroundStyle(viewModel.projects[index].color)
                     }
                 }
             }
@@ -42,6 +43,10 @@ struct SearchableListView: View {
     var searchResults: [Projects] {
         if searchText.isEmpty {
             return viewModel.projects
+//                .filter {
+//                print($0.name + " \($0.iOSVersion)")
+//                return $0.iOSVersion >= .iOS16
+//            } // || $0.tags == [Tag.iOS16] }
         } else {
             return viewModel.projects.filter { $0.name.contains(searchText) }
         }

@@ -46,6 +46,14 @@ struct TestSheets: View {
 
 @available(iOS 16.0, *)
 extension TestSheets: ProjectProtocol {
+    var tags: [Tag] {
+        [.swiftui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS16
+    }
+
     static func project() -> any ProjectProtocol {
         myView
     }

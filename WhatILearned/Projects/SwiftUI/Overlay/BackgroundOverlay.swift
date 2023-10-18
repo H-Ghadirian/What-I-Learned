@@ -1,15 +1,7 @@
 import SwiftUI
 
 @available(iOS 17.0, *)
-struct BackgroundOverlayView: View, ProjectProtocol {
-    static private let instance = BackgroundOverlayView()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
+struct BackgroundOverlayView: View {
 
     @State private var currentScaleAmount = 0.0
     @State private var finalScaleAmount = 1.0
@@ -78,6 +70,24 @@ struct BackgroundOverlayView: View, ProjectProtocol {
                     currentScaleAmount = 0
                 }
         )
+    }
+}
+
+@available(iOS 17.0, *)
+extension BackgroundOverlayView: ProjectProtocol {
+    var version: IOSVersionTag { .iOS17 }
+
+    var tags: [Tag] {
+        [.ui]
+    }
+
+    static private let instance = BackgroundOverlayView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
     }
 }
 

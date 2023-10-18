@@ -1,14 +1,6 @@
 import SwiftUI
 
-struct TestTabView: View, ProjectProtocol {
-    static private let instance = TestTabView()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
+struct TestTabView: View {
 
     @State var selectedTab = 0
 
@@ -23,6 +15,24 @@ struct TestTabView: View, ProjectProtocol {
     }
 }
 
+extension TestTabView: ProjectProtocol {
+    var tags: [Tag] {
+        [.swiftui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
+    static private let instance = TestTabView()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+}
 struct TestTabView_Previews: PreviewProvider {
     static var previews: some View {
         TestTabView()

@@ -28,6 +28,14 @@ struct UserDefaultsView: View {
 }
 
 extension UserDefaultsView: ProjectProtocol {
+    var tags: [Tag] {
+        [.functionality]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     static let instance = UserDefaultsView()
 
     static func project() -> any ProjectProtocol {

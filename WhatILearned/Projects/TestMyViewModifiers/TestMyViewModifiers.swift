@@ -33,6 +33,14 @@ struct TestMyViewModifiersView_Previews: PreviewProvider {
 }
 
 extension TestMyViewModifiersView: ProjectProtocol {
+    var tags: [Tag] {
+        [.swiftui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     private static let instance = TestMyViewModifiersView()
 
     static func project() -> any ProjectProtocol {

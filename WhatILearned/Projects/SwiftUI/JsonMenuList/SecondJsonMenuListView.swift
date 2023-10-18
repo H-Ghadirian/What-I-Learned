@@ -8,16 +8,7 @@
  import SwiftUI
 
 @available(iOS 16.0, *)
-struct SecondJsonMenuListView: View, ProjectProtocol {
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
-
-    private static let instance = SecondJsonMenuListView()
+struct SecondJsonMenuListView: View {
 
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
 
@@ -85,6 +76,23 @@ struct SecondJsonMenuListView: View, ProjectProtocol {
         }
     }
  }
+
+@available(iOS 16.0, *)
+extension SecondJsonMenuListView: ProjectProtocol {
+    var tags: [Tag] { [.ui] }
+
+    var version: IOSVersionTag { .iOS16 }
+
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
+    }
+
+    private static let instance = SecondJsonMenuListView()
+}
 
 @available(iOS 16.0, *)
 struct SecondJsonMenuListView_Previews: PreviewProvider {

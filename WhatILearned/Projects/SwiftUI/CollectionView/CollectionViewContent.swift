@@ -6,16 +6,7 @@ struct DataModel: Identifiable {
     let imageName: String
 }
 
-struct CollectionViewContent: View, ProjectProtocol {
-    static private let instance = CollectionViewContent()
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
-
+struct CollectionViewContent: View {
     let data: [DataModel] = [
         .init(id: "0", name: "SteveJobs", imageName: "pencil.and.outline"),
         .init(id: "1", name: "Satya Nadella", imageName: "signature"),
@@ -33,6 +24,21 @@ struct CollectionViewContent: View, ProjectProtocol {
                 }
             }.navigationBarTitle("CollectionView")
         }
+    }
+}
+
+extension CollectionViewContent: ProjectProtocol {
+    var tags: [Tag] { [.swiftui] }
+
+    var version: IOSVersionTag { .iOS14 }
+
+    static private let instance = CollectionViewContent()
+    static func project() -> any ProjectProtocol {
+        instance
+    }
+
+    static func run() -> AnyView {
+        AnyView(instance)
     }
 }
 

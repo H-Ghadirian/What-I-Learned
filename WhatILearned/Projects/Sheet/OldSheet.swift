@@ -99,6 +99,14 @@ struct OldSheetView: View {
 }
 
 extension OldSheetView: ProjectProtocol {
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
+    var tags: [Tag] {
+        [.ui]
+    }
+
     static func project() -> any ProjectProtocol {
         instance
     }

@@ -2,15 +2,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct JsonMenuListView: View, ProjectProtocol {
-    static private let jsonMenuListView = JsonMenuListView()
-    static func project() -> any ProjectProtocol {
-        jsonMenuListView
-    }
-
-    static func run() -> AnyView {
-        AnyView(jsonMenuListView)
-    }
+struct JsonMenuListView: View {
 
     @AppStorage("systemThemeVal") private var systemTheme: Int = SchemeType.allCases.first!.rawValue
 
@@ -59,6 +51,26 @@ struct JsonMenuListView: View, ProjectProtocol {
             }
             .navigationBarTitle("Hamed Resume")
         }
+    }
+}
+
+@available(iOS 16.0, *)
+extension JsonMenuListView: ProjectProtocol {
+    var tags: [Tag] {
+        [.swiftui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS16
+    }
+
+    static private let jsonMenuListView = JsonMenuListView()
+    static func project() -> any ProjectProtocol {
+        jsonMenuListView
+    }
+
+    static func run() -> AnyView {
+        AnyView(jsonMenuListView)
     }
 }
 

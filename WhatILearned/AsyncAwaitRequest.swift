@@ -36,6 +36,14 @@ struct AsyncAwaitRequest: View {
 }
 
 extension AsyncAwaitRequest: ProjectProtocol {
+    var version: IOSVersionTag {
+        .iOS14
+    }
+    
+    var tags: [Tag] {
+        [.networking]
+    }
+
     private static let instance = AsyncAwaitRequest()
 
     static func project() -> any ProjectProtocol {

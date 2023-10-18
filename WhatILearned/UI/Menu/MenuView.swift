@@ -13,6 +13,14 @@ private struct MainAppFactory {
 }
 
 extension MenuView: ProjectProtocol {
+    var tags: [Tag] {
+        [.ui]
+    }
+
+    var version: IOSVersionTag {
+        .iOS14
+    }
+
     static func project() -> any ProjectProtocol {
         return shared!
     }
