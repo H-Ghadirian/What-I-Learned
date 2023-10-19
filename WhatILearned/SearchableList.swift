@@ -21,21 +21,30 @@ struct SearchableListView: View {
                     .presentationDragIndicator(.automatic)
             }
             .font(.title).bold()
-            List {
-                ForEach(searchResults.indices, id: \.self) { index in
-                    NavigationLink {
-                        if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
-                            viewModel.projects[index].view
-                        } else {
-                            Text("Not support")
+                ScrollViewReader { scrollValue in
+                    ZStack(alignment: .bottomTrailing) {
+                        List {
+                            ForEach(searchResults.indices, id: \.self) { index in
+                                NavigationLink {
+                                    if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
+                                        viewModel.projects[index].view
+                                    } else {
+                                        Text("Not support")
+                                    }
+                                } label: {
+                                    Text("\(index + 1) -" + viewModel.projects[index].name)
+                                        .foregroundStyle(viewModel.projects[index].color)
+                                }
+                            }
                         }
-                    } label: {
-                        Text("\(index + 1) -" + viewModel.projects[index].name)
-                            .foregroundStyle(viewModel.projects[index].color)
+                        Button {
+                            scrollValue.scrollTo(26)
+                        } label: {
+                            Image(systemName: "arrow.down")
+                        }
                     }
                 }
-            }
-            .navigationTitle("Projects \(viewModel.projects.count)")
+                .navigationTitle("Projects \(viewModel.projects.count)")
         }
         .searchable(text: $searchText) {
             ForEach(searchResults, id: \.self) { result in
