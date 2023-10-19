@@ -56,12 +56,8 @@ struct MapView: View {
 }
 
 extension MapView: ProjectProtocol {
-    var tags: [Tag] {
-        [.library]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.library], version: .iOS14)
     }
 
     private static let instance = MapView()

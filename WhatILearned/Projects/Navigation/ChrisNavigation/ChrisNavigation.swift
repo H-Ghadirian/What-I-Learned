@@ -59,12 +59,8 @@ struct ChrisNavigation: View {
 
 @available(iOS 16.0, *)
 extension ChrisNavigation: ProjectProtocol {
-    var tags: [Tag] {
-        [.swiftui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS16
+    var tags: ProjectTags {
+        .init(tags: [.swiftui], version: .iOS16)
     }
 
     private static let instance = ChrisNavigation()

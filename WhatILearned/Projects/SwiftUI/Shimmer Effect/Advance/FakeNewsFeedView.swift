@@ -36,12 +36,8 @@ struct FakeNewsFeedView: View {
 }
 
 extension FakeNewsFeedView: ProjectProtocol {
-    var tags: [Tag] {
-        [.swiftui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.swiftui], version: .iOS14)
     }
 
     static let instance = FakeNewsFeedView()

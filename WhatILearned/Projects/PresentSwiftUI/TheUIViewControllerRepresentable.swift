@@ -25,12 +25,8 @@ struct TheUIViewControllerRepresentable: View {
 }
 
 extension TheUIViewControllerRepresentable: ProjectProtocol {
-    var tags: [Tag] {
-        [.ui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.ui], version: .iOS14)
     }
 
     static func project() -> any ProjectProtocol {

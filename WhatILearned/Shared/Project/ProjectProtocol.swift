@@ -11,8 +11,7 @@ import SwiftUI
 protocol ProjectProtocol: Identifiable {
     var id: UUID { get }
     var name: String { get }
-    var tags: [Tag] { get }
-    var version: IOSVersionTag { get }
+    var tags: ProjectTags { get }
     static func project() -> any ProjectProtocol
     static func run() -> AnyView
 }
@@ -20,6 +19,11 @@ protocol ProjectProtocol: Identifiable {
 extension ProjectProtocol {
     var name: String { "\(Self.self)" }
     var id: UUID { UUID() }
+}
+
+struct ProjectTags {
+    var tags: [Tag]
+    var version: IOSVersionTag
 }
 
 // swiftui:disable identifier_name

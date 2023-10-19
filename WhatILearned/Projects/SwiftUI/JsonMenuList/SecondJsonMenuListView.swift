@@ -79,9 +79,9 @@ struct SecondJsonMenuListView: View {
 
 @available(iOS 16.0, *)
 extension SecondJsonMenuListView: ProjectProtocol {
-    var tags: [Tag] { [.ui] }
-
-    var version: IOSVersionTag { .iOS16 }
+    var tags: ProjectTags {
+        .init(tags: [.ui], version: .iOS16)
+    }
 
     static func project() -> any ProjectProtocol {
         instance

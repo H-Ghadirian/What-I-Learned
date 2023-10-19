@@ -150,11 +150,11 @@ enum Projects: CaseIterable {
     }
 
     var iOSVersion: IOSVersionTag {
-        create.version
+        create.tags.version
     }
 
     var tags: [Tag] {
-        create.tags
+        create.tags.tags
     }
 
     var name: String {

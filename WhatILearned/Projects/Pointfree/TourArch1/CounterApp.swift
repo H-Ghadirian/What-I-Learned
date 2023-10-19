@@ -89,12 +89,8 @@ struct CounterAppView: View {
 }
 
 extension CounterAppView: ProjectProtocol {
-    var tags: [Tag] {
-        [.architecture]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.architecture], version: .iOS14)
     }
 
     private static let instance = CounterAppView(

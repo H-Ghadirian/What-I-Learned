@@ -27,12 +27,11 @@ struct HapticTestView: View {
 }
 
 extension HapticTestView: ProjectProtocol {
-    var tags: [Tag] {
-        [.functionality]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        ProjectTags(
+            tags: [.functionality],
+            version: .iOS14
+        )
     }
 
     static private let instance = HapticTestView()

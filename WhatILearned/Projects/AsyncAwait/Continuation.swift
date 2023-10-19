@@ -34,14 +34,10 @@ struct ContinuationContentView: View {
 
 @available(iOS 15.0, *)
 extension ContinuationContentView: ProjectProtocol {
-    var tags: [Tag] {
-        [.functionality]
+    var tags: ProjectTags {
+        .init(tags: [.functionality], version: .iOS15)
     }
 
-    var version: IOSVersionTag {
-        .iOS15
-    }
-    
     private static let instance = ContinuationContentView()
 
     static func project() -> any ProjectProtocol {

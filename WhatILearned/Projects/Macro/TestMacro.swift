@@ -18,12 +18,8 @@ struct TestMacro: View {
 }
 
 extension TestMacro: ProjectProtocol {
-    var tags: [Tag] {
-        [.functionality]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.functionality], version: .iOS14)
     }
 
     static func project() -> any ProjectProtocol {

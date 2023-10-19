@@ -56,12 +56,8 @@ struct JsonMenuListView: View {
 
 @available(iOS 16.0, *)
 extension JsonMenuListView: ProjectProtocol {
-    var tags: [Tag] {
-        [.swiftui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS16
+    var tags: ProjectTags {
+        .init(tags: [.swiftui], version: .iOS16)
     }
 
     static private let jsonMenuListView = JsonMenuListView()

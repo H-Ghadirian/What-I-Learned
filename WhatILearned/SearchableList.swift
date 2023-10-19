@@ -24,7 +24,11 @@ struct SearchableListView: View {
             List {
                 ForEach(searchResults.indices, id: \.self) { index in
                     NavigationLink {
-                        viewModel.projects[index].view
+                        if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
+                            viewModel.projects[index].view
+                        } else {
+                            Text("Not support")
+                        }
                     } label: {
                         Text("\(index + 1) -" + viewModel.projects[index].name)
                             .foregroundStyle(viewModel.projects[index].color)
@@ -55,5 +59,14 @@ struct SearchableListView: View {
 
 struct SearchableListViewModel {
     let projects: [Projects] = Projects.allCases
-    let iOSVersion = UIDevice.current.systemVersion
+    func iOSVersionOf(_ index: Int) -> Int {
+        let vers = projects[index].iOSVersion.rawValue
+        print("\(index) : \(vers)")
+        return vers
+    }
+    var iOSVersion: Int {
+        let current = Int(Double(UIDevice.current.systemVersion) ?? 0)
+        print(current)
+        return current
+    }
 }

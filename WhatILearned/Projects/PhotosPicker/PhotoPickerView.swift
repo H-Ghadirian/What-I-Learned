@@ -36,12 +36,8 @@ struct PhotoPickerView: View {
 
 @available(iOS 16.0, *)
 extension PhotoPickerView: ProjectProtocol {
-    var tags: [Tag] {
-        [.ui, .library]
-    }
-
-    var version: IOSVersionTag {
-        .iOS16
+    var tags: ProjectTags {
+        .init(tags: [.ui, .library], version: .iOS16)
     }
 
     private static let instance = PhotoPickerView()

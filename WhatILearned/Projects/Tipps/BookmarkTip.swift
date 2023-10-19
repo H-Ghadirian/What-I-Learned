@@ -50,12 +50,8 @@ struct BookmarkTipView: View {
 
 @available(iOS 17.0, *)
 extension BookmarkTipView: ProjectProtocol {
-    var version: IOSVersionTag {
-        .iOS17
-    }
-
-    var tags: [Tag] {
-        [.ui]
+    var tags: ProjectTags {
+        .init(tags: [.ui], version: .iOS17)
     }
 
     static let instance = BookmarkTipView()

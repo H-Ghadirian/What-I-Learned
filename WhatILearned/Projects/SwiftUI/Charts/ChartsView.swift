@@ -2,10 +2,11 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 struct ChartsView: View, ProjectProtocol {
-    var version: IOSVersionTag = .iOS16
-
-    var tags: [Tag] {
-        [.ui]
+    var tags: ProjectTags {
+        ProjectTags(
+            tags: [.ui],
+            version: .iOS16
+        )
     }
 
     static private let instance = ChartsView()

@@ -44,12 +44,8 @@ struct SheetNavigation: View {
 }
 
 extension SheetNavigation: ProjectProtocol {
-    var tags: [Tag] {
-        [.swiftui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.swiftui], version: .iOS14)
     }
 
     static func project() -> any ProjectProtocol {

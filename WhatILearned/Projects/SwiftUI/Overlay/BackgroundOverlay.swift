@@ -75,10 +75,11 @@ struct BackgroundOverlayView: View {
 
 @available(iOS 17.0, *)
 extension BackgroundOverlayView: ProjectProtocol {
-    var version: IOSVersionTag { .iOS17 }
-
-    var tags: [Tag] {
-        [.ui]
+    var tags: ProjectTags {
+        ProjectTags(
+            tags: [.ui],
+            version: .iOS17
+        )
     }
 
     static private let instance = BackgroundOverlayView()

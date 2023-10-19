@@ -16,12 +16,8 @@ struct TestTabView: View {
 }
 
 extension TestTabView: ProjectProtocol {
-    var tags: [Tag] {
-        [.swiftui]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.swiftui], version: .iOS14)
     }
 
     static private let instance = TestTabView()

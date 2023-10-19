@@ -23,12 +23,8 @@ struct UsersView: View {
 }
 
 extension UsersView: ProjectProtocol {
-    var tags: [Tag] {
-        [.functionality]
-    }
-
-    var version: IOSVersionTag {
-        .iOS14
+    var tags: ProjectTags {
+        .init(tags: [.functionality], version: .iOS14)
     }
 
     private static let instance = UsersView()
