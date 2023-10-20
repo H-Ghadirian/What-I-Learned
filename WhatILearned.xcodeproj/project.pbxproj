@@ -23,6 +23,7 @@
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
+		2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C53FE2AE3165F00472FF4 /* RatingView.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -156,6 +157,7 @@
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
+		2A3C53FE2AE3165F00472FF4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A3C53FD2AE315C400472FF4 /* StarView */,
 				2A95C3552AC5A2FA00E2DABD /* JsonMenuList */,
 				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
 				2AE0F5F82A916F730001A30E /* Toast */,
@@ -425,6 +428,14 @@
 				2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */,
 			);
 			path = HapticTest;
+			sourceTree = "<group>";
+		};
+		2A3C53FD2AE315C400472FF4 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				2A3C53FE2AE3165F00472FF4 /* RatingView.swift */,
+			);
+			path = StarView;
 			sourceTree = "<group>";
 		};
 		2A7875D9299D7264001450F6 = {
@@ -1180,6 +1191,7 @@
 				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
 				2A95C3652AC5E77C00E2DABD /* Projects.swift in Sources */,
 				2AED33402ACF65D4003FE39F /* View+ .swift in Sources */,
+				2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */,
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
