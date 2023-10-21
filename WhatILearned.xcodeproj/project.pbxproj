@@ -31,6 +31,7 @@
 		2A787602299D7265001450F6 /* WhatILearnedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787601299D7265001450F6 /* WhatILearnedUITests.swift */; };
 		2A787604299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */; };
 		2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */; };
+		2A7D85F12AE4542B00ECCF31 /* SearchableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */; };
 		2A8100222A8952820086B146 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100212A8952820086B146 /* AddArticleView.swift */; };
 		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
 		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
@@ -170,6 +171,7 @@
 		2A787601299D7265001450F6 /* WhatILearnedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITests.swift; sourceTree = "<group>"; };
 		2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTags.swift; sourceTree = "<group>"; };
+		2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableListViewModel.swift; sourceTree = "<group>"; };
 		2A8100212A8952820086B146 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				2A95C3612AC5C43500E2DABD /* SearchableList.swift */,
+				2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */,
 			);
 			name = "Searchable List";
 			sourceTree = "<group>";
@@ -1168,6 +1171,7 @@
 				2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */,
 				2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
+				2A7D85F12AE4542B00ECCF31 /* SearchableListViewModel.swift in Sources */,
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
 				2AFA7A5B2A7D96D50006BDDF /* MenuItem.swift in Sources */,
