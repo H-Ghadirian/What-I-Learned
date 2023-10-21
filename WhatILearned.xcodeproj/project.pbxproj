@@ -34,6 +34,7 @@
 		2A7D85F12AE4542B00ECCF31 /* SearchableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */; };
 		2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F22AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift */; };
 		2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F42AE454E600ECCF31 /* RatingScreenView.swift */; };
+		2A7D85F82AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F72AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift */; };
 		2A8100222A8952820086B146 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100212A8952820086B146 /* AddArticleView.swift */; };
 		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
 		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
@@ -176,6 +177,7 @@
 		2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableListViewModel.swift; sourceTree = "<group>"; };
 		2A7D85F22AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatingScreenView+ProjectProtocol.swift"; sourceTree = "<group>"; };
 		2A7D85F42AE454E600ECCF31 /* RatingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingScreenView.swift; sourceTree = "<group>"; };
+		2A7D85F72AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+dismiss.swift"; sourceTree = "<group>"; };
 		2A8100212A8952820086B146 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 				2A05DC9B2ABE3D1000C78FCF /* ViewModifiers */,
 				2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */,
 				2AED333F2ACF65D4003FE39F /* View+ .swift */,
+				2A7D85F72AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1222,6 +1225,7 @@
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
 				2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
+				2A7D85F82AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
