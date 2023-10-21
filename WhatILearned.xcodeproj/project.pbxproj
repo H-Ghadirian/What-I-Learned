@@ -32,6 +32,8 @@
 		2A787604299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */; };
 		2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */; };
 		2A7D85F12AE4542B00ECCF31 /* SearchableListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */; };
+		2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F22AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift */; };
+		2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85F42AE454E600ECCF31 /* RatingScreenView.swift */; };
 		2A8100222A8952820086B146 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100212A8952820086B146 /* AddArticleView.swift */; };
 		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
 		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
@@ -172,6 +174,8 @@
 		2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTags.swift; sourceTree = "<group>"; };
 		2A7D85F02AE4542B00ECCF31 /* SearchableListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableListViewModel.swift; sourceTree = "<group>"; };
+		2A7D85F22AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatingScreenView+ProjectProtocol.swift"; sourceTree = "<group>"; };
+		2A7D85F42AE454E600ECCF31 /* RatingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingScreenView.swift; sourceTree = "<group>"; };
 		2A8100212A8952820086B146 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
@@ -438,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				2A3C53FE2AE3165F00472FF4 /* RatingView.swift */,
+				2A7D85F62AE4561E00ECCF31 /* RatingScreenView */,
 			);
 			path = StarView;
 			sourceTree = "<group>";
@@ -501,6 +506,15 @@
 				2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */,
 			);
 			path = WhatILearnedUITests;
+			sourceTree = "<group>";
+		};
+		2A7D85F62AE4561E00ECCF31 /* RatingScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				2A7D85F22AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift */,
+				2A7D85F42AE454E600ECCF31 /* RatingScreenView.swift */,
+			);
+			path = RatingScreenView;
 			sourceTree = "<group>";
 		};
 		2A8100252A8C0BC80086B146 /* AsyncAwaitRequest */ = {
@@ -1137,6 +1151,7 @@
 				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
+				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
@@ -1203,6 +1218,7 @@
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
+				2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
 				2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,

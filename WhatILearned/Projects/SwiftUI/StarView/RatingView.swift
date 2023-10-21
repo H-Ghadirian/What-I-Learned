@@ -8,6 +8,12 @@
 import Foundation
 import SwiftUI
 
+struct RatingViewModel {
+    var onRate: () -> Void = {
+        print("onRate")
+    }
+}
+
 struct RatingView: View {
     @Binding var rating: Int
     private let startEmpty = Image(systemName: "star")
@@ -15,6 +21,11 @@ struct RatingView: View {
 
     private let onColor = Color.gray
     private let offColor = Color.yellow
+    private let viewModel: RatingViewModel
+    init(viewModel: RatingViewModel, rating: Binding<Int>) {
+        self.viewModel = viewModel
+        self._rating = rating
+    }
 
     var body: some View {
         HStack {
@@ -43,29 +54,9 @@ struct RatingView: View {
     }
 }
 
-struct RatingScreenView: View {
-    @State private var rate = 2
-    var body: some View {
-        RatingView(rating: $rate)
-    }
-}
-
-extension RatingScreenView: ProjectProtocol {
-    var tags: ProjectTags {
-        .init(tags: [.swiftui], version: .iOS14)
-    }
-
-    static func project() -> any ProjectProtocol {
-        instance
-    }
-
-    static func run() -> AnyView {
-        AnyView(instance)
-    }
-
-    private static let instance = RatingScreenView()
-}
-
 #Preview {
-    RatingView(rating: .constant(2))
+    RatingView(
+        viewModel: RatingViewModel(),
+        rating: .constant(2)
+    )
 }
