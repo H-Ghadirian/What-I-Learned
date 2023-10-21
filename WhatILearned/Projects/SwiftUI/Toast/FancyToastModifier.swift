@@ -14,7 +14,7 @@ struct FancyToastModifier: ViewModifier {
                         .offset(y: -30)
                 }.animation(.spring(), value: toast)
             )
-            .onChange(of: toast) { value in
+            .onChange(of: toast) { _ in
                 showToast()
             }
     }

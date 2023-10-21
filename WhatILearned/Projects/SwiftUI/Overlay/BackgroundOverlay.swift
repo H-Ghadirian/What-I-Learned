@@ -55,6 +55,7 @@ struct BackgroundOverlayView: View {
                     currentRotationAmount = angle
                 }
                 .onEnded { angle in
+                    print(angle)
                     finalRotationAmount += currentRotationAmount
                     currentRotationAmount = .zero
                 }
@@ -66,6 +67,7 @@ struct BackgroundOverlayView: View {
                     currentScaleAmount = amount - 1
                 }
                 .onEnded { amount in
+                    print(amount)
                     finalScaleAmount += currentScaleAmount
                     currentScaleAmount = 0
                 }

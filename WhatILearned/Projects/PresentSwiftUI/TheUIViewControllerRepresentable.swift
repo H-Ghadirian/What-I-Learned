@@ -48,8 +48,7 @@ struct MyView: UIViewControllerRepresentable {
     typealias UIViewControllerType = PresentSwiftUIViewController
 
     func makeUIViewController(context: Context) -> PresentSwiftUIViewController {
-        let vc = PresentSwiftUIViewController()
-        return vc
+        PresentSwiftUIViewController()
     }
 
     func updateUIViewController(_ uiViewController: PresentSwiftUIViewController, context: Context) {

@@ -10,7 +10,11 @@ struct NewsItem: Codable, Identifiable {
         .init(
             id: $0,
             title: "Lorem ipsum dolor",
-            subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            subtitle:
+                """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+""",
             imageName: "star.fill"
         )
     }

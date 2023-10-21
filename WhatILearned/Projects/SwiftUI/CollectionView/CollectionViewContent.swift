@@ -18,7 +18,7 @@ struct CollectionViewContent: View {
         NavigationView {
             List {
                 ForEach(data) { items in
-                    ForEach(0..<2) { item in
+                    ForEach(0..<2) { _ in
                         CollectionView(data: items)
                     }
                 }
@@ -48,7 +48,7 @@ struct CollectionView: View {
     var body: some View {
         VStack {
             HStack {
-                ForEach(0..<2) { items in
+                ForEach(0..<2) { _ in
                     Spacer()
                     Image(systemName: data.imageName)
                         .resizable()

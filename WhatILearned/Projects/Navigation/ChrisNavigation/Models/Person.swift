@@ -2,7 +2,7 @@ import Foundation
 
 struct Person: Identifiable, Hashable {
     let id = UUID()
-    
+
     let name: String
     let age: Int
 }

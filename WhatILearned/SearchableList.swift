@@ -69,13 +69,9 @@ struct SearchableListView: View {
 struct SearchableListViewModel {
     let projects: [Projects] = Projects.allCases
     func iOSVersionOf(_ index: Int) -> Int {
-        let vers = projects[index].iOSVersion.rawValue
-        print("\(index) : \(vers)")
-        return vers
+        projects[index].iOSVersion.rawValue
     }
     var iOSVersion: Int {
-        let current = Int(Double(UIDevice.current.systemVersion) ?? 0)
-        print(current)
-        return current
+        Int(Double(UIDevice.current.systemVersion) ?? 0)
     }
 }

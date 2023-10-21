@@ -16,11 +16,11 @@ let package = Package(
         .executable(
             name: "MyMacroClient",
             targets: ["MyMacroClient"]
-        ),
+        )
     ],
     dependencies: [
         // Depend on the Swift 5.9 release of SwiftSyntax
-        .package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0"),
+        .package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -45,8 +45,8 @@ let package = Package(
             name: "MyMacroTests",
             dependencies: [
                 "MyMacroMacros",
-                .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax"),
+                .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax")
             ]
-        ),
+        )
     ]
 )

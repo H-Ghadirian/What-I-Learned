@@ -44,7 +44,7 @@ extension FakeNewsFeedView: ProjectProtocol {
     static func project() -> any ProjectProtocol {
         instance
     }
-    
+
     static func run() -> AnyView {
         AnyView(instance)
     }
