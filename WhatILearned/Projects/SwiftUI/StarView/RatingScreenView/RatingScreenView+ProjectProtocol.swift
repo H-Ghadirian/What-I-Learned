@@ -11,7 +11,7 @@ extension RatingScreenView: ProjectProtocol {
     var tags: ProjectTags {
         .init(tags: [.swiftui], version: .iOS14)
     }
-    var presentationMode: PresentationMode { .modal }
+    var presentationMode: PresentationMode { .modal(isFullScreen: true) }
 
     static func project() -> any ProjectProtocol {
         instance

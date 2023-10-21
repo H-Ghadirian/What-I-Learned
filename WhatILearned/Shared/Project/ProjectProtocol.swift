@@ -24,6 +24,6 @@ extension ProjectProtocol {
 }
 
 enum PresentationMode {
-    case modal
+    case modal(isFullScreen: Bool)
     case present
 }

@@ -8,6 +8,7 @@ struct SearchableListView: View {
     @State private var searchText = ""
     @State private var showHalfSheet: Bool = false
     @State private var modalSheet: Bool = false
+    @State private var fullscreenModalSheet: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -30,10 +31,15 @@ struct SearchableListView: View {
     private var listOfProjects: some View {
         List {
             ForEach(searchResults.indices, id: \.self) { index in
-                if viewModel.projects[index].presentationMode == .present {
+                switch viewModel.projects[index].presentationMode {
+                case .modal(let isFullScreen):
+                    if isFullScreen {
+                        getButtonFullscreenSheet(index)
+                    } else {
+                        getButtonSheet(index)
+                    }
+                case .present:
                     getNavigationLink(index)
-                } else {
-                    getButtonSheet(index)
                 }
             }
         }
@@ -69,6 +75,18 @@ struct SearchableListView: View {
                 .foregroundStyle(viewModel.projects[index].color)
         }
         .sheet(isPresented: $modalSheet) {
+            viewModel.projects[index].view
+        }
+    }
+
+    private func getButtonFullscreenSheet(_ index: Int) -> some View {
+        Button {
+            fullscreenModalSheet = true
+        } label: {
+            getProjectTitleText(index)
+                .foregroundStyle(viewModel.projects[index].color)
+        }
+        .fullScreenCover(isPresented: $fullscreenModalSheet) {
             viewModel.projects[index].view
         }
     }
