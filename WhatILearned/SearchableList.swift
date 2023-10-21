@@ -7,6 +7,7 @@ struct SearchableListView: View {
 
     @State private var searchText = ""
     @State private var showHalfSheet: Bool = false
+    @State private var modalSheet: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -25,15 +26,27 @@ struct SearchableListView: View {
                     ZStack(alignment: .bottomTrailing) {
                         List {
                             ForEach(searchResults.indices, id: \.self) { index in
-                                NavigationLink {
-                                    if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
-                                        viewModel.projects[index].view
-                                    } else {
-                                        Text("Not support")
+                                if viewModel.projects[index].presentationMode == .present {
+                                    NavigationLink {
+                                        if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
+                                            viewModel.projects[index].view
+                                        } else {
+                                            Text("Not support")
+                                        }
+                                    } label: {
+                                        getProjectTitleText(index)
+                                            .foregroundStyle(viewModel.projects[index].color)
                                     }
-                                } label: {
-                                    Text("\(index + 1) -" + viewModel.projects[index].name)
-                                        .foregroundStyle(viewModel.projects[index].color)
+                                } else {
+                                    Button {
+                                        modalSheet = true
+                                    } label: {
+                                        getProjectTitleText(index)
+                                            .foregroundStyle(viewModel.projects[index].color)
+                                    }
+                                    .sheet(isPresented: $modalSheet) {
+                                        viewModel.projects[index].view
+                                    }
                                 }
                             }
                         }
@@ -53,7 +66,11 @@ struct SearchableListView: View {
         }
     }
 
-    var searchResults: [Projects] {
+    private func getProjectTitleText(_ index: Int) -> Text {
+        Text("\(index + 1) -" + viewModel.projects[index].name)
+    }
+
+    private var searchResults: [Projects] {
         if searchText.isEmpty {
             return viewModel.projects
 //                .filter {

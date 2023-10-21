@@ -30,6 +30,7 @@
 		2A7875F8299D7265001450F6 /* WhatILearnedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875F7299D7265001450F6 /* WhatILearnedTests.swift */; };
 		2A787602299D7265001450F6 /* WhatILearnedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787601299D7265001450F6 /* WhatILearnedUITests.swift */; };
 		2A787604299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */; };
+		2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */; };
 		2A8100222A8952820086B146 /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100212A8952820086B146 /* AddArticleView.swift */; };
 		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
 		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
@@ -168,6 +169,7 @@
 		2A7875FD299D7265001450F6 /* WhatILearnedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatILearnedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A787601299D7265001450F6 /* WhatILearnedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITests.swift; sourceTree = "<group>"; };
 		2A787603299D7265001450F6 /* WhatILearnedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTags.swift; sourceTree = "<group>"; };
 		2A8100212A8952820086B146 /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
@@ -552,6 +554,7 @@
 			children = (
 				2A95C3642AC5E77C00E2DABD /* Projects.swift */,
 				2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */,
+				2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -1128,6 +1131,7 @@
 			files = (
 				2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */,
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
+				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,

@@ -12,6 +12,7 @@ protocol ProjectProtocol: Identifiable {
     var id: UUID { get }
     var name: String { get }
     var tags: ProjectTags { get }
+    var presentationMode: PresentationMode { get }
     static func project() -> any ProjectProtocol
     static func run() -> AnyView
 }
@@ -19,32 +20,10 @@ protocol ProjectProtocol: Identifiable {
 extension ProjectProtocol {
     var name: String { "\(Self.self)" }
     var id: UUID { UUID() }
+    var presentationMode: PresentationMode { .present }
 }
 
-struct ProjectTags {
-    var tags: [Tag]
-    var version: IOSVersionTag
-}
-
-// swiftui:disable identifier_name
-enum Tag {
-    case animation
-    case swiftui
-    case ui
-    case networking
-    case storage
-    case functionality
-    case architecture
-    case library
-}
-
-enum IOSVersionTag: Int, Comparable {
-    static func < (lhs: IOSVersionTag, rhs: IOSVersionTag) -> Bool {
-        lhs.rawValue < rhs.rawValue
-    }
-
-    case iOS14 = 14
-    case iOS15 = 15
-    case iOS16 = 16
-    case iOS17 = 17
+enum PresentationMode {
+    case modal
+    case present
 }

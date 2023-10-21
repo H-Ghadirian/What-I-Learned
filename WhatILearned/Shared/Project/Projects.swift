@@ -38,6 +38,27 @@ enum Projects: CaseIterable {
     case mapView
     case chrisNavigation
 
+    var presentationMode: PresentationMode { create.presentationMode }
+
+    var color: Color {
+        switch iOSVersion {
+        case .iOS14:
+            return .red
+        case .iOS15:
+            return .purple
+        case .iOS16:
+            return .green
+        case .iOS17:
+            return .yellow
+        }
+    }
+
+    var iOSVersion: IOSVersionTag { create.tags.version }
+
+    var tags: [Tag] { create.tags.tags }
+
+    var name: String { create.name }
+
     var view: AnyView {
         switch self {
         case .sheets:
@@ -137,31 +158,6 @@ enum Projects: CaseIterable {
         case .ratingScreenView:
             return RatingScreenView.run()
         }
-    }
-
-    var color: Color {
-        switch iOSVersion {
-        case .iOS14:
-            return .red
-        case .iOS15:
-            return .purple
-        case .iOS16:
-            return .green
-        case .iOS17:
-            return .yellow
-        }
-    }
-
-    var iOSVersion: IOSVersionTag {
-        create.tags.version
-    }
-
-    var tags: [Tag] {
-        create.tags.tags
-    }
-
-    var name: String {
-        create.name
     }
 
     private var create: any ProjectProtocol {
