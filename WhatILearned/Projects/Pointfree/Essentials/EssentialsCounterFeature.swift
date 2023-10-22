@@ -20,6 +20,7 @@ struct EssentialsCounterFeature: Reducer {
         case decrementButtonTapped
         case incrementButtonTapped
         case factButtonTapped
+        case factResponse(String)
     }
 
     func reduce(into state: inout State, action: Action) -> Effect<Action> {
@@ -37,6 +38,16 @@ struct EssentialsCounterFeature: Reducer {
         case .factButtonTapped:
             state.fact = nil
             state.isLoading = true
+            return .run { [count = state.count] send in
+                let (data, _) = try await URLSession.shared
+                    .data(from: URL(string: "http://numbersapi.com/\(count)")!)
+                let fact = String(decoding: data, as: UTF8.self)
+                await send(.factResponse(fact))
+            }
+
+        case let .factResponse(fact):
+            state.fact = fact
+            state.isLoading = false
             return .none
         }
     }
@@ -86,10 +97,12 @@ struct EssentialsCounterView: View {
                     if viewStore.isLoading {
                         ProgressView()
                     } else if let fact = viewStore.fact {
-                        Text(fact)
-                            .font(.largeTitle)
-                            .multilineTextAlignment(.center)
-                            .padding()
+                        ScrollView {
+                            Text(fact)
+                                .font(.largeTitle)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                        }
                     }
                 }
             }
