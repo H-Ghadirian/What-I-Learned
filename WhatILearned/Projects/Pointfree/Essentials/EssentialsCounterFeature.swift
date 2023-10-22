@@ -14,6 +14,7 @@ struct EssentialsCounterFeature: Reducer {
         var count = 0
         var fact: String?
         var isLoading = false
+        var isTimerRunning = false
     }
 
     enum Action {
@@ -21,7 +22,11 @@ struct EssentialsCounterFeature: Reducer {
         case incrementButtonTapped
         case factButtonTapped
         case factResponse(String)
+        case toggleTimerButtonTapped
+        case timerTick
     }
+
+    enum CancelID { case timer }
 
     func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
@@ -49,7 +54,33 @@ struct EssentialsCounterFeature: Reducer {
             state.fact = fact
             state.isLoading = false
             return .none
+
+        case .timerTick:
+            state.count += 1
+            state.fact = nil
+            return .none
+
+        case .toggleTimerButtonTapped:
+            state.isTimerRunning.toggle()
+            if state.isTimerRunning {
+                return .run { send in
+                    while true {
+                        try await Task.sleep(seconds: 1)
+                        await send(.timerTick)
+                    }
+                }
+                .cancellable(id: CancelID.timer)
+            } else {
+                return .cancel(id: CancelID.timer)
+            }
         }
+    }
+}
+
+extension Task where Success == Never, Failure == Never {
+    static func sleep(seconds: Double) async throws {
+        let duration = UInt64(seconds * 1_000_000_000)
+        try await Task.sleep(nanoseconds: duration)
     }
 }
 
@@ -86,6 +117,16 @@ struct EssentialsCounterView: View {
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(10)
                     }
+                    Button(
+                        viewStore.isTimerRunning ? "Stop timer" : "Start timer"
+                    ) {
+                        viewStore.send(.toggleTimerButtonTapped)
+                    }
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.black.opacity(0.1))
+                    .cornerRadius(10)
+
                     Button("Fact") {
                         viewStore.send(.factButtonTapped)
                     }
