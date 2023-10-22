@@ -12,21 +12,31 @@ import Foundation
 struct EssentialsCounterFeature: Reducer {
     struct State {
         var count = 0
+        var fact: String?
+        var isLoading = false
     }
 
     enum Action {
         case decrementButtonTapped
         case incrementButtonTapped
+        case factButtonTapped
     }
 
     func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .decrementButtonTapped:
             state.count -= 1
+            state.fact = nil
             return .none
 
         case .incrementButtonTapped:
             state.count += 1
+            state.fact = nil
+            return .none
+
+        case .factButtonTapped:
+            state.fact = nil
+            state.isLoading = true
             return .none
         }
     }
@@ -64,6 +74,22 @@ struct EssentialsCounterView: View {
                         .padding()
                         .background(Color.black.opacity(0.1))
                         .cornerRadius(10)
+                    }
+                    Button("Fact") {
+                        viewStore.send(.factButtonTapped)
+                    }
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.black.opacity(0.1))
+                    .cornerRadius(10)
+
+                    if viewStore.isLoading {
+                        ProgressView()
+                    } else if let fact = viewStore.fact {
+                        Text(fact)
+                            .font(.largeTitle)
+                            .multilineTextAlignment(.center)
+                            .padding()
                     }
                 }
             }
