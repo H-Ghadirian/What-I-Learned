@@ -19,19 +19,19 @@ struct SearchableListView: View {
                     getScrollDownButton(scrollValue)
                 }
             }
-            .navigationTitle("Projects \(viewModel.projects.count)")
+            .navigationTitle(viewModel.title)
         }
         .searchable(text: $searchText) {
-            ForEach(searchResults, id: \.self) { result in
-                Text(result.name).searchCompletion(result.name)
+            ForEach(viewModel.getSearchResults(for: searchText), id: \.self) { nameOfProject in
+                Text(nameOfProject).searchCompletion(nameOfProject)
             }
         }
     }
 
     private var listOfProjects: some View {
         List {
-            ForEach(searchResults.indices, id: \.self) { index in
-                switch viewModel.projects[index].presentationMode {
+            ForEach(viewModel.getSearchResults(for: searchText).indices, id: \.self) { index in
+                switch viewModel.presentationModeOf(project: index) {
                 case .modal(let isFullScreen):
                     if isFullScreen {
                         getButtonFullscreenSheet(index)
@@ -61,7 +61,7 @@ struct SearchableListView: View {
 
     private func getScrollDownButton(_ scrollValue: ScrollViewProxy) -> some View {
         Button {
-            scrollValue.scrollTo(viewModel.projects.count - 1)
+            scrollValue.scrollTo(viewModel.numberOfProjects - 1)
         } label: {
             Image(systemName: "arrow.down")
         }
@@ -72,10 +72,10 @@ struct SearchableListView: View {
             modalSheet = true
         } label: {
             getProjectTitleText(index)
-                .foregroundStyle(viewModel.projects[index].color)
+                .foregroundStyle(viewModel.colorOf(project: index))
         }
         .sheet(isPresented: $modalSheet) {
-            viewModel.projects[index].view
+            viewModel.viewOf(project: index)
         }
     }
 
@@ -84,39 +84,27 @@ struct SearchableListView: View {
             fullscreenModalSheet = true
         } label: {
             getProjectTitleText(index)
-                .foregroundStyle(viewModel.projects[index].color)
+                .foregroundStyle(viewModel.colorOf(project: index))
         }
         .fullScreenCover(isPresented: $fullscreenModalSheet) {
-            viewModel.projects[index].view
+            viewModel.viewOf(project: index)
         }
     }
 
     private func getNavigationLink(_ index: Int) -> some View {
         NavigationLink {
             if viewModel.iOSVersion >= viewModel.iOSVersionOf(index) {
-                viewModel.projects[index].view
+                viewModel.viewOf(project: index)
             } else {
                 Text("Not support")
             }
         } label: {
             getProjectTitleText(index)
-                .foregroundStyle(viewModel.projects[index].color)
+                .foregroundStyle(viewModel.colorOf(project: index))
         }
     }
 
     private func getProjectTitleText(_ index: Int) -> Text {
-        Text("\(index + 1) -" + viewModel.projects[index].name)
-    }
-
-    private var searchResults: [Projects] {
-        if searchText.isEmpty {
-            return viewModel.projects
-//                .filter {
-//                print($0.name + " \($0.iOSVersion)")
-//                return $0.iOSVersion >= .iOS16
-//            } // || $0.tags == [Tag.iOS16] }
-        } else {
-            return viewModel.projects.filter { $0.name.contains(searchText) }
-        }
+        Text(viewModel.titleOf(project: index))
     }
 }
