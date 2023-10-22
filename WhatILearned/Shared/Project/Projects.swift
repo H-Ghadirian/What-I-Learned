@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum Projects: CaseIterable {
+    case toastViewExample
     case essentialsCounterView
     case ratingScreenView
     case oldSheetView
@@ -160,6 +161,8 @@ enum Projects: CaseIterable {
             return RatingScreenView.run()
         case .essentialsCounterView:
             return EssentialsCounterView.run()
+        case .toastViewExample:
+            return ToastViewExample.run()
         }
     }
 
@@ -263,6 +266,8 @@ enum Projects: CaseIterable {
             return RatingScreenView.project()
         case .essentialsCounterView:
             return EssentialsCounterView.project()
+        case .toastViewExample:
+            return ToastViewExample.project()
         }
     }
 }
