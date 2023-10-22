@@ -12,5 +12,12 @@ struct SearchableListViewModel {
     func iOSVersionOf(_ index: Int) -> Int {
         projects[index].iOSVersion.rawValue
     }
-    var iOSVersion: Int { Int(Double(UIDevice.current.systemVersion) ?? 0) }
+
+    var iOSVersion: Int {
+        Int(
+            Double(
+                UIDevice.current.systemVersion.split(separator: ".").first ?? "0"
+            ) ?? 0
+        )
+    }
 }
