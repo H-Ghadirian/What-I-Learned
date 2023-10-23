@@ -21,6 +21,8 @@
 		2A2E16B62ADDDBF500A7FBA2 /* OldSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16B52ADDDBF500A7FBA2 /* OldSheet.swift */; };
 		2A357C242ACDF3230048A059 /* SheetNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A357C232ACDF3230048A059 /* SheetNavigation.swift */; };
 		2A379F3E2AE543950085F2B2 /* EssentialsCounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F3D2AE543950085F2B2 /* EssentialsCounterFeature.swift */; };
+		2A379F532AE703520085F2B2 /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F522AE703520085F2B2 /* RatingViewTests.swift */; };
+		2A379F592AE708B40085F2B2 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 2A379F582AE708B40085F2B2 /* ViewInspector */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
@@ -161,6 +163,7 @@
 		2A2E16B52ADDDBF500A7FBA2 /* OldSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldSheet.swift; sourceTree = "<group>"; };
 		2A357C232ACDF3230048A059 /* SheetNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigation.swift; sourceTree = "<group>"; };
 		2A379F3D2AE543950085F2B2 /* EssentialsCounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialsCounterFeature.swift; sourceTree = "<group>"; };
+		2A379F522AE703520085F2B2 /* RatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewTests.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B09D2C1FB000FFD5A248169 /* Pods_WhatILearnedTests.framework in Frameworks */,
+				2A379F592AE708B40085F2B2 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,14 @@
 			path = Essentials;
 			sourceTree = "<group>";
 		};
+		2A379F512AE703320085F2B2 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2A379F522AE703520085F2B2 /* RatingViewTests.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
 		2A3AE1E02A8DF1580024EDC0 /* ApiRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +519,7 @@
 		2A7875F6299D7265001450F6 /* WhatILearnedTests */ = {
 			isa = PBXGroup;
 			children = (
+				2A379F512AE703320085F2B2 /* Projects */,
 				2A7875F7299D7265001450F6 /* WhatILearnedTests.swift */,
 			);
 			path = WhatILearnedTests;
@@ -964,6 +977,9 @@
 				2A7875F5299D7265001450F6 /* PBXTargetDependency */,
 			);
 			name = WhatILearnedTests;
+			packageProductDependencies = (
+				2A379F582AE708B40085F2B2 /* ViewInspector */,
+			);
 			productName = WhatILearnedTests;
 			productReference = 2A7875F3299D7265001450F6 /* WhatILearnedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1026,6 +1042,7 @@
 				2AAF65672AAF35EA00B86F64 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				2AB238B12ABB8C29008979F6 /* XCLocalSwiftPackageReference "../MyMacro" */,
 				2A95C34A2AC4DD0000E2DABD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2A379F572AE708B40085F2B2 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
@@ -1263,6 +1280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7875F8299D7265001450F6 /* WhatILearnedTests.swift in Sources */,
+				2A379F532AE703520085F2B2 /* RatingViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1643,6 +1661,14 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2A379F572AE708B40085F2B2 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.8;
+			};
+		};
 		2A95C34A2AC4DD0000E2DABD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -1678,6 +1704,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2A379F582AE708B40085F2B2 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A379F572AE708B40085F2B2 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
 		2A95C34B2AC4DD0000E2DABD /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2A95C34A2AC4DD0000E2DABD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

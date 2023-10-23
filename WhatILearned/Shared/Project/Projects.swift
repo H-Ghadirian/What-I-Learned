@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// swiftlint:disable type_body_length
 enum Projects: CaseIterable {
     case toastViewExample
     case essentialsCounterView
