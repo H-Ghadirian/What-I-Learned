@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+
 struct FloatingTextField: View {
-    let textFieldHeight: CGFloat = 100
+    private let textFieldHeight: CGFloat = 100
     private let placeHolderText: String
+    private var shouldPlaceHolderMove: Bool {
+        isEditing || (text.count != 0)
+    }
+
     @Binding var text: String
     @State private var isEditing = false
     public init(
@@ -18,9 +23,7 @@ struct FloatingTextField: View {
         self._text = text
         self.placeHolderText = placeHolder
     }
-    var shouldPlaceHolderMove: Bool {
-        isEditing || (text.count != 0)
-    }
+
     var body: some View {
         ZStack(alignment: .leading) {
             TextField(
@@ -55,11 +58,11 @@ struct FloatingTextField: View {
 }
 
 struct DemoFloatingTextField: View {
-    @State var name: String = ""
+    @State var username: String = ""
     @State var email: String = ""
     var body: some View {
         VStack {
-            FloatingTextField(placeHolder: "Name", text: $name)
+            FloatingTextField(placeHolder: "Name", text: $username)
                 .border(.blue)
             FloatingTextField(placeHolder: "Email", text: $email)
                 .border(.blue)

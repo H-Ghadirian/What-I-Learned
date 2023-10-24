@@ -24,6 +24,7 @@
 		2A379F532AE703520085F2B2 /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F522AE703520085F2B2 /* RatingViewTests.swift */; };
 		2A379F592AE708B40085F2B2 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 2A379F582AE708B40085F2B2 /* ViewInspector */; };
 		2A379F5C2AE718E00085F2B2 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */; };
+		2A379F5E2AE7AD2E0085F2B2 /* FloatingTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5D2AE7AD2E0085F2B2 /* FloatingTextEditor.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
@@ -166,6 +167,7 @@
 		2A379F3D2AE543950085F2B2 /* EssentialsCounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialsCounterFeature.swift; sourceTree = "<group>"; };
 		2A379F522AE703520085F2B2 /* RatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewTests.swift; sourceTree = "<group>"; };
 		2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		2A379F5D2AE7AD2E0085F2B2 /* FloatingTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextEditor.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */,
+				2A379F5D2AE7AD2E0085F2B2 /* FloatingTextEditor.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -1281,6 +1284,7 @@
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */,
+				2A379F5E2AE7AD2E0085F2B2 /* FloatingTextEditor.swift in Sources */,
 				2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */,
 				2AAF65512AAB692A00B86F64 /* ChartDescribable.swift in Sources */,
 				2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */,
