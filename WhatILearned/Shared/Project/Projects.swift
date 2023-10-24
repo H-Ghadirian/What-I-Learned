@@ -10,6 +10,7 @@ import SwiftUI
 
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    case demoFloatingTextField
     case toastViewExample
     case essentialsCounterView
     case ratingScreenView
@@ -164,6 +165,8 @@ enum Projects: CaseIterable {
             return EssentialsCounterView.run()
         case .toastViewExample:
             return ToastViewExample.run()
+        case .demoFloatingTextField:
+            return DemoFloatingTextField.run()
         }
     }
 
@@ -269,6 +272,8 @@ enum Projects: CaseIterable {
             return EssentialsCounterView.project()
         case .toastViewExample:
             return ToastViewExample.project()
+        case .demoFloatingTextField:
+            return DemoFloatingTextField.project()
         }
     }
 }

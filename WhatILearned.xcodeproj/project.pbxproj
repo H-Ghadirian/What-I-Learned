@@ -23,6 +23,7 @@
 		2A379F3E2AE543950085F2B2 /* EssentialsCounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F3D2AE543950085F2B2 /* EssentialsCounterFeature.swift */; };
 		2A379F532AE703520085F2B2 /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F522AE703520085F2B2 /* RatingViewTests.swift */; };
 		2A379F592AE708B40085F2B2 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 2A379F582AE708B40085F2B2 /* ViewInspector */; };
+		2A379F5C2AE718E00085F2B2 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
@@ -164,6 +165,7 @@
 		2A357C232ACDF3230048A059 /* SheetNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigation.swift; sourceTree = "<group>"; };
 		2A379F3D2AE543950085F2B2 /* EssentialsCounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialsCounterFeature.swift; sourceTree = "<group>"; };
 		2A379F522AE703520085F2B2 /* RatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewTests.swift; sourceTree = "<group>"; };
+		2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
@@ -421,6 +423,14 @@
 				2A379F522AE703520085F2B2 /* RatingViewTests.swift */,
 			);
 			path = Projects;
+			sourceTree = "<group>";
+		};
+		2A379F5A2AE718B10085F2B2 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		2A3AE1E02A8DF1580024EDC0 /* ApiRequest */ = {
@@ -869,6 +879,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A379F5A2AE718B10085F2B2 /* TextField */,
 				2A2E16AB2ADC3F3900A7FBA2 /* Storage */,
 				2A2E16A82AD89BE900A7FBA2 /* PresentSwiftUI */,
 				2AED335F2AD4A230003FE39F /* Tipps */,
@@ -1252,6 +1263,7 @@
 				2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
 				2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */,
+				2A379F5C2AE718E00085F2B2 /* FloatingTextField.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2A7D85F82AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
