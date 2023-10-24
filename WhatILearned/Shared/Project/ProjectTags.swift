@@ -12,11 +12,10 @@ struct ProjectTags {
     var version: IOSVersionTag
 }
 
-// swiftui:disable identifier_name
 enum Tag {
     case animation
     case swiftui
-    case ui
+    case userInterface
     case networking
     case storage
     case functionality

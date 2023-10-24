@@ -4,7 +4,7 @@ import SwiftUI
 struct ChartsView: View, ProjectProtocol {
     var tags: ProjectTags {
         ProjectTags(
-            tags: [.ui],
+            tags: [.userInterface],
             version: .iOS16
         )
     }

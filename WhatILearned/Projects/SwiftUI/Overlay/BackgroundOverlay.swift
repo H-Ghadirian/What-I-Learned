@@ -79,7 +79,7 @@ struct BackgroundOverlayView: View {
 extension BackgroundOverlayView: ProjectProtocol {
     var tags: ProjectTags {
         ProjectTags(
-            tags: [.ui],
+            tags: [.userInterface],
             version: .iOS17
         )
     }

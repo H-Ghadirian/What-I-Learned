@@ -9,7 +9,6 @@ import XCTest
 import SwiftUI
 import ViewInspector
 
-// swiftlint:disable force_try
 final class RatingViewTests: XCTestCase {
     func test_initialization() throws {
         let sut = makeSUT()
@@ -53,6 +52,7 @@ final class RatingViewTests: XCTestCase {
     private let starFillImage = Image(systemName: "star.fill").resizable()
 }
 
+// swiftlint:disable force_try
 private extension RatingView {
     func stars() -> [InspectableView<ViewType.Image>] {
         try! inspect().findAll(ViewType.Image.self)
@@ -65,3 +65,4 @@ private extension RatingView {
         try! stars()[number].callOnTapGesture()
     }
 }
+// swiftlint:enable force_try

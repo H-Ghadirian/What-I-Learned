@@ -14,7 +14,7 @@ private struct MainAppFactory {
 
 extension MenuView: ProjectProtocol {
     var tags: ProjectTags {
-        ProjectTags(tags: [.ui], version: .iOS14)
+        ProjectTags(tags: [.userInterface], version: .iOS14)
     }
 
     static func project() -> any ProjectProtocol {

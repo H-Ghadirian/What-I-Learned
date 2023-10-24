@@ -60,7 +60,7 @@ struct AddArticleView: View {
 @available(iOS 15.0, *)
 extension AddArticleView: ProjectProtocol {
     var tags: ProjectTags {
-        .init(tags: [.ui], version: .iOS15)
+        .init(tags: [.userInterface], version: .iOS15)
     }
 
     private static let instance = AddArticleView()

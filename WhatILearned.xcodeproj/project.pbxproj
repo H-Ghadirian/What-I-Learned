@@ -25,6 +25,7 @@
 		2A379F592AE708B40085F2B2 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 2A379F582AE708B40085F2B2 /* ViewInspector */; };
 		2A379F5C2AE718E00085F2B2 /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */; };
 		2A379F5E2AE7AD2E0085F2B2 /* FloatingTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5D2AE7AD2E0085F2B2 /* FloatingTextEditor.swift */; };
+		2A379F602AE7C1EB0085F2B2 /* FloatingTextEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A379F5F2AE7C1EB0085F2B2 /* FloatingTextEditorTests.swift */; };
 		2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */; };
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
@@ -168,6 +169,7 @@
 		2A379F522AE703520085F2B2 /* RatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewTests.swift; sourceTree = "<group>"; };
 		2A379F5B2AE718E00085F2B2 /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 		2A379F5D2AE7AD2E0085F2B2 /* FloatingTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextEditor.swift; sourceTree = "<group>"; };
+		2A379F5F2AE7C1EB0085F2B2 /* FloatingTextEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextEditorTests.swift; sourceTree = "<group>"; };
 		2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+noCache.swift"; sourceTree = "<group>"; };
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				2A379F522AE703520085F2B2 /* RatingViewTests.swift */,
+				2A379F5F2AE7C1EB0085F2B2 /* FloatingTextEditorTests.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -1296,6 +1299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7875F8299D7265001450F6 /* WhatILearnedTests.swift in Sources */,
+				2A379F602AE7C1EB0085F2B2 /* FloatingTextEditorTests.swift in Sources */,
 				2A379F532AE703520085F2B2 /* RatingViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

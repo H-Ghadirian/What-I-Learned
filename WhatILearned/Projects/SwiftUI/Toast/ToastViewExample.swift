@@ -18,7 +18,7 @@ struct ToastViewExample: View {
 
 extension ToastViewExample: ProjectProtocol {
     var tags: ProjectTags {
-        .init(tags: [.ui], version: .iOS14)
+        .init(tags: [.userInterface], version: .iOS14)
     }
 
     static func project() -> any ProjectProtocol {

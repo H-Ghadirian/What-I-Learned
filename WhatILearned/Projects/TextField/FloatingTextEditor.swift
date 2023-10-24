@@ -14,9 +14,9 @@ struct FloatingTextEditor: View {
     private var shouldPlaceHolderMove: Bool {
         isEditing || (text.count != 0)
     }
+    @State private var isEditing = false
 
     @Binding var text: String
-    @State private var isEditing = false
     public init(
         placeHolder: String,
         text: Binding<String>
@@ -35,15 +35,19 @@ struct FloatingTextEditor: View {
 
     private var placeholderText: some View {
         Text(placeHolderText)
-        .foregroundColor(Color.secondary)
-        .background(Color(UIColor.red))
-        .padding(
-            shouldPlaceHolderMove ?
-                 EdgeInsets(top: 0, leading: 15, bottom: textEditorHeight, trailing: 0) :
-                 EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 0)
-        )
-        .scaleEffect(shouldPlaceHolderMove ? 1.0 : 1.2)
-        .animation(.linear)
+            .foregroundColor(Color.secondary)
+            .background(Color(UIColor.white))
+            .padding(placeholderPadding)
+            .scaleEffect(shouldPlaceHolderMove ? 1.0 : 1.2)
+            .animation(.linear)
+    }
+
+    private var placeholderPadding: EdgeInsets {
+        shouldPlaceHolderMove ? getEdgeInsets(bottom: textEditorHeight) : getEdgeInsets()
+    }
+
+    private func getEdgeInsets(bottom: CGFloat = 0) -> EdgeInsets {
+        EdgeInsets(top: 0, leading: 15, bottom: bottom, trailing: 0)
     }
 
     private var texteditor: some View {
@@ -51,14 +55,18 @@ struct FloatingTextEditor: View {
             .onTapGesture {
                 isEditing = true
             }
-        .lineLimit(5)
-        .padding()
-        .overlay(RoundedRectangle(cornerRadius: 8)
-        .stroke(Color.secondary, lineWidth: 1)
-        .frame(height: textEditorHeight))
-        .foregroundColor(Color.green)
-        .accentColor(Color.secondary)
-        .animation(.linear)
+            .lineLimit(5)
+            .padding()
+            .overlay(roundedRectangle)
+            .foregroundColor(Color.black)
+            .accentColor(Color.black)
+            .animation(.linear)
+    }
+
+    private var roundedRectangle: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .stroke(Color.secondary, lineWidth: 1)
+            .frame(height: textEditorHeight)
     }
 }
 
@@ -68,8 +76,8 @@ struct DemoFloatingTextEditor: View {
 
     var body: some View {
         VStack {
-            FloatingTextEditor(placeHolder: "Name", text: $username)
-            FloatingTextEditor(placeHolder: "Email", text: $email)
+            FloatingTextEditor(placeHolder: " Name ", text: $username)
+            FloatingTextEditor(placeHolder: " Email ", text: $email)
         }
         .padding()
         .border(.black)
