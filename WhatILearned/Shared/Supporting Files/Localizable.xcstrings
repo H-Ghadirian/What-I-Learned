@@ -1,0 +1,290 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "-" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lld" : {
+
+    },
+    "+" : {
+
+    },
+    "Add a new article" : {
+
+    },
+    "Add Article" : {
+
+    },
+    "Article Category" : {
+
+    },
+    "Articles" : {
+
+    },
+    "avarage" : {
+
+    },
+    "average" : {
+
+    },
+    "Bookmark your idea by pressing on the bookmark icon" : {
+
+    },
+    "Bookmark your idea!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setzen Sie ein Lesezeichen für Ihre Idee!"
+          }
+        }
+      }
+    },
+    "Calculate" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Colapse me!" : {
+
+    },
+    "CollectionView" : {
+
+    },
+    "Confirm" : {
+
+    },
+    "Decrement" : {
+
+    },
+    "Delete" : {
+
+    },
+    "Department" : {
+
+    },
+    "Email :" : {
+
+    },
+    "error" : {
+
+    },
+    "Expand me!" : {
+
+    },
+    "Fact" : {
+
+    },
+    "First" : {
+
+    },
+    "First Name :" : {
+
+    },
+    "Get Fact" : {
+
+    },
+    "Hamed" : {
+
+    },
+    "Hamed Resume" : {
+
+    },
+    "heavy" : {
+
+    },
+    "Hello " : {
+
+    },
+    "Hello World" : {
+
+    },
+    "Hello World1" : {
+
+    },
+    "Hello World2" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Home" : {
+
+    },
+    "Inbox" : {
+
+    },
+    "Increment" : {
+
+    },
+    "iOS %lld" : {
+
+    },
+    "Last Name :" : {
+
+    },
+    "light" : {
+
+    },
+    "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" : {
+
+    },
+    "medium" : {
+
+    },
+    "Menu" : {
+
+    },
+    "My Github" : {
+
+    },
+    "Navigate to person" : {
+
+    },
+    "Navigation title" : {
+
+    },
+    "Not support" : {
+
+    },
+    "Open Second View!" : {
+
+    },
+    "People" : {
+
+    },
+    "Pick a mode" : {
+
+    },
+    "Pop to root" : {
+
+    },
+    "Present a ViewController" : {
+
+    },
+    "Present fullscreen cover!" : {
+
+    },
+    "Profit" : {
+
+    },
+    "Refresh" : {
+
+    },
+    "Retrieve" : {
+
+    },
+    "Run" : {
+
+    },
+    "Save" : {
+
+    },
+    "Second" : {
+
+    },
+    "Second View" : {
+
+    },
+    "Select a photo" : {
+
+    },
+    "Select Tags" : {
+
+    },
+    "Setting" : {
+
+    },
+    "Show Half Sheet" : {
+
+    },
+    "Source Code(Github)" : {
+
+    },
+    "Start" : {
+
+    },
+    "Start bookmarking" : {
+
+    },
+    "Start timer" : {
+
+    },
+    "Stop" : {
+
+    },
+    "Stop timer" : {
+
+    },
+    "success" : {
+
+    },
+    "Test Haptic" : {
+
+    },
+    "This a SwiftUI View" : {
+
+    },
+    "This app is all about what I learned!" : {
+
+    },
+    "This is my resume App" : {
+
+    },
+    "Title" : {
+
+    },
+    "Title of the article" : {
+
+    },
+    "Update" : {
+
+    },
+    "Users" : {
+
+    },
+    "View for Item %@" : {
+
+    },
+    "warning" : {
+
+    },
+    "Welcome" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Willkommen!"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome on board!"
+          }
+        }
+      }
+    },
+    "WError: lower iOS version" : {
+
+    },
+    "World!" : {
+
+    },
+    "You can find the code on" : {
+
+    }
+  },
+  "version" : "1.0"
+}
