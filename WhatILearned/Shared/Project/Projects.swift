@@ -10,6 +10,7 @@ import SwiftUI
 
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    case onTapGestureLocation
     case kerningView
     case demoFloatingTextEditor
     case demoFloatingTextField
@@ -173,6 +174,12 @@ enum Projects: CaseIterable {
             return DemoFloatingTextEditor.run()
         case .kerningView:
             return KerningView.run()
+        case .onTapGestureLocation:
+            if #available(iOS 16.0, *) {
+                return OnTapGestureLocation.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         }
     }
 
@@ -284,6 +291,12 @@ enum Projects: CaseIterable {
             return DemoFloatingTextEditor.project()
         case .kerningView:
             return KerningView.project()
+        case .onTapGestureLocation:
+            if #available(iOS 16.0, *) {
+                return OnTapGestureLocation.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         }
     }
 }

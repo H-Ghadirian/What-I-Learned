@@ -33,6 +33,7 @@
 		2A633E7A2AE984FC00BFD1D0 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E792AE984FC00BFD1D0 /* EventManager.swift */; };
 		2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */; };
 		2A633E812AEB019C00BFD1D0 /* KerningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E802AEB019C00BFD1D0 /* KerningView.swift */; };
+		2A633E842AEB052D00BFD1D0 /* OnTapGestureLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -179,6 +180,7 @@
 		2A633E792AE984FC00BFD1D0 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2A633E802AEB019C00BFD1D0 /* KerningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerningView.swift; sourceTree = "<group>"; };
+		2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTapGestureLocation.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -512,6 +514,7 @@
 		2A633E822AEB04F500BFD1D0 /* onTapGesture Location */ = {
 			isa = PBXGroup;
 			children = (
+				2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */,
 			);
 			path = "onTapGesture Location";
 			sourceTree = "<group>";
@@ -1234,6 +1237,7 @@
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
 				2A95C35C2AC5A9DA00E2DABD /* TestMacro.swift in Sources */,
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
+				2A633E842AEB052D00BFD1D0 /* OnTapGestureLocation.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
 				2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */,
