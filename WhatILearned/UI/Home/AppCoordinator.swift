@@ -18,13 +18,13 @@ class AppCoordinator: CoordinatorProtocol {
 
     func view(for state: AppTabItem) -> AnyView {
         switch state {
-        case .menu:
+        case .home:
             if #available(iOS 16.0, *) {
                 return AnyView(SearchableListView())
             } else {
                 return AnyView(Text("WError: lower iOS version"))
             }
-        case .profile:
+        case .setting:
             return AnyView(SettingTab())
         }
     }

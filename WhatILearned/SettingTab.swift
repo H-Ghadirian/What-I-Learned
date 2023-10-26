@@ -25,10 +25,6 @@ struct SettingTab: View {
                 .show(isVisible: false)
         }
         .padding()
-        .tabItem {
-            Image(systemName: "gear")
-            Text("Setting")
-        }
         .tag(2)
         .preferredColorScheme(selectedScheme)
     }

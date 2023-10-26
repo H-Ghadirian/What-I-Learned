@@ -16,13 +16,14 @@ struct AppView: View {
 
     var body: some View {
         TabView {
-            coordinator.view(for: .menu)
+            coordinator.view(for: .home)
                 .tabItem {
                     Label("Menu", systemImage: "house")
                 }
-            coordinator.view(for: .profile)
+            coordinator.view(for: .setting)
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Image(systemName: "gear")
+                    Text("Setting")
                 }
         }
     }
