@@ -7,37 +7,39 @@
 
 import SwiftUI
 
-struct SearchableListViewModel {
-    let projects: [Projects] = Projects.allCases
-    func iOSVersionOf(_ index: Int) -> Int {
-        projects[index].iOSVersion.rawValue
-    }
+class SearchableListViewModel {
+    private let projects: [Projects] = Projects.allCases
+    private var searchResultProjects: [Projects] = Projects.allCases
 
     var title: String { "Projects \(numberOfProjects)" }
     var numberOfProjects: Int { projects.count }
+
+    func iOSVersionOf(_ index: Int) -> Int {
+        searchResultProjects[index].iOSVersion.rawValue
+    }
+
     func presentationModeOf(project index: Int) -> PresentationMode {
-        projects[index].presentationMode
+        searchResultProjects[index].presentationMode
     }
     func colorOf(project index: Int) -> Color {
-        projects[index].color
+        searchResultProjects[index].color
     }
     func viewOf(project index: Int) -> AnyView {
-        projects[index].view
+        searchResultProjects[index].view
     }
     func titleOf(project index: Int) -> String {
-        "\(index + 1) - " + projects[index].name
+        "\(index + 1) - " + searchResultProjects[index].name
     }
+
     func getSearchResults(for text: String) -> [String] {
         if text.isEmpty {
-            return projects.map { $0.name }
-//                .filter {
-//                print($0.name + " \($0.iOSVersion)")
-//                return $0.iOSVersion >= .iOS16
-//            } // || $0.tags == [Tag.iOS16] }
+            searchResultProjects = projects
         } else {
-            return projects.filter { $0.name.contains(text) }.map { $0.name }
+            searchResultProjects = projects.filter { $0.name.contains(text) }
         }
+        return searchResultProjects.map { $0.name }
     }
+
     var iOSVersion: Int {
         Int(
             Double(
