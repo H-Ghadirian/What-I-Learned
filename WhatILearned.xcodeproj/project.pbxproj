@@ -34,6 +34,9 @@
 		2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */; };
 		2A633E812AEB019C00BFD1D0 /* KerningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E802AEB019C00BFD1D0 /* KerningView.swift */; };
 		2A633E842AEB052D00BFD1D0 /* OnTapGestureLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */; };
+		2A633E992AEBE72700BFD1D0 /* SimpleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E982AEBE72700BFD1D0 /* SimpleToastView.swift */; };
+		2A633E9B2AEBF2D700BFD1D0 /* SimpleToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */; };
+		2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -181,6 +184,9 @@
 		2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2A633E802AEB019C00BFD1D0 /* KerningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerningView.swift; sourceTree = "<group>"; };
 		2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTapGestureLocation.swift; sourceTree = "<group>"; };
+		2A633E982AEBE72700BFD1D0 /* SimpleToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToastView.swift; sourceTree = "<group>"; };
+		2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToastModifier.swift; sourceTree = "<group>"; };
+		2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToast.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -519,6 +525,27 @@
 			path = "onTapGesture Location";
 			sourceTree = "<group>";
 		};
+		2A633E972AEBE70A00BFD1D0 /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				2A633E982AEBE72700BFD1D0 /* SimpleToastView.swift */,
+				2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */,
+				2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		2A633E9E2AEBF3E300BFD1D0 /* Fancy */ = {
+			isa = PBXGroup;
+			children = (
+				2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */,
+				2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */,
+				2AE0F5FD2A9170540001A30E /* FancyToast.swift */,
+				2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */,
+			);
+			path = Fancy;
+			sourceTree = "<group>";
+		};
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
@@ -793,10 +820,8 @@
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
-				2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */,
-				2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */,
-				2AE0F5FD2A9170540001A30E /* FancyToast.swift */,
-				2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */,
+				2A633E9E2AEBF3E300BFD1D0 /* Fancy */,
+				2A633E972AEBE70A00BFD1D0 /* Simple */,
 				2AE0F6012A91728D0001A30E /* View+toastView.swift */,
 				2AE0F6032A9172BE0001A30E /* ToastViewExample.swift */,
 			);
@@ -1252,6 +1277,7 @@
 				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
 				2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */,
 				2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */,
+				2A633E992AEBE72700BFD1D0 /* SimpleToastView.swift in Sources */,
 				2A047BD22AB661F900492C0A /* CollectionViewContent.swift in Sources */,
 				2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */,
 				2A2E16B62ADDDBF500A7FBA2 /* OldSheet.swift in Sources */,
@@ -1283,6 +1309,7 @@
 				2AE0F61E2A9BF8AD0001A30E /* CoordinatorProtocol.swift in Sources */,
 				2AAF65702AAF37A000B86F64 /* LottieView.swift in Sources */,
 				2AAF658A2AAF4D7E00B86F64 /* FakeNewsViewModel.swift in Sources */,
+				2A633E9B2AEBF2D700BFD1D0 /* SimpleToastModifier.swift in Sources */,
 				2A357C242ACDF3230048A059 /* SheetNavigation.swift in Sources */,
 				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
@@ -1296,6 +1323,7 @@
 				2AE0F6192A9BF5920001A30E /* AppDelegate.swift in Sources */,
 				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
 				2A95C3652AC5E77C00E2DABD /* Projects.swift in Sources */,
+				2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */,
 				2AED33402ACF65D4003FE39F /* View+ .swift in Sources */,
 				2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */,
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,

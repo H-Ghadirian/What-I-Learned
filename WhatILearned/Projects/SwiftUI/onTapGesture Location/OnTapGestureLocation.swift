@@ -9,7 +9,7 @@ import SwiftUI
 
 @available(iOS 16.0, *)
 struct OnTapGestureLocation: View {
-    @State private var location = ""
+    @State private var location = "(0, 0)"
 
     var body: some View {
         VStack(spacing: 16) {

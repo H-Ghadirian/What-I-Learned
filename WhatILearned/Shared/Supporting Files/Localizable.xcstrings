@@ -86,6 +86,9 @@
     "Fact" : {
 
     },
+    "Fancy Toast" : {
+
+    },
     "ffi" : {
 
     },
@@ -191,9 +194,6 @@
     "Retrieve" : {
 
     },
-    "Run" : {
-
-    },
     "Save" : {
 
     },
@@ -213,6 +213,9 @@
 
     },
     "Show Half Sheet" : {
+
+    },
+    "Simple Toast" : {
 
     },
     "Source Code(Github)" : {

@@ -2,17 +2,25 @@ import Foundation
 import SwiftUI
 
 struct ToastViewExample: View {
-    @State private var toast: FancyToast?
+    @State private var fancyToast: FancyToast?
+    @State private var simpleToast: SimpleToast?
+
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Button {
-                toast = FancyToast(type: .info, title: "Toast info", message: "Toast message")
+                fancyToast = FancyToast(type: .info, title: "Toast info", message: "Toast message")
             } label: {
-                Text("Run")
+                Text("Fancy Toast")
             }
 
+            Button {
+                simpleToast = SimpleToast(message: "Lorem ipsum dolor sit amet, adipiscing elit. ")
+            } label: {
+                Text("Simple Toast")
+            }
         }
-        .toastView(toast: $toast)
+        .toastView(toast: $fancyToast)
+        .toastView(toast: $simpleToast)
     }
 }
 

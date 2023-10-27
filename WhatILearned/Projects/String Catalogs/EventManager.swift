@@ -5,13 +5,13 @@ import EventKit
 class EventManager: ObservableObject {
     @Published var events: [EKEvent] = []
     @Published var eventStatus: EKAuthorizationStatus = .notDetermined
-    
+
     let eventStore = EKEventStore()
-    
+
     init() {
         askUserRequest()
     }
-    
+
     private func askUserRequest() {
         eventStore.requestFullAccessToEvents { [weak self] success, error in
             if let error = error {
@@ -24,17 +24,17 @@ class EventManager: ObservableObject {
             }
         }
     }
-    
+
     private func handleStatus(status: EKAuthorizationStatus) {
         DispatchQueue.main.async {
             self.eventStatus = status
         }
     }
-    
+
     private func handleError(error: Error) {
         print(error.localizedDescription)
     }
-    
+
     func fetchEvents() async {
         if eventStatus == .fullAccess {
             let calendars = eventStore.calendars(for: .event)
