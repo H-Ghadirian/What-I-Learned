@@ -37,6 +37,7 @@
 		2A633E992AEBE72700BFD1D0 /* SimpleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E982AEBE72700BFD1D0 /* SimpleToastView.swift */; };
 		2A633E9B2AEBF2D700BFD1D0 /* SimpleToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */; };
 		2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */; };
+		2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -187,6 +188,7 @@
 		2A633E982AEBE72700BFD1D0 /* SimpleToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToastView.swift; sourceTree = "<group>"; };
 		2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToastModifier.swift; sourceTree = "<group>"; };
 		2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToast.swift; sourceTree = "<group>"; };
+		2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardView.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				2A047BCD2AB5082A00492C0A /* Overlay */,
 				2A047BD02AB661DD00492C0A /* CollectionView */,
 				2AE0F6272A9F556F0001A30E /* TabView */,
+				2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -1255,6 +1258,7 @@
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
 				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
+				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,

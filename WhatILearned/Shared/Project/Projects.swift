@@ -10,6 +10,7 @@ import SwiftUI
 
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    case dismissKeyboardView
     case onTapGestureLocation
     case kerningView
     case demoFloatingTextEditor
@@ -180,6 +181,12 @@ enum Projects: CaseIterable {
             } else {
                 fatalError("WError: lower iOS version")
             }
+        case .dismissKeyboardView:
+            if #available(iOS 15.0, *) {
+                return DismissKeyboardView.run()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
         }
     }
 
@@ -294,6 +301,12 @@ enum Projects: CaseIterable {
         case .onTapGestureLocation:
             if #available(iOS 16.0, *) {
                 return OnTapGestureLocation.project()
+            } else {
+                fatalError("WError: lower iOS version")
+            }
+        case .dismissKeyboardView:
+            if #available(iOS 15.0, *) {
+                return DismissKeyboardView.project()
             } else {
                 fatalError("WError: lower iOS version")
             }
