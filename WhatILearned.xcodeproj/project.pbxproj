@@ -329,37 +329,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A047BCD2AB5082A00492C0A /* Overlay */ = {
-			isa = PBXGroup;
-			children = (
-				2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */,
-			);
-			path = Overlay;
-			sourceTree = "<group>";
-		};
-		2A047BD02AB661DD00492C0A /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				2A047BD12AB661F900492C0A /* CollectionViewContent.swift */,
-			);
-			path = CollectionView;
-			sourceTree = "<group>";
-		};
 		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				2A633E822AEB04F500BFD1D0 /* onTapGesture Location */,
+				2A95C35D2AC5B16F00E2DABD /* Sheet */,
+				2A379F5A2AE718B10085F2B2 /* TextField */,
+				2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */,
+				2AE0F6282A9F558C0001A30E /* TestTabView.swift */,
+				2A047BD12AB661F900492C0A /* CollectionViewContent.swift */,
+				2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */,
+				2A633E802AEB019C00BFD1D0 /* KerningView.swift */,
+				2A047BCE2AB5084F00492C0A /* BackgroundOverlay.swift */,
+				2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */,
 				2A633E7F2AEB018400BFD1D0 /* Kerning */,
 				2A3C53FD2AE315C400472FF4 /* StarView */,
 				2A95C3552AC5A2FA00E2DABD /* JsonMenuList */,
-				2A3AE1E92A8E61780024EDC0 /* HapticTest */,
 				2AE0F5F82A916F730001A30E /* Toast */,
 				2AAF65482AAB67BF00B86F64 /* Charts */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
-				2A047BCD2AB5082A00492C0A /* Overlay */,
-				2A047BD02AB661DD00492C0A /* CollectionView */,
-				2AE0F6272A9F556F0001A30E /* TabView */,
-				2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -487,14 +474,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		2A3AE1E92A8E61780024EDC0 /* HapticTest */ = {
-			isa = PBXGroup;
-			children = (
-				2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */,
-			);
-			path = HapticTest;
-			sourceTree = "<group>";
-		};
 		2A3C53FD2AE315C400472FF4 /* StarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -515,17 +494,8 @@
 		2A633E7F2AEB018400BFD1D0 /* Kerning */ = {
 			isa = PBXGroup;
 			children = (
-				2A633E802AEB019C00BFD1D0 /* KerningView.swift */,
 			);
 			path = Kerning;
-			sourceTree = "<group>";
-		};
-		2A633E822AEB04F500BFD1D0 /* onTapGesture Location */ = {
-			isa = PBXGroup;
-			children = (
-				2A633E832AEB052D00BFD1D0 /* OnTapGestureLocation.swift */,
-			);
-			path = "onTapGesture Location";
 			sourceTree = "<group>";
 		};
 		2A633E972AEBE70A00BFD1D0 /* Simple */ = {
@@ -547,6 +517,18 @@
 				2AE0F5FF2A9172580001A30E /* FancyToastModifier.swift */,
 			);
 			path = Fancy;
+			sourceTree = "<group>";
+		};
+		2A633EA12AEF1EAB00BFD1D0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
+				2AAF656A2AAF35F500B86F64 /* Lottie */,
+				2AE0F6212A9D3D380001A30E /* Map */,
+				2AE0F6242A9F52380001A30E /* PhotosPicker */,
+				2AED335F2AD4A230003FE39F /* Tipps */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		2A7875D9299D7264001450F6 = {
@@ -865,14 +847,6 @@
 			path = PhotosPicker;
 			sourceTree = "<group>";
 		};
-		2AE0F6272A9F556F0001A30E /* TabView */ = {
-			isa = PBXGroup;
-			children = (
-				2AE0F6282A9F558C0001A30E /* TestTabView.swift */,
-			);
-			path = TabView;
-			sourceTree = "<group>";
-		};
 		2AED335F2AD4A230003FE39F /* Tipps */ = {
 			isa = PBXGroup;
 			children = (
@@ -944,23 +918,17 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A633EA12AEF1EAB00BFD1D0 /* Library */,
 				2A633E782AE984DE00BFD1D0 /* String Catalogs */,
-				2A379F5A2AE718B10085F2B2 /* TextField */,
 				2A2E16AB2ADC3F3900A7FBA2 /* Storage */,
 				2A2E16A82AD89BE900A7FBA2 /* PresentSwiftUI */,
-				2AED335F2AD4A230003FE39F /* Tipps */,
-				2A95C35D2AC5B16F00E2DABD /* Sheet */,
 				2A95C35A2AC5A9C900E2DABD /* Macro */,
 				2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */,
 				2A047BD32AB6B5AB00492C0A /* SwiftUI */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
-				2AAF656A2AAF35F500B86F64 /* Lottie */,
 				2AAF655B2AACDD9D00B86F64 /* Pagination */,
 				2A1E641A2AA352CC004D4498 /* Pointfree */,
-				2AE0F6242A9F52380001A30E /* PhotosPicker */,
-				2AE0F6212A9D3D380001A30E /* Map */,
 				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
-				2A3AE1E32A8DF3410024EDC0 /* SignInWithApple */,
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
 			);
@@ -970,9 +938,9 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2AFA7A482A7C31E80006BDDF /* SchemeType.swift */,
 				2A95C3632AC5E76500E2DABD /* Project */,
 				2AE0F61A2A9BF8750001A30E /* Navigation */,
-				2AFA7A482A7C31E80006BDDF /* SchemeType.swift */,
 				2AFA7A522A7D965A0006BDDF /* MainApp */,
 				2AE0F60C2A9958940001A30E /* Supporting Files */,
 				2A3AE1E52A8E61350024EDC0 /* Helpers */,
