@@ -38,6 +38,9 @@
 		2A633E9B2AEBF2D700BFD1D0 /* SimpleToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */; };
 		2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */; };
 		2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */; };
+		2A633EC82AF45CA600BFD1D0 /* UIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633EC72AF45CA600BFD1D0 /* UIComposer.swift */; };
+		2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633EC92AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift */; };
+		2A633ECC2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633ECB2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -189,6 +192,9 @@
 		2A633E9A2AEBF2D700BFD1D0 /* SimpleToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToastModifier.swift; sourceTree = "<group>"; };
 		2A633E9C2AEBF33D00BFD1D0 /* SimpleToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleToast.swift; sourceTree = "<group>"; };
 		2A633E9F2AEF17F400BFD1D0 /* DismissKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardView.swift; sourceTree = "<group>"; };
+		2A633EC72AF45CA600BFD1D0 /* UIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComposer.swift; sourceTree = "<group>"; };
+		2A633EC92AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequestView.swift; sourceTree = "<group>"; };
+		2A633ECB2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequestViewModel.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -531,6 +537,32 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		2A633EB12AF1C0B700BFD1D0 /* Modular Compose */ = {
+			isa = PBXGroup;
+			children = (
+				2A633EB32AF1C0DB00BFD1D0 /* UI */,
+				2A633EB22AF1C0D200BFD1D0 /* functionality */,
+			);
+			path = "Modular Compose";
+			sourceTree = "<group>";
+		};
+		2A633EB22AF1C0D200BFD1D0 /* functionality */ = {
+			isa = PBXGroup;
+			children = (
+				2A633ECB2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift */,
+			);
+			path = functionality;
+			sourceTree = "<group>";
+		};
+		2A633EB32AF1C0DB00BFD1D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2A633EC72AF45CA600BFD1D0 /* UIComposer.swift */,
+				2A633EC92AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
@@ -608,7 +640,6 @@
 				2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */,
 				2A8100262A8C0BD90086B146 /* RemoteFile.swift */,
 				2A8100282A8C0BFB0086B146 /* Message.swift */,
-				2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */,
 			);
 			name = AsyncAwaitRequest;
 			path = ../..;
@@ -664,6 +695,7 @@
 		2A9DED6029AB834F0092D549 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2A3AE1E12A8DF2710024EDC0 /* URLSession+noCache.swift */,
 				2A05DC9B2ABE3D1000C78FCF /* ViewModifiers */,
 				2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */,
 				2AED333F2ACF65D4003FE39F /* View+ .swift */,
@@ -918,6 +950,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A633EB12AF1C0B700BFD1D0 /* Modular Compose */,
 				2A633EA12AEF1EAB00BFD1D0 /* Library */,
 				2A633E782AE984DE00BFD1D0 /* String Catalogs */,
 				2A2E16AB2ADC3F3900A7FBA2 /* Storage */,
@@ -1228,6 +1261,7 @@
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
+				2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */,
 				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
@@ -1312,6 +1346,7 @@
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
+				2A633ECC2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift in Sources */,
 				2AAF65632AACE2CB00B86F64 /* UsersViewModel.swift in Sources */,
 				2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */,
 				2AAF65882AAF4D5D00B86F64 /* FakeNewsService.swift in Sources */,
@@ -1319,6 +1354,7 @@
 				2AAF657F2AAF48B600B86F64 /* View+shimmer.swift in Sources */,
 				2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */,
 				2A379F3E2AE543950085F2B2 /* EssentialsCounterFeature.swift in Sources */,
+				2A633EC82AF45CA600BFD1D0 /* UIComposer.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */,
