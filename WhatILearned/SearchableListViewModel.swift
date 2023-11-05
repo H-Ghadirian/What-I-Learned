@@ -8,24 +8,38 @@
 import SwiftUI
 
 class SearchableListViewModel {
-    private let projects: [Projects] = Projects.allCases
-    private var searchResultProjects: [Projects] = Projects.allCases
+    private let altProjects: [any ProjectProtocol] = [TestMyViewModifiersView.instance]
+    private let altSearchResultProjects: [any ProjectProtocol] = [TestMyViewModifiersView.instance]
+
+    private let projects: [any ProjectProtocol] = [TestMyViewModifiersView.instance]
+    private var searchResultProjects: [any ProjectProtocol] = [TestMyViewModifiersView.instance]
 
     var title: String { "Projects \(numberOfProjects)" }
-    var numberOfProjects: Int { projects.count }
+    var numberOfProjects: Int { altProjects.count }
 
     func iOSVersionOf(_ index: Int) -> Int {
-        searchResultProjects[index].iOSVersion.rawValue
+        altSearchResultProjects[index].tags.version.rawValue
     }
 
     func presentationModeOf(project index: Int) -> PresentationMode {
-        searchResultProjects[index].presentationMode
+        altSearchResultProjects[index].presentationMode
     }
     func colorOf(project index: Int) -> Color {
-        searchResultProjects[index].color
+        switch altSearchResultProjects[index].tags.version {
+        case .iOS14:
+            return .red
+        case .iOS15:
+            return .purple
+        case .iOS16:
+            return .green
+        case .iOS17:
+            return .yellow
+        }
     }
     func viewOf(project index: Int) -> AnyView {
-        searchResultProjects[index].view
+        type(of: altSearchResultProjects[index]).run()
+//        AnyView(.mySelf)
+//        searchResultProjects[index].view
     }
     func titleOf(project index: Int) -> String {
         "\(index + 1) - " + searchResultProjects[index].name

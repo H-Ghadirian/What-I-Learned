@@ -37,7 +37,7 @@ extension TestMyViewModifiersView: ProjectProtocol {
         .init(tags: [.swiftui], version: .iOS14)
     }
 
-    private static let instance = TestMyViewModifiersView()
+    static let instance = TestMyViewModifiersView()
 
     static func project() -> any ProjectProtocol {
         instance

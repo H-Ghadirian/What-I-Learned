@@ -8,8 +8,28 @@
 import Foundation
 import SwiftUI
 
+//func testP() {
+//    var color: Color {
+//        switch projectList[0].tags.version {
+//        case .iOS14:
+//            return .red
+//        case .iOS15:
+//            return .purple
+//        case .iOS16:
+//            return .green
+//        case .iOS17:
+//            return .yellow
+//        }
+//    }
+//    projectList.forEach { project in
+//        project
+//    }
+//}
+
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    static let list: [any ProjectProtocol] = [TestMyViewModifiersView.instance]
+
     case dismissKeyboardView
     case onTapGestureLocation
     case kerningView
