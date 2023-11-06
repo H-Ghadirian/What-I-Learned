@@ -10,6 +10,7 @@ import SwiftUI
 
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    case listInAdjustableDrawerView
     case dismissKeyboardView
     case onTapGestureLocation
     case kerningView
@@ -187,6 +188,8 @@ enum Projects: CaseIterable {
             } else {
                 fatalError("WError: lower iOS version")
             }
+        case .listInAdjustableDrawerView:
+            return ListInAdjustableSheetView.run()
         }
     }
 
@@ -310,6 +313,8 @@ enum Projects: CaseIterable {
             } else {
                 fatalError("WError: lower iOS version")
             }
+        case .listInAdjustableDrawerView:
+            return ListInAdjustableSheetView.project()
         }
     }
 }

@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct HapticTestView: View {
+public struct HapticTestView: View {
 
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 10) {
             Button("light") {
                 HapticFeedback().start(.light)
@@ -27,6 +27,7 @@ struct HapticTestView: View {
 }
 
 extension HapticTestView: ProjectProtocol {
+    public var id: UUID { UUID() }
     var tags: ProjectTags {
         ProjectTags(
             tags: [.functionality],
