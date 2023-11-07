@@ -93,13 +93,18 @@ public struct AdjustableSheetView<Content: View>: View {
     }
 
     private func dismiss() {
-        withAnimation(.easeInOut(duration: 0.25)) { store.offset = screenHeight; store.globalOpacity = 0 }
+        withAnimation(.easeInOut(duration: 0.25)) {
+            store.offset = screenHeight;
+            store.globalOpacity = 0
+        }
         Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { [weak viewModel] _ in viewModel?.dismiss?() }
     }
 
     private func onChange(of dragValue: DragGesture.Value) {
         let startingPoint = store.lastOffset
-        withAnimation(.spring(duration: 0.25)) { store.offset = max(dragValue.translation.height + startingPoint, 0) }
+        withAnimation(.spring(duration: 0.25)) {
+            store.offset = max(dragValue.translation.height + startingPoint, 0)
+        }
     }
 
     private func onDragEnd(with dragValue: DragGesture.Value) {
