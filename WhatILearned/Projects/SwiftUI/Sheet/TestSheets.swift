@@ -5,6 +5,7 @@ struct TestSheets: View {
 
     @State private var showHalfSheet: Bool = false
     @State private var isPresented = false
+    @State private var newMessageText = ""
 
     var body: some View {
         VStack(spacing: 10) {
@@ -31,6 +32,18 @@ struct TestSheets: View {
             List {
                 ForEach(0..<100) { number in
                     Text("\(number)")
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
+                TextField(
+                    "New message",
+                    text: $newMessageText
+                )
+                .padding()
+                .textFieldStyle(.roundedBorder)
+                .background(.ultraThinMaterial)
+                .onSubmit {
+                    print(newMessageText)
                 }
             }
         }
