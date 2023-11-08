@@ -71,6 +71,8 @@
 		2A633F232AF8FC5500BFD1D0 /* ListInAdjustableSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F222AF8FC5500BFD1D0 /* ListInAdjustableSheetView.swift */; };
 		2A633F252AF94A3900BFD1D0 /* MovieListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F242AF94A3900BFD1D0 /* MovieListStore.swift */; };
 		2A633F3C2AFADF6900BFD1D0 /* CustomizeButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3B2AFADF6900BFD1D0 /* CustomizeButtonsView.swift */; };
+		2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */; };
+		2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -255,6 +257,8 @@
 		2A633F222AF8FC5500BFD1D0 /* ListInAdjustableSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInAdjustableSheetView.swift; sourceTree = "<group>"; };
 		2A633F242AF94A3900BFD1D0 /* MovieListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListStore.swift; sourceTree = "<group>"; };
 		2A633F3B2AFADF6900BFD1D0 /* CustomizeButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButtonsView.swift; sourceTree = "<group>"; };
+		2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleExperiment.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 				2AE0F5F82A916F730001A30E /* Toast */,
 				2AAF65482AAB67BF00B86F64 /* Charts */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
+				2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 			isa = PBXGroup;
 			children = (
 				2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */,
+				2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1509,6 +1515,7 @@
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
 				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
+				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2A633EDD2AF836BD00BFD1D0 /* AdjustableSheetViewModel.swift in Sources */,
@@ -1622,6 +1629,7 @@
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A633EFE2AF83B4C00BFD1D0 /* MovieListHTTPClient.swift in Sources */,
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
+				2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */,
 				2A633ECC2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift in Sources */,
 				2AAF65632AACE2CB00B86F64 /* UsersViewModel.swift in Sources */,
 				2A633F0C2AF83F1500BFD1D0 /* MovieListColors.swift in Sources */,
