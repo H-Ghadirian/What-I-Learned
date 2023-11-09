@@ -73,6 +73,7 @@
 		2A633F3C2AFADF6900BFD1D0 /* CustomizeButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3B2AFADF6900BFD1D0 /* CustomizeButtonsView.swift */; };
 		2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */; };
 		2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */; };
+		2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -259,6 +260,7 @@
 		2A633F3B2AFADF6900BFD1D0 /* CustomizeButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeButtonsView.swift; sourceTree = "<group>"; };
 		2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleExperiment.swift; sourceTree = "<group>"; };
+		2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithNotifications.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -819,6 +821,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		2A633F412AFCF98500BFD1D0 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
@@ -1213,6 +1223,7 @@
 				2A2E16A82AD89BE900A7FBA2 /* PresentSwiftUI */,
 				2A95C35A2AC5A9C900E2DABD /* Macro */,
 				2A05DC9E2ABE3D5400C78FCF /* TestMyViewModifiers */,
+				2A633F412AFCF98500BFD1D0 /* Notification */,
 				2A047BD32AB6B5AB00492C0A /* SwiftUI */,
 				2AAF65902AAFA27900B86F64 /* AsyncAwait */,
 				2AAF655B2AACDD9D00B86F64 /* Pagination */,
@@ -1577,6 +1588,7 @@
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
 				2A633EFA2AF83AE200BFD1D0 /* RemoteMovieListImageDataLoader.swift in Sources */,
 				2AFA7A5B2A7D96D50006BDDF /* MenuItem.swift in Sources */,
+				2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */,
 				2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */,
 				2AAF65612AACE29F00B86F64 /* UsersView.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,

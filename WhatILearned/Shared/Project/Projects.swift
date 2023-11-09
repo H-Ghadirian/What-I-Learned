@@ -10,6 +10,7 @@ import SwiftUI
 
 // swiftlint:disable type_body_length
 enum Projects: CaseIterable {
+    case handlingUIApplicationState
     case toggleExperiment
     case customizeButtonsView
     case listInAdjustableDrawerView
@@ -196,6 +197,8 @@ enum Projects: CaseIterable {
             return CustomizeButtonsView.run()
         case .toggleExperiment:
             return ToggleExperiment.run()
+        case .handlingUIApplicationState:
+            return PlayingWithNotifications.run()
         }
     }
 
@@ -323,6 +326,8 @@ enum Projects: CaseIterable {
             return ListInAdjustableSheetView.project()
         case .customizeButtonsView:
             return CustomizeButtonsView.project()
+        case .handlingUIApplicationState:
+            return PlayingWithNotifications.project()
         case .toggleExperiment:
             return ToggleExperiment.project()
         }

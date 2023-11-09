@@ -30,7 +30,7 @@ extension ToggleExperiment: ProjectProtocol {
     public var id: UUID { UUID() }
     var tags: ProjectTags {
         ProjectTags(
-            tags: [.functionality],
+            tags: [.userInterface],
             version: .iOS14
         )
     }
