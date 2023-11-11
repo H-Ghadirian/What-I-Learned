@@ -74,6 +74,7 @@
 		2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */; };
 		2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */; };
 		2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */; };
+		2A633F4B2B00407E00BFD1D0 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F4A2B00407E00BFD1D0 /* Projects.swift */; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -260,6 +261,7 @@
 		2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleExperiment.swift; sourceTree = "<group>"; };
 		2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithNotifications.swift; sourceTree = "<group>"; };
+		2A633F4A2B00407E00BFD1D0 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -949,6 +951,7 @@
 		2A95C3632AC5E76500E2DABD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				2A633F4A2B00407E00BFD1D0 /* Projects.swift */,
 				2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */,
 				2A7D85EE2AE414D500ECCF31 /* ProjectTags.swift */,
 			);
@@ -1526,6 +1529,7 @@
 				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
+				2A633F4B2B00407E00BFD1D0 /* Projects.swift in Sources */,
 				2A633EDD2AF836BD00BFD1D0 /* AdjustableSheetViewModel.swift in Sources */,
 				2A633F0E2AF83FC200BFD1D0 /* MovieListFonts.swift in Sources */,
 				2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */,
