@@ -13,7 +13,6 @@ protocol ProjectProtocol: Identifiable {
     var name: String { get }
     var tags: ProjectTags { get }
     var presentationMode: PresentationMode { get }
-    var mySelf: any ProjectProtocol { get }
     static func project() -> any ProjectProtocol
     static func run() -> AnyView
 }
@@ -22,7 +21,6 @@ extension ProjectProtocol {
     var name: String { "\(Self.self)" }
     var id: UUID { UUID() }
     var presentationMode: PresentationMode { .present }
-    var mySelf: any ProjectProtocol { self }
 }
 
 enum PresentationMode {
