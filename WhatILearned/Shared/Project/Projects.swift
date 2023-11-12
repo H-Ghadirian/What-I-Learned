@@ -33,6 +33,7 @@ enum Projects {
     ]
 
     static let iOS14: [any ProjectProtocol] = [
+        TestMyFramework.project(),
         PlayingWithNotifications.project(),
         CustomizeButtonsView.project(),
         ToggleExperiment.project(),

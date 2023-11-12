@@ -75,6 +75,9 @@
 		2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */; };
 		2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */; };
 		2A633F4B2B00407E00BFD1D0 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633F4A2B00407E00BFD1D0 /* Projects.swift */; };
+		2A633FEE2B00CE1800BFD1D0 /* TestMyFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633FED2B00CE1800BFD1D0 /* TestMyFramework.swift */; };
+		2A633FEF2B00CF0800BFD1D0 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A633FE62B00CCF200BFD1D0 /* MyFramework.framework */; };
+		2A633FF02B00CF0800BFD1D0 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A633FE62B00CCF200BFD1D0 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */; };
 		2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875E9299D7265001450F6 /* Assets.xcassets */; };
 		2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7875ED299D7265001450F6 /* Preview Assets.xcassets */; };
@@ -176,6 +179,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A633FE52B00CCF200BFD1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FC62B00CCF100BFD1D0;
+			remoteInfo = MyFramework;
+		};
+		2A633FE72B00CCF200BFD1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FD02B00CCF100BFD1D0;
+			remoteInfo = MyFrameworkTests;
+		};
 		2A7875F4299D7265001450F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A7875DA299D7264001450F6 /* Project object */;
@@ -191,6 +208,20 @@
 			remoteInfo = WhatILearned;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A633FF12B00CF0900BFD1D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A633FF02B00CF0800BFD1D0 /* MyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02480B845C7DBFC72C6760DA /* Pods-WhatILearned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.release.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +293,8 @@
 		2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleExperiment.swift; sourceTree = "<group>"; };
 		2A633F422AFCF9C200BFD1D0 /* PlayingWithNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithNotifications.swift; sourceTree = "<group>"; };
 		2A633F4A2B00407E00BFD1D0 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFramework.xcodeproj; path = MyFramework/MyFramework.xcodeproj; sourceTree = "<group>"; };
+		2A633FED2B00CE1800BFD1D0 /* TestMyFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyFramework.swift; sourceTree = "<group>"; };
 		2A7875E2299D7264001450F6 /* WhatILearned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatILearned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7875E5299D7264001450F6 /* WhatILearnedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatILearnedApp.swift; sourceTree = "<group>"; };
 		2A7875E9299D7265001450F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -372,6 +405,7 @@
 				2A95C34C2AC4DD0000E2DABD /* FirebaseAnalytics in Frameworks */,
 				2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */,
 				2AAF65662AACE6C500B86F64 /* Alamofire in Frameworks */,
+				2A633FEF2B00CF0800BFD1D0 /* MyFramework.framework in Frameworks */,
 				2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */,
 				2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */,
 				F100A27B9BF15FDD64DA5AA7 /* Pods_WhatILearned.framework in Frameworks */,
@@ -829,9 +863,19 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
+		2A633FE12B00CCF100BFD1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A633FE62B00CCF200BFD1D0 /* MyFramework.framework */,
+				2A633FE82B00CCF200BFD1D0 /* MyFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
+				2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */,
 				2A7875E4299D7264001450F6 /* WhatILearned */,
 				2A7875F6299D7265001450F6 /* WhatILearnedTests */,
 				2A787600299D7265001450F6 /* WhatILearnedUITests */,
@@ -1231,6 +1275,7 @@
 				2A3AE1E42A8DF3B10024EDC0 /* Navigation */,
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
+				2A633FED2B00CE1800BFD1D0 /* TestMyFramework.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -1285,6 +1330,7 @@
 				2A7875DF299D7264001450F6 /* Frameworks */,
 				2A7875E0299D7264001450F6 /* Resources */,
 				2AFA7A402A7645920006BDDF /* ShellScript */,
+				2A633FF12B00CF0900BFD1D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1391,6 +1437,12 @@
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A633FE12B00CCF100BFD1D0 /* Products */;
+					ProjectRef = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A7875E1299D7264001450F6 /* WhatILearned */,
@@ -1399,6 +1451,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2A633FE62B00CCF200BFD1D0 /* MyFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyFramework.framework;
+			remoteRef = 2A633FE52B00CCF200BFD1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A633FE82B00CCF200BFD1D0 /* MyFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFrameworkTests.xctest;
+			remoteRef = 2A633FE72B00CCF200BFD1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A7875E0299D7264001450F6 /* Resources */ = {
@@ -1623,6 +1692,7 @@
 				2A633EF12AF83A3E00BFD1D0 /* MovieListItem.swift in Sources */,
 				2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */,
 				2AED33402ACF65D4003FE39F /* View+ .swift in Sources */,
+				2A633FEE2B00CE1800BFD1D0 /* TestMyFramework.swift in Sources */,
 				2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */,
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,

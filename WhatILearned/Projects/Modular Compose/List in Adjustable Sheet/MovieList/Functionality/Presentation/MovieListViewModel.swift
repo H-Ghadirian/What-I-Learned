@@ -29,7 +29,7 @@ public class MovieListViewModel {
     }
 
     private func performLoading() {
-        loader.loadProducts() { [weak self] result in
+        loader.loadProducts { [weak self] result in
             if let productItems = try? result.get() {
                 self?.loadedProductItems?(productItems)
             } else {
