@@ -875,6 +875,7 @@
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
+				2AB238B22ABB8C94008979F6 /* MyMacro */,
 				2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */,
 				2A7875E4299D7264001450F6 /* WhatILearned */,
 				2A7875F6299D7265001450F6 /* WhatILearnedTests */,
@@ -898,7 +899,6 @@
 		2A7875E4299D7264001450F6 /* WhatILearned */ = {
 			isa = PBXGroup;
 			children = (
-				2AB238B22ABB8C94008979F6 /* MyMacro */,
 				2AE0F6052A940D9C0001A30E /* Info.plist */,
 				2AFA7AA02A818FBC0006BDDF /* Shared */,
 				2AFA7A9F2A818F820006BDDF /* Projects */,
