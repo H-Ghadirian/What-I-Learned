@@ -33,6 +33,7 @@ enum Projects {
     ]
 
     static let iOS14: [any ProjectProtocol] = [
+        LocalNotificationView.project(),
         TestMyFramework.project(),
         PlayingWithNotifications.project(),
         CustomizeButtonsView.project(),

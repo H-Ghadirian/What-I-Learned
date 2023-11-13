@@ -19,7 +19,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         appearance.largeTitleTextAttributes = attrs
 
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UNUserNotificationCenter.current().delegate = self
 
         return true
     }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
+        -> Void) {
+            completionHandler([.banner, .list, .badge, .sound])
+        }
 }

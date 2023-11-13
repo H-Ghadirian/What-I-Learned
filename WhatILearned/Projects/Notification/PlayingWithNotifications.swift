@@ -27,8 +27,7 @@ struct PlayingWithNotifications: View {
                     )
                 }
                 Text(newTask ?? "no task received")
-                    .onReceive(NotificationCenter.default.publisher(for: Notification.Name.taskAddedNotification))
-                { data in
+                    .onReceive(NotificationCenter.default.publisher(for: Notification.Name.taskAddedNotification)) { data in
                     // Change key as per your "UserLogs"
                     guard let userInfo = data.userInfo, let info = userInfo["UserInfo"] as? String else {
                         return
