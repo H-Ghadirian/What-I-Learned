@@ -9,7 +9,7 @@ import SwiftUI
 
 class SearchableListViewModel {
     private var searchResultProjects: [any ProjectProtocol] = []
-    private var projects: [any ProjectProtocol] = []
+    private var projects: [any ProjectProtocol] = Projects.list
 
     var title: String { "Projects \(numberOfProjects)" }
     var numberOfProjects: Int { projects.count }
@@ -19,13 +19,6 @@ class SearchableListViewModel {
                 UIDevice.current.systemVersion.split(separator: ".").first ?? "0"
             ) ?? 0
         )
-    }
-
-    init() {
-        if #available(iOS 17.0, *) { projects.append(contentsOf: Projects.iOS17) }
-        if #available(iOS 16.0, *) { projects.append(contentsOf: Projects.iOS16) }
-        if #available(iOS 15.0, *) { projects.append(contentsOf: Projects.iOS15) }
-        projects.append(contentsOf: Projects.iOS14)
     }
 
     func iOSVersionOf(_ index: Int) -> Int {

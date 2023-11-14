@@ -7,15 +7,22 @@
 
 import Foundation
 enum Projects {
+    static var list: [any ProjectProtocol] {
+        var projectList = iOS14
+        if #available(iOS 15.0, *) { projectList.append(contentsOf: Projects.iOS15) }
+        if #available(iOS 16.0, *) { projectList.append(contentsOf: Projects.iOS16) }
+        if #available(iOS 17.0, *) { projectList.append(contentsOf: Projects.iOS17) }
+        return projectList
+    }
 
     @available(iOS 17.0, *)
-    static let iOS17: [any ProjectProtocol] = [
+    private static let iOS17: [any ProjectProtocol] = [
         BackgroundOverlayView.project(),
         BookmarkTipView.project()
     ]
 
     @available(iOS 16.0, *)
-    static let iOS16: [any ProjectProtocol] = [
+    private static let iOS16: [any ProjectProtocol] = [
         TestSheets.project(),
         SecondJsonMenuListView.project(),
         JsonMenuListView.project(),
@@ -26,13 +33,14 @@ enum Projects {
     ]
 
     @available(iOS 15.0, *)
-    static let iOS15: [any ProjectProtocol] = [
+    private static let iOS15: [any ProjectProtocol] = [
         ContinuationContentView.project(),
         AddArticleView.project(),
         DismissKeyboardView.project()
     ]
 
-    static let iOS14: [any ProjectProtocol] = [
+    private static let iOS14: [any ProjectProtocol] = [
+        RunLoopVsDispatchQueueView.project(),
         LocalNotificationView.project(),
         TestMyFramework.project(),
         PlayingWithNotifications.project(),

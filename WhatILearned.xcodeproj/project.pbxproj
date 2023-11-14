@@ -107,6 +107,8 @@
 		2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */; };
 		2AA102782B02BE41000B4DB6 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102772B02BE41000B4DB6 /* LocalNotificationManager.swift */; };
 		2AA1027A2B02BF87000B4DB6 /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102792B02BF87000B4DB6 /* LocalNotificationView.swift */; };
+		2AA102842B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102832B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift */; };
+		2AA102862B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
 		2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */; };
 		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
@@ -325,6 +327,8 @@
 		2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
 		2AA102772B02BE41000B4DB6 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		2AA102792B02BF87000B4DB6 /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
+		2AA102832B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopVsDispatchQueueView.swift; sourceTree = "<group>"; };
+		2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopVsDispatchQueueViewModel.swift; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
 		2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
 		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
@@ -1046,6 +1050,15 @@
 			path = Local;
 			sourceTree = "<group>";
 		};
+		2AA102822B03BF88000B4DB6 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				2AA102832B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift */,
+				2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		2AAF65482AAB67BF00B86F64 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1281,6 +1294,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AA102822B03BF88000B4DB6 /* Concurrency */,
 				2AA102752B02BE26000B4DB6 /* PushNotification */,
 				2A633EB12AF1C0B700BFD1D0 /* Modular Compose */,
 				2A633EA12AEF1EAB00BFD1D0 /* Library */,
@@ -1683,6 +1697,7 @@
 				2AFA7A5B2A7D96D50006BDDF /* MenuItem.swift in Sources */,
 				2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */,
 				2AA102782B02BE41000B4DB6 /* LocalNotificationManager.swift in Sources */,
+				2AA102842B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift in Sources */,
 				2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */,
 				2AAF65612AACE29F00B86F64 /* UsersView.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
@@ -1750,6 +1765,7 @@
 				2A633EC82AF45CA600BFD1D0 /* UIComposer.swift in Sources */,
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
+				2AA102862B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift in Sources */,
 				2A633EE92AF8375E00BFD1D0 /* AdjustableSheetUIComposer.swift in Sources */,
 				2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */,
 				2A379F5E2AE7AD2E0085F2B2 /* FloatingTextEditor.swift in Sources */,
