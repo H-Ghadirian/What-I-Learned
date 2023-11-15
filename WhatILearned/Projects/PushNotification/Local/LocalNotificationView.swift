@@ -20,10 +20,11 @@ struct LocalNotificationView: View {
         VStack {
             Text("Notification Demo")
             Button(
-                action: { self.setNotification() }
-            ) {
-                Text("Set Notification!")
-            }
+                action: { self.setNotification() },
+                label: {
+                    Text("Set Notification!")
+                }
+            )
         }
     }
 }

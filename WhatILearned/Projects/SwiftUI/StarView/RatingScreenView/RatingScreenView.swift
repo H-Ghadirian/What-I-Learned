@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RatingScreenViewModel {
-    var onRate: () -> Void = {}
+    var onRate: () -> Void = {
+        print("rated!")
+    }
     var ratingViewModel = RatingViewModel()
 }
 

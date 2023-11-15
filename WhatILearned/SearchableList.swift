@@ -7,8 +7,8 @@ struct SearchableListView: View {
 
     @State private var searchText = ""
     @State private var showHalfSheet: Bool = false
-    @State private var modalSheet: Bool = false
-    @State private var fullscreenModalSheet: Bool = false
+    @State private var modalSheet: [Bool] = [Bool](repeating: false, count: Projects.list.count)
+    @State private var fullscreenModalSheet: [Bool] = [Bool](repeating: false, count: Projects.list.count)
 
     var body: some View {
         NavigationStack {
@@ -69,25 +69,27 @@ struct SearchableListView: View {
 
     private func getButtonSheet(_ index: Int) -> some View {
         Button {
-            modalSheet = true
+            modalSheet[index] = true
         } label: {
             getProjectTitleText(index)
                 .foregroundStyle(viewModel.colorOf(project: index))
         }
-        .sheet(isPresented: $modalSheet) {
+        .sheet(isPresented: $modalSheet[index]) {
             viewModel.viewOf(project: index)
         }
     }
 
     private func getButtonFullscreenSheet(_ index: Int) -> some View {
-        Button {
-            fullscreenModalSheet = true
+        print("Hamed Before Button: \(index)")
+        return Button {
+            fullscreenModalSheet[index] = true
         } label: {
             getProjectTitleText(index)
                 .foregroundStyle(viewModel.colorOf(project: index))
         }
-        .fullScreenCover(isPresented: $fullscreenModalSheet) {
-            viewModel.viewOf(project: index)
+        .fullScreenCover(isPresented: $fullscreenModalSheet[index]) {
+            print("Hamed fullScreenCover: \(index)")
+            return viewModel.viewOf(project: index)
         }
     }
 
