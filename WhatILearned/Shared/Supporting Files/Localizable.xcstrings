@@ -158,6 +158,9 @@
     "medium" : {
 
     },
+    "Medium tutorial" : {
+
+    },
     "Menu" : {
 
     },
@@ -260,10 +263,16 @@
     "Start bookmarking" : {
 
     },
+    "Start Spinner" : {
+
+    },
     "Start timer" : {
 
     },
     "Stop" : {
+
+    },
+    "Stop Spinner" : {
 
     },
     "Stop timer" : {

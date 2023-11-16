@@ -109,6 +109,8 @@
 		2AA1027A2B02BF87000B4DB6 /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102792B02BF87000B4DB6 /* LocalNotificationView.swift */; };
 		2AA102842B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102832B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift */; };
 		2AA102862B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */; };
+		2AA102B12B062216000B4DB6 /* TestSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */; };
+		2AA102B42B062466000B4DB6 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102B32B062466000B4DB6 /* SpinnerView.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
 		2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */; };
 		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
@@ -329,6 +331,8 @@
 		2AA102792B02BF87000B4DB6 /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		2AA102832B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopVsDispatchQueueView.swift; sourceTree = "<group>"; };
 		2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopVsDispatchQueueViewModel.swift; sourceTree = "<group>"; };
+		2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSpinnerView.swift; sourceTree = "<group>"; };
+		2AA102B32B062466000B4DB6 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
 		2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
 		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
@@ -463,6 +467,7 @@
 				2AAF65482AAB67BF00B86F64 /* Charts */,
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */,
+				2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -1059,6 +1064,14 @@
 			path = Concurrency;
 			sourceTree = "<group>";
 		};
+		2AA102B22B062455000B4DB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AA102B32B062466000B4DB6 /* SpinnerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2AAF65482AAB67BF00B86F64 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1319,6 +1332,7 @@
 		2AFA7AA02A818FBC0006BDDF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2AA102B22B062455000B4DB6 /* Views */,
 				2AFA7A482A7C31E80006BDDF /* SchemeType.swift */,
 				2A95C3632AC5E76500E2DABD /* Project */,
 				2AE0F61A2A9BF8750001A30E /* Navigation */,
@@ -1640,6 +1654,7 @@
 				2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */,
 				2A633EE22AF836FB00BFD1D0 /* AdjustableSheetFont.swift in Sources */,
 				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
+				2AA102B42B062466000B4DB6 /* SpinnerView.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
 				2AFA7A582A7D969E0006BDDF /* NavigatorView.swift in Sources */,
 				2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */,
@@ -1736,6 +1751,7 @@
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
+				2AA102B12B062216000B4DB6 /* TestSpinnerView.swift in Sources */,
 				2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
 				2A633F002AF83B5D00BFD1D0 /* MovieListImageDataMapper.swift in Sources */,
