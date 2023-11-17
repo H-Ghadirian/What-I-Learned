@@ -179,6 +179,10 @@
 		2AFA7A992A818E580006BDDF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A982A818E580006BDDF /* Person.swift */; };
 		2AFA7A9B2A818E740006BDDF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A9A2A818E740006BDDF /* Article.swift */; };
 		2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A9D2A818EE70006BDDF /* ChrisNavigation.swift */; };
+		2AFD9E522B08251B00EC6C37 /* PressButtonStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E512B08251B00EC6C37 /* PressButtonStateStore.swift */; };
+		2AFD9E542B08256D00EC6C37 /* PressSubmitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E532B08256D00EC6C37 /* PressSubmitButtonView.swift */; };
+		2AFD9E5A2B0825F800EC6C37 /* PressButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E592B0825F800EC6C37 /* PressButtonState.swift */; };
+		2AFD9E5D2B08262C00EC6C37 /* PressButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E5C2B08262C00EC6C37 /* PressButtonViewModel.swift */; };
 		2B242C5CE51532B87D02A275 /* Pods_WhatILearned_WhatILearnedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */; };
 		3B09D2C1FB000FFD5A248169 /* Pods_WhatILearnedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395B16BABD98F5E70FC2056 /* Pods_WhatILearnedTests.framework */; };
 		F100A27B9BF15FDD64DA5AA7 /* Pods_WhatILearned.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAEE4548DC37CA211E1AA4 /* Pods_WhatILearned.framework */; };
@@ -398,6 +402,10 @@
 		2AFA7A982A818E580006BDDF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2AFA7A9A2A818E740006BDDF /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		2AFA7A9D2A818EE70006BDDF /* ChrisNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrisNavigation.swift; sourceTree = "<group>"; };
+		2AFD9E512B08251B00EC6C37 /* PressButtonStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonStateStore.swift; sourceTree = "<group>"; };
+		2AFD9E532B08256D00EC6C37 /* PressSubmitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressSubmitButtonView.swift; sourceTree = "<group>"; };
+		2AFD9E592B0825F800EC6C37 /* PressButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonState.swift; sourceTree = "<group>"; };
+		2AFD9E5C2B08262C00EC6C37 /* PressButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonViewModel.swift; sourceTree = "<group>"; };
 		703FCBC88B3876BF71F38400 /* Pods-WhatILearned.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.debug.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.debug.xcconfig"; sourceTree = "<group>"; };
 		85BE3A862777F35DA5E323B9 /* Pods-WhatILearnedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearnedTests.release.xcconfig"; path = "Target Support Files/Pods-WhatILearnedTests/Pods-WhatILearnedTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0FF8219A5592B1A6D8E8807 /* Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig"; path = "Target Support Files/Pods-WhatILearned-WhatILearnedUITests/Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1307,6 +1315,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AFD9E502B0824C900EC6C37 /* 3 state button */,
 				2AA102822B03BF88000B4DB6 /* Concurrency */,
 				2AA102752B02BE26000B4DB6 /* PushNotification */,
 				2A633EB12AF1C0B700BFD1D0 /* Modular Compose */,
@@ -1343,6 +1352,57 @@
 				2A9DED6029AB834F0092D549 /* Extension */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2AFD9E502B0824C900EC6C37 /* 3 state button */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E562B0825C700EC6C37 /* Functionality */,
+				2AFD9E552B0825C000EC6C37 /* iOS */,
+			);
+			path = "3 state button";
+			sourceTree = "<group>";
+		};
+		2AFD9E552B0825C000EC6C37 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E582B0825DB00EC6C37 /* Store */,
+				2AFD9E572B0825D400EC6C37 /* UI */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2AFD9E562B0825C700EC6C37 /* Functionality */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E5C2B08262C00EC6C37 /* PressButtonViewModel.swift */,
+			);
+			path = Functionality;
+			sourceTree = "<group>";
+		};
+		2AFD9E572B0825D400EC6C37 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E5B2B08261200EC6C37 /* View */,
+				2AFD9E592B0825F800EC6C37 /* PressButtonState.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2AFD9E582B0825DB00EC6C37 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E512B08251B00EC6C37 /* PressButtonStateStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2AFD9E5B2B08261200EC6C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2AFD9E532B08256D00EC6C37 /* PressSubmitButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3F344F2485208F08C705DC75 /* Frameworks */ = {
@@ -1663,6 +1723,7 @@
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
 				2A633E842AEB052D00BFD1D0 /* OnTapGestureLocation.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
+				2AFD9E542B08256D00EC6C37 /* PressSubmitButtonView.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
 				2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */,
 				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
@@ -1744,6 +1805,7 @@
 				2A633F102AF83FDD00BFD1D0 /* MovieListImageNames.swift in Sources */,
 				2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */,
 				2A633EF12AF83A3E00BFD1D0 /* MovieListItem.swift in Sources */,
+				2AFD9E5D2B08262C00EC6C37 /* PressButtonViewModel.swift in Sources */,
 				2A633E9D2AEBF33D00BFD1D0 /* SimpleToast.swift in Sources */,
 				2AED33402ACF65D4003FE39F /* View+ .swift in Sources */,
 				2A633FEE2B00CE1800BFD1D0 /* TestMyFramework.swift in Sources */,
@@ -1765,6 +1827,7 @@
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A633EFE2AF83B4C00BFD1D0 /* MovieListHTTPClient.swift in Sources */,
+				2AFD9E5A2B0825F800EC6C37 /* PressButtonState.swift in Sources */,
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
 				2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */,
 				2A633ECC2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift in Sources */,
@@ -1782,6 +1845,7 @@
 				2A9DED5F29AB832C0092D549 /* Bundle+decode.swift in Sources */,
 				2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */,
 				2AA102862B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift in Sources */,
+				2AFD9E522B08251B00EC6C37 /* PressButtonStateStore.swift in Sources */,
 				2A633EE92AF8375E00BFD1D0 /* AdjustableSheetUIComposer.swift in Sources */,
 				2A95C3592AC5A4CD00E2DABD /* SecondJsonMenuListView.swift in Sources */,
 				2A379F5E2AE7AD2E0085F2B2 /* FloatingTextEditor.swift in Sources */,
