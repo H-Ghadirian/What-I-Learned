@@ -12,5 +12,5 @@ class PressButtonViewModel {
     public var onSubmitFeedback: Observer?
 
     let submitButtonTitle = "Press Me!"
-    let reloadingIconName = "loadingArrow"
+    let reloadingIconName = "circle.dotted"
 }

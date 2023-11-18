@@ -62,7 +62,7 @@ struct PressSubmitButtonView: View {
     }
 
     private var submitButtonLoading: some View {
-        Image(viewModel.reloadingIconName)
+        Image(systemName: viewModel.reloadingIconName)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .rotationEffect(rotationAngle)
     }
