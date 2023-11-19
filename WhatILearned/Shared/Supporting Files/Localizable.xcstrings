@@ -74,7 +74,13 @@
     "Department" : {
 
     },
+    "Disable" : {
+
+    },
     "Email :" : {
+
+    },
+    "Enable" : {
 
     },
     "error" : {
@@ -150,6 +156,9 @@
 
     },
     "light" : {
+
+    },
+    "Loading" : {
 
     },
     "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" : {

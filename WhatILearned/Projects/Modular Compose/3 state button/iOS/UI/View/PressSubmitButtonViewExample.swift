@@ -8,14 +8,50 @@
 import SwiftUI
 
 struct PressSubmitButtonViewExample: View {
-    @ObservedObject private var store: PressSubmitButtonViewStore
+    @ObservedObject private var pressSubmitButtonViewStore: PressSubmitButtonViewStore
+    @ObservedObject private var stateStore = PressButtonStateStore(.disable)
+    @State var storage: [Bool] = [true, false, false]
+
     init(store: PressSubmitButtonViewStore) {
-        self.store = store
+        self.pressSubmitButtonViewStore = store
     }
 
     var body: some View {
         VStack {
-            store.value
+            Toggle(
+                "Disable",
+                isOn: Binding(
+                    get: { self.storage[0] },
+                    set: { _ in
+                        withAnimation {
+                            self.storage = self.storage.enumerated().map { $0.0 == 0 }
+                        }
+                    }
+                )
+            )
+            Toggle(
+                "Loading",
+                isOn: Binding(
+                    get: { self.storage[1] },
+                    set: { _ in
+                        withAnimation {
+                            self.storage = self.storage.enumerated().map { $0.0 == 1 }
+                        }
+                    }
+                )
+            )
+            Toggle(
+                "Enable",
+                isOn: Binding(
+                    get: { self.storage[2] },
+                    set: { _ in
+                        withAnimation {
+                            self.storage = self.storage.enumerated().map { $0.0 == 2 }
+                        }
+                    }
+                )
+            )
+            pressSubmitButtonViewStore.value
         }
         .padding()
     }
