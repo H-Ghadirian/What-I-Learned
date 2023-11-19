@@ -10,7 +10,6 @@ import SwiftUI
 struct PressSubmitButtonViewExample: View {
     @ObservedObject private var pressSubmitButtonViewStore: PressSubmitButtonViewStore
     @ObservedObject private var stateStore = PressButtonStateStore(.disable)
-    @State var storage: [Bool] = [true, false, false]
 
     init(store: PressSubmitButtonViewStore) {
         self.pressSubmitButtonViewStore = store
@@ -21,10 +20,10 @@ struct PressSubmitButtonViewExample: View {
             Toggle(
                 "Disable",
                 isOn: Binding(
-                    get: { self.storage[0] },
+                    get: { stateStore.value == .disable },
                     set: { _ in
                         withAnimation {
-                            self.storage = self.storage.enumerated().map { $0.0 == 0 }
+                            stateStore.value = .disable
                         }
                     }
                 )
@@ -32,10 +31,10 @@ struct PressSubmitButtonViewExample: View {
             Toggle(
                 "Loading",
                 isOn: Binding(
-                    get: { self.storage[1] },
+                    get: { stateStore.value == .loading },
                     set: { _ in
                         withAnimation {
-                            self.storage = self.storage.enumerated().map { $0.0 == 1 }
+                            stateStore.value = .loading
                         }
                     }
                 )
@@ -43,10 +42,10 @@ struct PressSubmitButtonViewExample: View {
             Toggle(
                 "Enable",
                 isOn: Binding(
-                    get: { self.storage[2] },
+                    get: { stateStore.value == .enable },
                     set: { _ in
                         withAnimation {
-                            self.storage = self.storage.enumerated().map { $0.0 == 2 }
+                            stateStore.value = .enable
                         }
                     }
                 )
