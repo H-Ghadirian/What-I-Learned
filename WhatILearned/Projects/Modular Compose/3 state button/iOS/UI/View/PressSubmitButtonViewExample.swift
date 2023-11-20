@@ -28,6 +28,7 @@ struct PressSubmitButtonViewExample: View {
                     }
                 )
             )
+            .toggleStyle(CheckboxToggleStyle())
             Toggle(
                 "Loading",
                 isOn: Binding(
@@ -39,6 +40,7 @@ struct PressSubmitButtonViewExample: View {
                     }
                 )
             )
+            .toggleStyle(CheckboxToggleStyle())
             Toggle(
                 "Enable",
                 isOn: Binding(
@@ -50,6 +52,7 @@ struct PressSubmitButtonViewExample: View {
                     }
                 )
             )
+            .toggleStyle(CheckboxToggleStyle())
             pressSubmitButtonViewStore.value
         }
         .padding()
