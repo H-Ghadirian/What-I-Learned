@@ -50,6 +50,9 @@
         }
       }
     },
+    "Bounce" : {
+
+    },
     "Calculate" : {
 
     },
@@ -215,7 +218,13 @@
     "Profit" : {
 
     },
+    "Pulse" : {
+
+    },
     "Refresh" : {
+
+    },
+    "Replace" : {
 
     },
     "Retrieve" : {
@@ -228,6 +237,9 @@
 
     },
     "Save" : {
+
+    },
+    "Scale" : {
 
     },
     "Second" : {
@@ -315,6 +327,9 @@
 
     },
     "Users" : {
+
+    },
+    "Variable Color" : {
 
     },
     "View for Item %@" : {

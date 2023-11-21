@@ -12,6 +12,7 @@
 		2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */; };
 		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */; };
+		2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */; };
 		2A2E16A72AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2E16A52AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib */; };
@@ -244,6 +245,7 @@
 		2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOnTapModifier.swift; sourceTree = "<group>"; };
 		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModifier.swift; sourceTree = "<group>"; };
+		2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsView.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSwiftUIViewController.swift; sourceTree = "<group>"; };
 		2A2E16A52AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentSwiftUIViewController.xib; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 				2AAF65712AAF3FEE00B86F64 /* Shimmer Effect */,
 				2A633F3F2AFC4B2B00BFD1D0 /* ToggleExperiment.swift */,
 				2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */,
+				2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -1837,6 +1840,7 @@
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
 				2A8100292A8C0BFB0086B146 /* Message.swift in Sources */,
 				2A633EFE2AF83B4C00BFD1D0 /* MovieListHTTPClient.swift in Sources */,
+				2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */,
 				2AFD9E612B08FC6700EC6C37 /* ViewObserverStore.swift in Sources */,
 				2AFD9E5A2B0825F800EC6C37 /* PressButtonState.swift in Sources */,
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
