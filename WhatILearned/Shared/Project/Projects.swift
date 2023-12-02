@@ -35,6 +35,7 @@ enum Projects {
 
     @available(iOS 15.0, *)
     private static let iOS15: [any ProjectProtocol] = [
+        DropDownPickerExampleView.project(),
         ContinuationContentView.project(),
         AddArticleView.project(),
         DismissKeyboardView.project()

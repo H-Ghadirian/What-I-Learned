@@ -11,6 +11,7 @@ import SwiftUI
 protocol ProjectProtocol: Identifiable {
     var id: UUID { get }
     var name: String { get }
+    var link: URL? { get }
     var tags: ProjectTags { get }
     var presentationMode: PresentationMode { get }
     static func project() -> any ProjectProtocol
@@ -20,6 +21,7 @@ protocol ProjectProtocol: Identifiable {
 extension ProjectProtocol {
     var name: String { "\(Self.self)" }
     var id: UUID { UUID() }
+    var link: URL? { nil }
     var presentationMode: PresentationMode { .present }
 }
 

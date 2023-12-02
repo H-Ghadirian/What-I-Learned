@@ -31,6 +31,7 @@
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
 		2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C53FE2AE3165F00472FF4 /* RatingView.swift */; };
+		2A506F752B1BD2E600EC4AD5 /* DropDownPickerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */; };
 		2A633E7A2AE984FC00BFD1D0 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E792AE984FC00BFD1D0 /* EventManager.swift */; };
 		2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */; };
 		2A633E812AEB019C00BFD1D0 /* KerningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E802AEB019C00BFD1D0 /* KerningView.swift */; };
@@ -263,6 +264,7 @@
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
 		2A3C53FE2AE3165F00472FF4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerState.swift; sourceTree = "<group>"; };
 		2A633E792AE984FC00BFD1D0 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2A633E802AEB019C00BFD1D0 /* KerningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerningView.swift; sourceTree = "<group>"; };
@@ -466,6 +468,7 @@
 		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A506F732B1BD2D600EC4AD5 /* Custom DropDown */,
 				2A633F3A2AFADF4600BFD1D0 /* Button */,
 				2A95C35D2AC5B16F00E2DABD /* Sheet */,
 				2A379F5A2AE718B10085F2B2 /* TextField */,
@@ -621,6 +624,14 @@
 				2A7D85F62AE4561E00ECCF31 /* RatingScreenView */,
 			);
 			path = StarView;
+			sourceTree = "<group>";
+		};
+		2A506F732B1BD2D600EC4AD5 /* Custom DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */,
+			);
+			path = "Custom DropDown";
 			sourceTree = "<group>";
 		};
 		2A633E782AE984DE00BFD1D0 /* String Catalogs */ = {
@@ -1773,6 +1784,7 @@
 				2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */,
 				2A633F032AF83B9600BFD1D0 /* MovieListViewModel.swift in Sources */,
 				2A633F162AF8402000BFD1D0 /* MovieListView.swift in Sources */,
+				2A506F752B1BD2E600EC4AD5 /* DropDownPickerState.swift in Sources */,
 				2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */,
 				2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
