@@ -32,6 +32,7 @@
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
 		2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C53FE2AE3165F00472FF4 /* RatingView.swift */; };
 		2A506F752B1BD2E600EC4AD5 /* DropDownPickerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */; };
+		2A506F7B2B1D3EFA00EC4AD5 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */; };
 		2A633E7A2AE984FC00BFD1D0 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E792AE984FC00BFD1D0 /* EventManager.swift */; };
 		2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */; };
 		2A633E812AEB019C00BFD1D0 /* KerningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E802AEB019C00BFD1D0 /* KerningView.swift */; };
@@ -265,6 +266,7 @@
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
 		2A3C53FE2AE3165F00472FF4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerState.swift; sourceTree = "<group>"; };
+		2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2A633E792AE984FC00BFD1D0 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		2A633E7D2AE9873600BFD1D0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2A633E802AEB019C00BFD1D0 /* KerningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerningView.swift; sourceTree = "<group>"; };
@@ -918,6 +920,7 @@
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
+				2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */,
 				2AB238B22ABB8C94008979F6 /* MyMacro */,
 				2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */,
 				2A7875E4299D7264001450F6 /* WhatILearned */,
@@ -1611,6 +1614,7 @@
 				2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */,
 				2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */,
 				2AAF656C2AAF376200B86F64 /* dancing.json in Resources */,
+				2A506F7B2B1D3EFA00EC4AD5 /* Config.xcconfig in Resources */,
 				2A7875EE299D7265001450F6 /* Preview Assets.xcassets in Resources */,
 				2A7875EA299D7265001450F6 /* Assets.xcassets in Resources */,
 				2A2E16A72AD89BE100A7FBA2 /* PresentSwiftUIViewController.xib in Resources */,
@@ -1918,6 +1922,156 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2A506F762B1D3D8F00EC4AD5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		2A506F772B1D3D8F00EC4AD5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 703FCBC88B3876BF71F38400 /* Pods-WhatILearned.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WhatILearned/WhatILearned.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WhatILearned/Preview Content\"";
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatILearned/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamedgh.ir.WhatILearned;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
+		2A506F782B1D3D8F00EC4AD5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3FC937516220251FDC989C2 /* Pods-WhatILearnedTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQ479VRV3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamedgh.ir.WhatILearnedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatILearned.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatILearned";
+			};
+			name = Staging;
+		};
+		2A506F792B1D3D8F00EC4AD5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0FF8219A5592B1A6D8E8807 /* Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CDQ479VRV3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hamedgh.ir.WhatILearnedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatILearned;
+			};
+			name = Staging;
+		};
 		2A787605299D7265001450F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2218,6 +2372,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A787605299D7265001450F6 /* Debug */,
+				2A506F762B1D3D8F00EC4AD5 /* Staging */,
 				2A787606299D7265001450F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2227,6 +2382,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A787608299D7265001450F6 /* Debug */,
+				2A506F772B1D3D8F00EC4AD5 /* Staging */,
 				2A787609299D7265001450F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2236,6 +2392,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A78760B299D7265001450F6 /* Debug */,
+				2A506F782B1D3D8F00EC4AD5 /* Staging */,
 				2A78760C299D7265001450F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2245,6 +2402,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A78760E299D7265001450F6 /* Debug */,
+				2A506F792B1D3D8F00EC4AD5 /* Staging */,
 				2A78760F299D7265001450F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
