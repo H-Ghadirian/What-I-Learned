@@ -6,7 +6,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
-
+        checkEnviornement()
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Colors.primary)
@@ -22,6 +22,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         UNUserNotificationCenter.current().delegate = self
 
         return true
+    }
+
+    func checkEnviornement() {
+        #if DEBUG
+        print("Hamed! It is Debug")
+        #elseif STAGING
+        print("Hamed! It is Staging")
+        #endif
     }
 }
 
