@@ -12,6 +12,10 @@
 		2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */; };
 		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */; };
+		2A0FF2C82B23D5E100BDE1A1 /* SwiftData Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2C72B23D5E100BDE1A1 /* SwiftData Models.swift */; };
+		2A0FF2CA2B23D60800BDE1A1 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2C92B23D60800BDE1A1 /* UserList.swift */; };
+		2A0FF2CC2B23D63900BDE1A1 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2CB2B23D63900BDE1A1 /* CreateUser.swift */; };
+		2A0FF2CE2B23D65D00BDE1A1 /* EditUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0FF2CD2B23D65D00BDE1A1 /* EditUser.swift */; };
 		2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */; };
@@ -193,6 +197,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A0FF2C22B23D5A800BDE1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FC62B00CCF100BFD1D0;
+			remoteInfo = MyFramework;
+		};
+		2A0FF2C42B23D5A800BDE1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FD02B00CCF100BFD1D0;
+			remoteInfo = MyFrameworkTests;
+		};
 		2A7875F4299D7265001450F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A7875DA299D7264001450F6 /* Project object */;
@@ -230,6 +248,10 @@
 		2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOnTapModifier.swift; sourceTree = "<group>"; };
 		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModifier.swift; sourceTree = "<group>"; };
+		2A0FF2C72B23D5E100BDE1A1 /* SwiftData Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftData Models.swift"; sourceTree = "<group>"; };
+		2A0FF2C92B23D60800BDE1A1 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		2A0FF2CB2B23D63900BDE1A1 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
+		2A0FF2CD2B23D65D00BDE1A1 /* EditUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUser.swift; sourceTree = "<group>"; };
 		2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsView.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSwiftUIViewController.swift; sourceTree = "<group>"; };
@@ -494,6 +516,26 @@
 				2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */,
 			);
 			path = TestMyViewModifiers;
+			sourceTree = "<group>";
+		};
+		2A0FF2BE2B23D5A800BDE1A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A0FF2C32B23D5A800BDE1A1 /* MyFramework.framework */,
+				2A0FF2C52B23D5A800BDE1A1 /* MyFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A0FF2C62B23D5BD00BDE1A1 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				2A0FF2C72B23D5E100BDE1A1 /* SwiftData Models.swift */,
+				2A0FF2C92B23D60800BDE1A1 /* UserList.swift */,
+				2A0FF2CB2B23D63900BDE1A1 /* CreateUser.swift */,
+				2A0FF2CD2B23D65D00BDE1A1 /* EditUser.swift */,
+			);
+			path = SwiftData;
 			sourceTree = "<group>";
 		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
@@ -1313,6 +1355,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A0FF2C62B23D5BD00BDE1A1 /* SwiftData */,
 				2AA102822B03BF88000B4DB6 /* Concurrency */,
 				2AA102752B02BE26000B4DB6 /* PushNotification */,
 				2A633EB12AF1C0B700BFD1D0 /* Modular Compose */,
@@ -1546,6 +1589,12 @@
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A0FF2BE2B23D5A800BDE1A1 /* Products */;
+					ProjectRef = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A7875E1299D7264001450F6 /* WhatILearned */,
@@ -1554,6 +1603,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2A0FF2C32B23D5A800BDE1A1 /* MyFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyFramework.framework;
+			remoteRef = 2A0FF2C22B23D5A800BDE1A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A0FF2C52B23D5A800BDE1A1 /* MyFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFrameworkTests.xctest;
+			remoteRef = 2A0FF2C42B23D5A800BDE1A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A7875E0299D7264001450F6 /* Resources */ = {
@@ -1711,6 +1777,7 @@
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
 				2AED33612AD4A2B1003FE39F /* BookmarkTip.swift in Sources */,
+				2A0FF2C82B23D5E100BDE1A1 /* SwiftData Models.swift in Sources */,
 				2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */,
 				2AE0F61C2A9BF8870001A30E /* CoordinatorModifier.swift in Sources */,
 				2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */,
@@ -1755,6 +1822,7 @@
 				2AA102842B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift in Sources */,
 				2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */,
 				2AAF65612AACE29F00B86F64 /* UsersView.swift in Sources */,
+				2A0FF2CE2B23D65D00BDE1A1 /* EditUser.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
 				2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */,
 				2A2E16AE2ADC400F00A7FBA2 /* UserDefaultsViewModel.swift in Sources */,
@@ -1795,8 +1863,10 @@
 				2AA102B12B062216000B4DB6 /* TestSpinnerView.swift in Sources */,
 				2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */,
 				2AFA7A562A7D966C0006BDDF /* AppCoordinator.swift in Sources */,
+				2A0FF2CA2B23D60800BDE1A1 /* UserList.swift in Sources */,
 				2A633F002AF83B5D00BFD1D0 /* MovieListImageDataMapper.swift in Sources */,
 				2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */,
+				2A0FF2CC2B23D63900BDE1A1 /* CreateUser.swift in Sources */,
 				2A379F5C2AE718E00085F2B2 /* FloatingTextField.swift in Sources */,
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2A633F3C2AFADF6900BFD1D0 /* CustomizeButtonsView.swift in Sources */,
