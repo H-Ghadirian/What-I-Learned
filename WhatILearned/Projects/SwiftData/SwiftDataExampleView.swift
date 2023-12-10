@@ -15,6 +15,7 @@ struct SwiftDataExample: View {
     @Query private var items: [DataItem]
 
     var body: some View {
+        Link("Tutorial", destination: link!)
         Button("Insert") {
             context.insert(DataItem(name: "Hamed"))
         }
@@ -44,6 +45,10 @@ struct SwiftDataExample: View {
 extension SwiftDataExample: ProjectProtocol {
     var tags: ProjectTags {
         .init(tags: [.storage], version: .iOS17)
+    }
+
+    var link: URL? {
+        URL(string: "https://www.youtube.com/watch?v=krRkm8w22A8")
     }
 
     static func project() -> any ProjectProtocol {
