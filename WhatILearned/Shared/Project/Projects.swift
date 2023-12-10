@@ -17,6 +17,7 @@ enum Projects {
 
     @available(iOS 17.0, *)
     private static let iOS17: [any ProjectProtocol] = [
+        SwiftDataExample.project(),
         AnimatedSymbolsView.project(),
         BackgroundOverlayView.project(),
         BookmarkTipView.project()

@@ -149,6 +149,8 @@
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
 		2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */; };
 		2ABCEB7C2AD58EAF003028A8 /* KeychainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */; };
+		2ACF77F82B2523E800159E74 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF77F72B2523E800159E74 /* DataItem.swift */; };
+		2ACF77FA2B25AB7E00159E74 /* SwiftDataExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF77F92B25AB7E00159E74 /* SwiftDataExampleView.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
 		2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */; };
 		2AE0F5FE2A9170540001A30E /* FancyToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5FD2A9170540001A30E /* FancyToast.swift */; };
@@ -206,6 +208,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2A7875E1299D7264001450F6;
 			remoteInfo = WhatILearned;
+		};
+		2ACF77F22B2521F600159E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FC62B00CCF100BFD1D0;
+			remoteInfo = MyFramework;
+		};
+		2ACF77F42B2521F600159E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A633FD02B00CCF100BFD1D0;
+			remoteInfo = MyFrameworkTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -363,6 +379,8 @@
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewModel.swift; sourceTree = "<group>"; };
 		2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainView.swift; sourceTree = "<group>"; };
+		2ACF77F72B2523E800159E74 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		2ACF77F92B25AB7E00159E74 /* SwiftDataExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExampleView.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
 		2AE0F5FB2A916FB20001A30E /* FancyToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastStyle.swift; sourceTree = "<group>"; };
 		2AE0F5FD2A9170540001A30E /* FancyToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToast.swift; sourceTree = "<group>"; };
@@ -1197,6 +1215,24 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		2ACF77EE2B2521F600159E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF77F32B2521F600159E74 /* MyFramework.framework */,
+				2ACF77F52B2521F600159E74 /* MyFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ACF77F62B2523CE00159E74 /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				2ACF77F72B2523E800159E74 /* DataItem.swift */,
+				2ACF77F92B25AB7E00159E74 /* SwiftDataExampleView.swift */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
 		2AE0F5F82A916F730001A30E /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -1313,6 +1349,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2ACF77F62B2523CE00159E74 /* SwiftData */,
 				2AA102822B03BF88000B4DB6 /* Concurrency */,
 				2AA102752B02BE26000B4DB6 /* PushNotification */,
 				2A633EB12AF1C0B700BFD1D0 /* Modular Compose */,
@@ -1546,6 +1583,12 @@
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2ACF77EE2B2521F600159E74 /* Products */;
+					ProjectRef = 2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A7875E1299D7264001450F6 /* WhatILearned */,
@@ -1554,6 +1597,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2ACF77F32B2521F600159E74 /* MyFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyFramework.framework;
+			remoteRef = 2ACF77F22B2521F600159E74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2ACF77F52B2521F600159E74 /* MyFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFrameworkTests.xctest;
+			remoteRef = 2ACF77F42B2521F600159E74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A7875E0299D7264001450F6 /* Resources */ = {
@@ -1685,6 +1745,7 @@
 				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
+				2ACF77FA2B25AB7E00159E74 /* SwiftDataExampleView.swift in Sources */,
 				2A633F4B2B00407E00BFD1D0 /* Projects.swift in Sources */,
 				2A633EDD2AF836BD00BFD1D0 /* AdjustableSheetViewModel.swift in Sources */,
 				2A633F0E2AF83FC200BFD1D0 /* MovieListFonts.swift in Sources */,
@@ -1816,6 +1877,7 @@
 				2A633F0C2AF83F1500BFD1D0 /* MovieListColors.swift in Sources */,
 				2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */,
 				2AAF65882AAF4D5D00B86F64 /* FakeNewsService.swift in Sources */,
+				2ACF77F82B2523E800159E74 /* DataItem.swift in Sources */,
 				2A2E16B02ADC402500A7FBA2 /* UserDefaultsView.swift in Sources */,
 				2AAF657F2AAF48B600B86F64 /* View+shimmer.swift in Sources */,
 				2AFD9E5F2B08FBF100EC6C37 /* PressSubmitButtonViewStore.swift in Sources */,

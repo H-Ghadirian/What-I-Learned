@@ -27,12 +27,22 @@ struct WhatILearnedApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AppView(coordinator: AppCoordinator())
-                .onOpenURL { url in
-                    handle(url)
-                }
-                .toastView(toast: $toast)
-                .environment(\.locale, .init(identifier: "en"))
+            if #available(iOS 17.0, *) {
+                AppView(coordinator: AppCoordinator())
+                    .onOpenURL { url in
+                        handle(url)
+                    }
+                    .toastView(toast: $toast)
+                    .environment(\.locale, .init(identifier: "en"))
+                    .modelContainer(for: DataItem.self)
+            } else {
+                AppView(coordinator: AppCoordinator())
+                    .onOpenURL { url in
+                        handle(url)
+                    }
+                    .toastView(toast: $toast)
+                    .environment(\.locale, .init(identifier: "en"))
+            }
         }
     }
 
@@ -49,6 +59,17 @@ struct WhatILearnedApp: App {
             if let productId = components?.queryItems?.first(where: { $0.name == "id" })?.value {
                 toast = FancyToast(type: .info, title: "Toast info", message: productId)
             }
+        }
+    }
+}
+
+public extension View {
+    @ViewBuilder
+    func modify(@ViewBuilder _ transform: (Self) -> (some View)?) -> some View {
+        if let view = transform(self), !(view is EmptyView) {
+            view
+        } else {
+            self
         }
     }
 }
