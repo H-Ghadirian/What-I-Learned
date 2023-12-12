@@ -7,11 +7,11 @@
 
 import Foundation
 import SwiftUI
-import MyFramework
+// import MyFramework // bug: it avoid to run on a real device!
 
 public struct TestMyFramework: View {
     public var body: some View {
-        Button(SomeInfoFromFramework().bookTitle) {
+        Button("SomeInfoFromFramework().bookTitle") {
             print("worked!")
         }
     }

@@ -31,6 +31,9 @@
     "Articles" : {
 
     },
+    "Authorize HealthKit" : {
+
+    },
     "avarage" : {
 
     },
@@ -206,6 +209,9 @@
     "Pick a mode" : {
 
     },
+    "Please Authorize Health!" : {
+
+    },
     "Pop to root" : {
 
     },
@@ -278,6 +284,9 @@
     "Simple Toast" : {
 
     },
+    "SomeInfoFromFramework().bookTitle" : {
+
+    },
     "Source Code(Github)" : {
 
     },
@@ -321,6 +330,9 @@
 
     },
     "Title of the article" : {
+
+    },
+    "Today's Step Count" : {
 
     },
     "Tutorial" : {

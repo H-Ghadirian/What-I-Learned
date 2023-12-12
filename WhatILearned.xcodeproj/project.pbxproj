@@ -112,6 +112,9 @@
 		2AA102862B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */; };
 		2AA102B12B062216000B4DB6 /* TestSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */; };
 		2AA102B42B062466000B4DB6 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA102B32B062466000B4DB6 /* SpinnerView.swift */; };
+		2AA72AD82B28F45400C36D70 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72AD72B28F45400C36D70 /* HealthKitManager.swift */; };
+		2AA72ADA2B28F5AD00C36D70 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72AD92B28F5AD00C36D70 /* HealthKitViewModel.swift */; };
+		2AA72ADC2B28F70500C36D70 /* TodayStepCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72ADB2B28F70500C36D70 /* TodayStepCountView.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
 		2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */; };
 		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
@@ -345,6 +348,9 @@
 		2AA102852B042119000B4DB6 /* RunLoopVsDispatchQueueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLoopVsDispatchQueueViewModel.swift; sourceTree = "<group>"; };
 		2AA102B02B062216000B4DB6 /* TestSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSpinnerView.swift; sourceTree = "<group>"; };
 		2AA102B32B062466000B4DB6 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		2AA72AD72B28F45400C36D70 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		2AA72AD92B28F5AD00C36D70 /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
+		2AA72ADB2B28F70500C36D70 /* TodayStepCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayStepCountView.swift; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
 		2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
 		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
@@ -1096,6 +1102,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2AA72AD62B28F44500C36D70 /* StepCount */ = {
+			isa = PBXGroup;
+			children = (
+				2AA72AD72B28F45400C36D70 /* HealthKitManager.swift */,
+				2AA72AD92B28F5AD00C36D70 /* HealthKitViewModel.swift */,
+				2AA72ADB2B28F70500C36D70 /* TodayStepCountView.swift */,
+			);
+			path = StepCount;
+			sourceTree = "<group>";
+		};
 		2AAF65482AAB67BF00B86F64 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1349,6 +1365,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AA72AD62B28F44500C36D70 /* StepCount */,
 				2ACF77F62B2523CE00159E74 /* SwiftData */,
 				2AA102822B03BF88000B4DB6 /* Concurrency */,
 				2AA102752B02BE26000B4DB6 /* PushNotification */,
@@ -1743,6 +1760,7 @@
 				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
+				2AA72AD82B28F45400C36D70 /* HealthKitManager.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2ACF77FA2B25AB7E00159E74 /* SwiftDataExampleView.swift in Sources */,
@@ -1750,6 +1768,7 @@
 				2A633EDD2AF836BD00BFD1D0 /* AdjustableSheetViewModel.swift in Sources */,
 				2A633F0E2AF83FC200BFD1D0 /* MovieListFonts.swift in Sources */,
 				2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */,
+				2AA72ADC2B28F70500C36D70 /* TodayStepCountView.swift in Sources */,
 				2A633EE22AF836FB00BFD1D0 /* AdjustableSheetFont.swift in Sources */,
 				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
 				2AA102B42B062466000B4DB6 /* SpinnerView.swift in Sources */,
@@ -1830,6 +1849,7 @@
 				2A357C242ACDF3230048A059 /* SheetNavigation.swift in Sources */,
 				2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */,
 				2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */,
+				2AA72ADA2B28F5AD00C36D70 /* HealthKitViewModel.swift in Sources */,
 				2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */,
 				2A8100222A8952820086B146 /* AddArticleView.swift in Sources */,
 				2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */,
@@ -2009,6 +2029,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatILearned/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to share health usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow to update health usage";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "we need your location so that can work properly";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location to work!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -2045,7 +2069,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -2068,7 +2092,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -2211,6 +2235,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatILearned/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to share health usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow to update health usage";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "we need your location so that can work properly";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location to work!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -2255,6 +2283,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WhatILearned/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow to share health usage";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Please allow to update health usage";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "we need your location so that can work properly";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location to work!";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -2291,7 +2323,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -2315,7 +2347,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -2338,7 +2370,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -2361,7 +2393,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CDQ479VRV3;
+				DEVELOPMENT_TEAM = WV7G3G5SGX;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
