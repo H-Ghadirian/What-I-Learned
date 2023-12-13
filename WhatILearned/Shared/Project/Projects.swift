@@ -43,6 +43,7 @@ enum Projects {
     ]
 
     private static let iOS14: [any ProjectProtocol] = [
+        SpotlightSeatchExample.project(),
         TodayStepCountView.project(),
         PressSubmitButtonViewExample.project(),
         TestSpinnerView.project(),

@@ -115,6 +115,8 @@
 		2AA72AD82B28F45400C36D70 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72AD72B28F45400C36D70 /* HealthKitManager.swift */; };
 		2AA72ADA2B28F5AD00C36D70 /* HealthKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72AD92B28F5AD00C36D70 /* HealthKitViewModel.swift */; };
 		2AA72ADC2B28F70500C36D70 /* TodayStepCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA72ADB2B28F70500C36D70 /* TodayStepCountView.swift */; };
+		2AA7F8692B29637600E46086 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7F8682B29637600E46086 /* SpotlightManager.swift */; };
+		2AA7F86B2B29647F00E46086 /* SpotlightSeatchExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7F86A2B29647F00E46086 /* SpotlightSeatchExample.swift */; };
 		2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */; };
 		2AAF654D2AAB68C100B86F64 /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */; };
 		2AAF654F2AAB690900B86F64 /* ShapeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF654E2AAB690900B86F64 /* ShapeColor.swift */; };
@@ -351,6 +353,8 @@
 		2AA72AD72B28F45400C36D70 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		2AA72AD92B28F5AD00C36D70 /* HealthKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitViewModel.swift; sourceTree = "<group>"; };
 		2AA72ADB2B28F70500C36D70 /* TodayStepCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayStepCountView.swift; sourceTree = "<group>"; };
+		2AA7F8682B29637600E46086 /* SpotlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
+		2AA7F86A2B29647F00E46086 /* SpotlightSeatchExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightSeatchExample.swift; sourceTree = "<group>"; };
 		2AAF65492AAB684B00B86F64 /* ChartContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContainerView.swift; sourceTree = "<group>"; };
 		2AAF654C2AAB68C100B86F64 /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
 		2AAF654E2AAB690900B86F64 /* ShapeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeColor.swift; sourceTree = "<group>"; };
@@ -621,6 +625,7 @@
 				2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */,
 				2A633F3D2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift */,
 				2AFD9E602B08FC6700EC6C37 /* ViewObserverStore.swift */,
+				2AA7F8682B29637600E46086 /* SpotlightManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1385,6 +1390,7 @@
 				2AFA7A4B2A7D96480006BDDF /* Menu */,
 				2A3AE1E02A8DF1580024EDC0 /* ApiRequest */,
 				2A633FED2B00CE1800BFD1D0 /* TestMyFramework.swift */,
+				2AA7F86A2B29647F00E46086 /* SpotlightSeatchExample.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -1757,6 +1763,7 @@
 			files = (
 				2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */,
 				2AFA7A552A7D966C0006BDDF /* AppView.swift in Sources */,
+				2AA7F86B2B29647F00E46086 /* SpotlightSeatchExample.swift in Sources */,
 				2A7D85EF2AE414D500ECCF31 /* ProjectTags.swift in Sources */,
 				2AFA7A502A7D96560006BDDF /* MenuView.swift in Sources */,
 				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
@@ -1785,6 +1792,7 @@
 				2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */,
 				2AAF655A2AAB761800B86F64 /* MarkType.swift in Sources */,
 				2AA1027A2B02BF87000B4DB6 /* LocalNotificationView.swift in Sources */,
+				2AA7F8692B29637600E46086 /* SpotlightManager.swift in Sources */,
 				2A633F182AF8403500BFD1D0 /* MovieListItemView.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
 				2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */,

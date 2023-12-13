@@ -77,6 +77,9 @@
     "Delete" : {
 
     },
+    "Delete all" : {
+
+    },
     "Department" : {
 
     },
@@ -267,6 +270,9 @@
 
     },
     "Setting" : {
+
+    },
+    "Setup" : {
 
     },
     "Show Half Sheet" : {
