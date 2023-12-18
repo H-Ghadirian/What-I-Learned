@@ -35,6 +35,7 @@ struct TodayStepCountView: View {
 
                     Button {
                         viewModel.healthRequest()
+                        print(type(of: self.body))
                     } label: {
                         Text("Authorize HealthKit")
                             .font(.headline)
@@ -80,3 +81,33 @@ struct TodayStepCountView_Previews: PreviewProvider {
 //            .environmentObject(HealthKitViewModel())
     }
 }
+
+// ModifiedContent<
+//    ModifiedContent<
+//        VStack<
+//            _ConditionalContent<
+//                VStack<
+//                    TupleView<(Text, Text)>
+//                >,
+//                VStack<
+//                    TupleView<
+//                        (Text, 
+//                         ModifiedContent<
+//                             ModifiedContent<
+//                                 ModifiedContent<
+//                                         Button<Text>,
+//                                         _FrameLayout
+//                                 >,
+//                                 _BackgroundModifier<Color>
+//                             >,
+//                            _ClipEffect<RoundedRectangle>
+//                         >
+//                        )
+//                    >
+//                >
+//            >
+//        >,
+//        _PaddingLayout
+//    >,
+//    _AppearanceActionModifier
+// >
