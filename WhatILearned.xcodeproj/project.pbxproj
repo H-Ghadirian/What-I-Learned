@@ -12,6 +12,7 @@
 		2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */; };
 		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */; };
+		2A11E64D2B4490D6000F5FF2 /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11E64C2B4490D6000F5FF2 /* Logger+.swift */; };
 		2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */; };
@@ -254,6 +255,7 @@
 		2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOnTapModifier.swift; sourceTree = "<group>"; };
 		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModifier.swift; sourceTree = "<group>"; };
+		2A11E64C2B4490D6000F5FF2 /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
 		2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsView.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSwiftUIViewController.swift; sourceTree = "<group>"; };
@@ -1074,6 +1076,7 @@
 				2A9DED5E29AB832C0092D549 /* Bundle+decode.swift */,
 				2AED333F2ACF65D4003FE39F /* View+ .swift */,
 				2A7D85F72AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift */,
+				2A11E64C2B4490D6000F5FF2 /* Logger+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1861,6 +1864,7 @@
 				2AA102842B03BFE8000B4DB6 /* RunLoopVsDispatchQueueView.swift in Sources */,
 				2AAF65732AAF3FFE00B86F64 /* PlaceholderView.swift in Sources */,
 				2AAF65612AACE29F00B86F64 /* UsersView.swift in Sources */,
+				2A11E64D2B4490D6000F5FF2 /* Logger+.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
 				2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */,
 				2A2E16AE2ADC400F00A7FBA2 /* UserDefaultsViewModel.swift in Sources */,
