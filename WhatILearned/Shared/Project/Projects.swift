@@ -44,6 +44,7 @@ enum Projects {
     ]
 
     private static let iOS14: [any ProjectProtocol] = [
+        TheMemoryLeakUIViewControllerRepresentable.project(),
         SpotlightSeatchExample.project(),
         TodayStepCountView.project(),
         PressSubmitButtonViewExample.project(),

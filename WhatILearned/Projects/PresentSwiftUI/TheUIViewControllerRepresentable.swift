@@ -45,7 +45,7 @@ extension TheUIViewControllerRepresentable: ProjectProtocol {
 }
 
 struct MyView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = PresentSwiftUIViewController
+//    typealias UIViewControllerType = PresentSwiftUIViewController
 
     func makeUIViewController(context: Context) -> PresentSwiftUIViewController {
         PresentSwiftUIViewController()

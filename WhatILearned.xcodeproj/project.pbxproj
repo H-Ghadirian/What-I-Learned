@@ -12,6 +12,9 @@
 		2A05DC9D2ABE3D2100C78FCF /* ScaleOnTapModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */; };
 		2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */; };
 		2A05DCA22ABFAD2C00C78FCF /* GradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */; };
+		2A0CCDF62B8E2E630093D239 /* MemoryLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CCDF42B8E2E630093D239 /* MemoryLeakViewController.swift */; };
+		2A0CCDF72B8E2E630093D239 /* MemoryLeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0CCDF52B8E2E630093D239 /* MemoryLeakViewController.xib */; };
+		2A0CCDF92B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */; };
 		2A11E64D2B4490D6000F5FF2 /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11E64C2B4490D6000F5FF2 /* Logger+.swift */; };
 		2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
@@ -255,6 +258,9 @@
 		2A05DC9C2ABE3D2100C78FCF /* ScaleOnTapModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleOnTapModifier.swift; sourceTree = "<group>"; };
 		2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyViewModifiers.swift; sourceTree = "<group>"; };
 		2A05DCA12ABFAD2C00C78FCF /* GradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientModifier.swift; sourceTree = "<group>"; };
+		2A0CCDF42B8E2E630093D239 /* MemoryLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeakViewController.swift; sourceTree = "<group>"; };
+		2A0CCDF52B8E2E630093D239 /* MemoryLeakViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryLeakViewController.xib; sourceTree = "<group>"; };
+		2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMemoryLeakUIViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		2A11E64C2B4490D6000F5FF2 /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
 		2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsView.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
@@ -530,6 +536,16 @@
 				2A05DC9F2ABE3D6B00C78FCF /* TestMyViewModifiers.swift */,
 			);
 			path = TestMyViewModifiers;
+			sourceTree = "<group>";
+		};
+		2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */ = {
+			isa = PBXGroup;
+			children = (
+				2A0CCDF42B8E2E630093D239 /* MemoryLeakViewController.swift */,
+				2A0CCDF52B8E2E630093D239 /* MemoryLeakViewController.xib */,
+				2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */,
+			);
+			path = MemoryLeak;
 			sourceTree = "<group>";
 		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
@@ -1389,6 +1405,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */,
 				2A7551FC2B2CF34400AC15BA /* Infinite Carousal */,
 				2AA72AD62B28F44500C36D70 /* StepCount */,
 				2ACF77F62B2523CE00159E74 /* SwiftData */,
@@ -1665,6 +1682,7 @@
 			files = (
 				2A9DED5B29AB7D200092D549 /* menu.json in Resources */,
 				2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */,
+				2A0CCDF72B8E2E630093D239 /* MemoryLeakViewController.xib in Resources */,
 				2A633E7E2AE9873600BFD1D0 /* Localizable.xcstrings in Resources */,
 				2AAF656C2AAF376200B86F64 /* dancing.json in Resources */,
 				2A506F7B2B1D3EFA00EC4AD5 /* Config.xcconfig in Resources */,
@@ -1858,6 +1876,7 @@
 				2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */,
 				2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */,
 				2A633EFA2AF83AE200BFD1D0 /* RemoteMovieListImageDataLoader.swift in Sources */,
+				2A0CCDF92B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift in Sources */,
 				2AFA7A5B2A7D96D50006BDDF /* MenuItem.swift in Sources */,
 				2A633F432AFCF9C200BFD1D0 /* PlayingWithNotifications.swift in Sources */,
 				2AA102782B02BE41000B4DB6 /* LocalNotificationManager.swift in Sources */,
@@ -1867,6 +1886,7 @@
 				2A11E64D2B4490D6000F5FF2 /* Logger+.swift in Sources */,
 				2AAF655D2AACDE2500B86F64 /* Users.swift in Sources */,
 				2AAF65852AAF4CD700B86F64 /* FakeNewsFeedView.swift in Sources */,
+				2A0CCDF62B8E2E630093D239 /* MemoryLeakViewController.swift in Sources */,
 				2A2E16AE2ADC400F00A7FBA2 /* UserDefaultsViewModel.swift in Sources */,
 				2A633F1A2AF8405200BFD1D0 /* MovieListRetryView.swift in Sources */,
 				2AFA7A9E2A818EE80006BDDF /* ChrisNavigation.swift in Sources */,

@@ -50,13 +50,13 @@ struct RatingScreenView: View {
     RatingScreenView(
         viewModel: .init(
             onRate: {
-            print("on rate 1")
-        },
-        ratingViewModel: .init(
-            onRate: {
-                print("on rate 2")
-        }
+                print("on rate 1")
+            },
+            ratingViewModel: .init(
+                onRate: {
+                    print("on rate 2")
+                }
+            )
         )
-        )
-        )
+    )
 }

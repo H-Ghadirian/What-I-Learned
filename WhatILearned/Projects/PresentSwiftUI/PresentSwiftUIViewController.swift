@@ -15,6 +15,7 @@ class PresentSwiftUIViewController: UIViewController {
         let hostingController = UIHostingController(rootView: swiftUIView)
         present(hostingController, animated: true, completion: nil)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
