@@ -31,8 +31,7 @@ struct SimpleToastView: View {
     }
 }
 
-struct SimpleToastViewPreviews: PreviewProvider {
-  static var previews: some View {
+#Preview {
     VStack {
         SimpleToastView(
             message: "Lorem ipsum dolor sit amet, adipiscing elit. ")
@@ -40,5 +39,4 @@ struct SimpleToastViewPreviews: PreviewProvider {
         SimpleToastView(
             message: "Lorem ipsum dolor sit amet, adipiscing elit. ")
     }
-  }
 }

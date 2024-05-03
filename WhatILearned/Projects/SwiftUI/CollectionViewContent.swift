@@ -70,8 +70,6 @@ struct CollectionView: View {
     }
 }
 
-struct CollectionViewContent_Previews: PreviewProvider {
-    static var previews: some View {
-        CollectionViewContent().environment(\.colorScheme, .light)
-    }
+#Preview {
+    CollectionViewContent().environment(\.colorScheme, .light)
 }
