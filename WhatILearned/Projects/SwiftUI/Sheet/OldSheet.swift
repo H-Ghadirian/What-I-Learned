@@ -56,6 +56,17 @@ struct BottomSheetView<Content: View>: View {
             VStack(spacing: 0) {
                 self.indicator.padding()
                 self.content
+                HStack {
+                    Spacer()
+                        .frame(width: 30)
+                    GeometryReader { proxy in
+                        VStack(spacing: 10) {
+                            Text("X: \(proxy.frame(in: .global).origin.x)")
+                            Text("Y: \(proxy.frame(in: .global).origin.y)")
+                        }
+                        .foregroundColor(.black)
+                    }
+                }
             }
             .frame(width: geometry.size.width, height: self.maxHeight, alignment: .top)
             .background(Color(.secondarySystemBackground))
@@ -84,6 +95,11 @@ struct OldSheetView: View {
     var body: some View {
         GeometryReader { geometry in
             Color.green
+            VStack(spacing: 10) {
+                Text("X: \(geometry.frame(in: CoordinateSpace.local).origin.x)")
+                Text("Y: \(geometry.frame(in: CoordinateSpace.local).origin.y)")
+            }
+            .foregroundColor(.black)
             BottomSheetView(
                 isOpen: self.$bottomSheetShown,
                 maxHeight: geometry.size.height * 0.6
