@@ -105,3 +105,7 @@ struct FloatingTextEditor_Previews: PreviewProvider {
         DemoFloatingTextEditor()
     }
 }
+
+#Preview {
+    DemoFloatingTextEditor()
+}

@@ -45,3 +45,7 @@ extension KeychainView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+#Preview {
+    KeychainView()
+}

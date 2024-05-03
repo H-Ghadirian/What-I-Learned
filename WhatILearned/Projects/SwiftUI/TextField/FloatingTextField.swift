@@ -93,3 +93,7 @@ struct FloatingTextField_Previews: PreviewProvider {
         DemoFloatingTextField()
     }
 }
+
+#Preview {
+    DemoFloatingTextField()
+}

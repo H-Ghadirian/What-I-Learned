@@ -46,3 +46,7 @@ extension CustomizeButtonsView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+#Preview {
+    CustomizeButtonsView()
+}

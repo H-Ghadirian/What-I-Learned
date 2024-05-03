@@ -153,3 +153,8 @@ struct DropDownPicker: View {
         .zIndex(1)
     }
 }
+
+@available(iOS 15.0, *)
+#Preview {
+    DropDownPickerExampleView()
+}

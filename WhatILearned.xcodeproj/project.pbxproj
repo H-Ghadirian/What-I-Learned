@@ -35,6 +35,7 @@
 		2A3AE1E82A8E614C0024EDC0 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */; };
 		2A3AE1EB2A8E618E0024EDC0 /* HapticTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */; };
 		2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C53FE2AE3165F00472FF4 /* RatingView.swift */; };
+		2A4B76312BE508E800C1E01C /* ZStackBackgroundColorProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B76302BE508E800C1E01C /* ZStackBackgroundColorProblem.swift */; };
 		2A506F752B1BD2E600EC4AD5 /* DropDownPickerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */; };
 		2A506F7B2B1D3EFA00EC4AD5 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */; };
 		2A633E7A2AE984FC00BFD1D0 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A633E792AE984FC00BFD1D0 /* EventManager.swift */; };
@@ -280,6 +281,7 @@
 		2A3AE1E72A8E614C0024EDC0 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		2A3AE1EA2A8E618E0024EDC0 /* HapticTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTest.swift; sourceTree = "<group>"; };
 		2A3C53FE2AE3165F00472FF4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		2A4B76302BE508E800C1E01C /* ZStackBackgroundColorProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackBackgroundColorProblem.swift; sourceTree = "<group>"; };
 		2A506F742B1BD2E600EC4AD5 /* DropDownPickerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPickerState.swift; sourceTree = "<group>"; };
 		2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2A633E792AE984FC00BFD1D0 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 		2A047BD32AB6B5AB00492C0A /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A4B762F2BE508BC00C1E01C /* ZStack */,
 				2A506F732B1BD2D600EC4AD5 /* Custom DropDown */,
 				2A633F3A2AFADF4600BFD1D0 /* Button */,
 				2A95C35D2AC5B16F00E2DABD /* Sheet */,
@@ -661,6 +664,14 @@
 				2A7D85F62AE4561E00ECCF31 /* RatingScreenView */,
 			);
 			path = StarView;
+			sourceTree = "<group>";
+		};
+		2A4B762F2BE508BC00C1E01C /* ZStack */ = {
+			isa = PBXGroup;
+			children = (
+				2A4B76302BE508E800C1E01C /* ZStackBackgroundColorProblem.swift */,
+			);
+			path = ZStack;
 			sourceTree = "<group>";
 		};
 		2A506F732B1BD2D600EC4AD5 /* Custom DropDown */ = {
@@ -1858,6 +1869,7 @@
 				2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */,
 				2A633F142AF8400700BFD1D0 /* MovieListItemStore.swift in Sources */,
 				2A047BCF2AB5084F00492C0A /* BackgroundOverlay.swift in Sources */,
+				2A4B76312BE508E800C1E01C /* ZStackBackgroundColorProblem.swift in Sources */,
 				2A633F1C2AF8406400BFD1D0 /* MovieListSkeletonView.swift in Sources */,
 				2AAF657D2AAF486800B86F64 /* ShimmerConfiguration.swift in Sources */,
 				2AFD9E632B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift in Sources */,

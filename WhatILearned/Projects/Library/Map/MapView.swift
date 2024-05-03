@@ -70,3 +70,7 @@ extension MapView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+#Preview {
+    MapView()
+}

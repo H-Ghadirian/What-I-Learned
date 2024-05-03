@@ -73,3 +73,8 @@ extension AddArticleView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+@available(iOS 15.0, *)
+#Preview {
+    AddArticleView()
+}

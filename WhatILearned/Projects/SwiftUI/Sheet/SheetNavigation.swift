@@ -56,3 +56,7 @@ extension SheetNavigation: ProjectProtocol {
     }
     private static let instance = SheetNavigation()
 }
+
+#Preview {
+    SheetNavigation()
+}

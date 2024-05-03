@@ -30,3 +30,7 @@ extension TestMacro: ProjectProtocol {
     }
     private static let instance = TestMacro()
 }
+
+#Preview {
+    TestMacro()
+}

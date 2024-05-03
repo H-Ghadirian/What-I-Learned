@@ -46,3 +46,7 @@ struct LottieContentView_Previews: PreviewProvider {
         LottieContentView()
     }
 }
+
+#Preview {
+    LottieContentView()
+}

@@ -71,3 +71,8 @@ extension TestSheets: ProjectProtocol {
     }
     private static let myView = TestSheets()
 }
+
+@available(iOS 16.0, *)
+#Preview {
+    TestSheets()
+}

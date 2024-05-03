@@ -42,3 +42,7 @@ extension UserDefaultsView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+#Preview {
+    UserDefaultsView()
+}

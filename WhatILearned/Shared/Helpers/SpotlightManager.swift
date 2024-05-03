@@ -28,7 +28,8 @@ enum SpotlightManager {
                                    keywords: [
                                     "marvel heroes",
                                     "marvel",
-                                    "heroes"
+                                    "heroes",
+                                    "hamed"
                                    ])
 
         let model2 = SpotlightModel(id: "1",
@@ -49,11 +50,12 @@ enum SpotlightManager {
         let searchableItems = spotlightModels.map { item -> CSSearchableItem in
             let attributeSet: CSSearchableItemAttributeSet
             if #available(iOS 14, *) {
-                attributeSet = .init(contentType: .content)
+                attributeSet = .init(contentType: .content) // item
             } else {
                 attributeSet = .init(itemContentType: kUTTypeText as String)
             }
             attributeSet.title = item.title
+//            attributeSet.displayName = item.title
             attributeSet.contentDescription = item.content
             attributeSet.relatedUniqueIdentifier = item.id
             attributeSet.keywords = item.keywords

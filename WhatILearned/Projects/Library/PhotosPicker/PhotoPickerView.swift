@@ -50,3 +50,8 @@ extension PhotoPickerView: ProjectProtocol {
         AnyView(instance)
     }
 }
+
+@available(iOS 16.0, *)
+#Preview {
+    PhotoPickerView()
+}

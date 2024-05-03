@@ -25,6 +25,7 @@ enum Projects {
 
     @available(iOS 16.0, *)
     private static let iOS16: [any ProjectProtocol] = [
+        ZStackBackgroundColorProblem.project(),
         TestSheets.project(),
         SecondJsonMenuListView.project(),
         JsonMenuListView.project(),

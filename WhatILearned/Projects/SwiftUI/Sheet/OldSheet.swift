@@ -127,3 +127,7 @@ struct OldSheetView_Previews: PreviewProvider {
         OldSheetView().edgesIgnoringSafeArea(.all)
     }
 }
+
+#Preview {
+    OldSheetView()
+}
