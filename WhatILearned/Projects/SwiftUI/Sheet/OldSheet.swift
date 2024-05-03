@@ -60,13 +60,21 @@ struct BottomSheetView<Content: View>: View {
                     Spacer()
                         .frame(width: 30)
                     GeometryReader { proxy in
+                        Color.gray
                         VStack(spacing: 10) {
                             Text("X: \(proxy.frame(in: .global).origin.x)")
                             Text("Y: \(proxy.frame(in: .global).origin.y)")
+                            Text("minX: \(proxy.frame(in: .global).minX)")
+                            Text("maxX: \(proxy.frame(in: .global).maxX)")
+                            Text("minY: \(proxy.frame(in: .global).minY)")
+                            Text("maxY: \(proxy.frame(in: .global).maxY)")
                         }
-                        .foregroundColor(.black)
                     }
+                    Spacer()
+                        .frame(width: 30)
                 }
+                Spacer()
+                    .frame(height: 30)
             }
             .frame(width: geometry.size.width, height: self.maxHeight, alignment: .top)
             .background(Color(.secondarySystemBackground))
