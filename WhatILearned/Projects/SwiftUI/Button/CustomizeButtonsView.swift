@@ -12,6 +12,16 @@ public struct CustomizeButtonsView: View {
 
     public var body: some View {
         VStack(spacing: 10) {
+            Button(action: {
+                print("Image Button Pressed!")
+            }) {
+                Image(ImageResource.pexels1)
+                    .resizable()
+                    .renderingMode(.original)
+                    .clipShape(Capsule())
+                    .frame(width: 200, height: 400)
+            }
+
             Button {
                 print("Pressed!")
             } label: {
@@ -23,6 +33,11 @@ public struct CustomizeButtonsView: View {
             .padding()
             .background(Color(red: 0.65, green: 0.05, blue: 1))
             .cornerRadius(8)
+
+            Button("Border Less") { }
+                .buttonStyle(.borderless)
+            Button("Plain Button") { }
+                .buttonStyle(.plain)
         }
         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
     }
