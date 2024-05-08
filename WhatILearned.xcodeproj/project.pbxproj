@@ -202,6 +202,7 @@
 		2AFD9E5F2B08FBF100EC6C37 /* PressSubmitButtonViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E5E2B08FBF100EC6C37 /* PressSubmitButtonViewStore.swift */; };
 		2AFD9E612B08FC6700EC6C37 /* ViewObserverStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E602B08FC6700EC6C37 /* ViewObserverStore.swift */; };
 		2AFD9E632B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFD9E622B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift */; };
+		2AFE4BBF2BEC281F00E4F6E2 /* CountUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE4BBE2BEC281F00E4F6E2 /* CountUp.swift */; };
 		2B242C5CE51532B87D02A275 /* Pods_WhatILearned_WhatILearnedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07687C1A79A8B38A05BA9365 /* Pods_WhatILearned_WhatILearnedUITests.framework */; };
 		3B09D2C1FB000FFD5A248169 /* Pods_WhatILearnedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395B16BABD98F5E70FC2056 /* Pods_WhatILearnedTests.framework */; };
 		F100A27B9BF15FDD64DA5AA7 /* Pods_WhatILearned.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BAEE4548DC37CA211E1AA4 /* Pods_WhatILearned.framework */; };
@@ -445,6 +446,7 @@
 		2AFD9E5E2B08FBF100EC6C37 /* PressSubmitButtonViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressSubmitButtonViewStore.swift; sourceTree = "<group>"; };
 		2AFD9E602B08FC6700EC6C37 /* ViewObserverStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewObserverStore.swift; sourceTree = "<group>"; };
 		2AFD9E622B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressSubmitButtonViewExample.swift; sourceTree = "<group>"; };
+		2AFE4BBE2BEC281F00E4F6E2 /* CountUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountUp.swift; sourceTree = "<group>"; };
 		703FCBC88B3876BF71F38400 /* Pods-WhatILearned.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned.debug.xcconfig"; path = "Target Support Files/Pods-WhatILearned/Pods-WhatILearned.debug.xcconfig"; sourceTree = "<group>"; };
 		85BE3A862777F35DA5E323B9 /* Pods-WhatILearnedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearnedTests.release.xcconfig"; path = "Target Support Files/Pods-WhatILearnedTests/Pods-WhatILearnedTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0FF8219A5592B1A6D8E8807 /* Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig"; path = "Target Support Files/Pods-WhatILearned-WhatILearnedUITests/Pods-WhatILearned-WhatILearnedUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1416,6 +1418,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AFE4BBD2BEC27EF00E4F6E2 /* Observation */,
 				2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */,
 				2A7551FC2B2CF34400AC15BA /* Infinite Carousal */,
 				2AA72AD62B28F44500C36D70 /* StepCount */,
@@ -1510,6 +1513,14 @@
 				2AFD9E622B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2AFE4BBD2BEC27EF00E4F6E2 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				2AFE4BBE2BEC281F00E4F6E2 /* CountUp.swift */,
+			);
+			path = Observation;
 			sourceTree = "<group>";
 		};
 		3F344F2485208F08C705DC75 /* Frameworks */ = {
@@ -1844,6 +1855,7 @@
 				2AA7F8692B29637600E46086 /* SpotlightManager.swift in Sources */,
 				2A633F182AF8403500BFD1D0 /* MovieListItemView.swift in Sources */,
 				2AE0F6002A9172580001A30E /* FancyToastModifier.swift in Sources */,
+				2AFE4BBF2BEC281F00E4F6E2 /* CountUp.swift in Sources */,
 				2A95C3622AC5C43500E2DABD /* SearchableList.swift in Sources */,
 				2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */,
 				2AFA7A5D2A7D99600006BDDF /* SettingTab.swift in Sources */,
