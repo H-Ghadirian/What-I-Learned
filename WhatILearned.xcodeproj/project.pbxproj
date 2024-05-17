@@ -155,6 +155,10 @@
 		2AAF658C2AAF4DB100B86F64 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF658B2AAF4DB100B86F64 /* MessageView.swift */; };
 		2AAF658E2AAF4E7600B86F64 /* newsItems.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF658D2AAF4E7600B86F64 /* newsItems.json */; };
 		2AAF65922AAFA29F00B86F64 /* Continuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF65912AAFA29F00B86F64 /* Continuation.swift */; };
+		2AB1DB4A2BF6B9CD00A5C3F4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1DB492BF6B9CD00A5C3F4 /* Models.swift */; };
+		2AB1DB4D2BF6C39100A5C3F4 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB1DB4C2BF6C39100A5C3F4 /* Tagged */; };
+		2AB1DB4F2BF6C39100A5C3F4 /* TaggedMoney in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB1DB4E2BF6C39100A5C3F4 /* TaggedMoney */; };
+		2AB1DB512BF6C39100A5C3F4 /* TaggedTime in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB1DB502BF6C39100A5C3F4 /* TaggedTime */; };
 		2AB20FD82AC2393B00AAC150 /* StrokeBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */; };
 		2AB20FDA2AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */; };
 		2AB238AE2ABB81C0008979F6 /* MacroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */; };
@@ -400,6 +404,7 @@
 		2AAF658B2AAF4DB100B86F64 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		2AAF658D2AAF4E7600B86F64 /* newsItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsItems.json; sourceTree = "<group>"; };
 		2AAF65912AAFA29F00B86F64 /* Continuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuation.swift; sourceTree = "<group>"; };
+		2AB1DB492BF6B9CD00A5C3F4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2AB20FD72AC2393B00AAC150 /* StrokeBorderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBorderModifier.swift; sourceTree = "<group>"; };
 		2AB20FD92AC23AA200AAC150 /* PulsatingNeonGlowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingNeonGlowModifier.swift; sourceTree = "<group>"; };
 		2AB238AD2ABB81C0008979F6 /* MacroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroViewModel.swift; sourceTree = "<group>"; };
@@ -467,11 +472,14 @@
 				2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */,
 				2AAF65662AACE6C500B86F64 /* Alamofire in Frameworks */,
 				2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */,
+				2AB1DB4D2BF6C39100A5C3F4 /* Tagged in Frameworks */,
+				2AB1DB4F2BF6C39100A5C3F4 /* TaggedMoney in Frameworks */,
 				2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */,
 				F100A27B9BF15FDD64DA5AA7 /* Pods_WhatILearned.framework in Frameworks */,
 				2AAF65692AAF35EA00B86F64 /* Lottie in Frameworks */,
 				2A95C34E2AC4DD0000E2DABD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				2A95C3542AC4DD0000E2DABD /* FirebaseAppCheck in Frameworks */,
+				2AB1DB512BF6C39100A5C3F4 /* TaggedTime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1275,6 +1283,14 @@
 			path = AsyncAwait;
 			sourceTree = "<group>";
 		};
+		2AB1DB482BF6B9B200A5C3F4 /* SyncUp */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1DB492BF6B9CD00A5C3F4 /* Models.swift */,
+			);
+			path = SyncUp;
+			sourceTree = "<group>";
+		};
 		2ABCEB782AD58E49003028A8 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -1418,6 +1434,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AB1DB482BF6B9B200A5C3F4 /* SyncUp */,
 				2AFE4BBD2BEC27EF00E4F6E2 /* Observation */,
 				2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */,
 				2A7551FC2B2CF34400AC15BA /* Infinite Carousal */,
@@ -1576,6 +1593,9 @@
 				2A95C34F2AC4DD0000E2DABD /* FirebaseAnalyticsSwift */,
 				2A95C3512AC4DD0000E2DABD /* FirebaseAnalyticsWithoutAdIdSupport */,
 				2A95C3532AC4DD0000E2DABD /* FirebaseAppCheck */,
+				2AB1DB4C2BF6C39100A5C3F4 /* Tagged */,
+				2AB1DB4E2BF6C39100A5C3F4 /* TaggedMoney */,
+				2AB1DB502BF6C39100A5C3F4 /* TaggedTime */,
 			);
 			productName = WhatILearned;
 			productReference = 2A7875E2299D7264001450F6 /* WhatILearned.app */;
@@ -1662,6 +1682,7 @@
 				2AB238B12ABB8C29008979F6 /* XCLocalSwiftPackageReference "../MyMacro" */,
 				2A95C34A2AC4DD0000E2DABD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				2A379F572AE708B40085F2B2 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */,
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
@@ -1892,6 +1913,7 @@
 				2A506F752B1BD2E600EC4AD5 /* DropDownPickerState.swift in Sources */,
 				2AAF657B2AAF47DD00B86F64 /* CollectionLoadingState.swift in Sources */,
 				2AAF65582AAB75DD00B86F64 /* AxisType.swift in Sources */,
+				2AB1DB4A2BF6B9CD00A5C3F4 /* Models.swift in Sources */,
 				2AE0F5FC2A916FB20001A30E /* FancyToastStyle.swift in Sources */,
 				2A633EF82AF83AD000BFD1D0 /* RemoteProductListLoader.swift in Sources */,
 				2A633EF32AF83A5700BFD1D0 /* MovieListLoader.swift in Sources */,
@@ -2086,6 +2108,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
 			};
 			name = Staging;
 		};
@@ -2240,6 +2263,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
 			};
 			name = Debug;
 		};
@@ -2292,6 +2316,7 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
 			};
 			name = Release;
 		};
@@ -2570,12 +2595,20 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
 		2AFA7A412A79280B0006BDDF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				kind = exactVersion;
+				version = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -2620,6 +2653,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AAF65672AAF35EA00B86F64 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		2AB1DB4C2BF6C39100A5C3F4 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		2AB1DB4E2BF6C39100A5C3F4 /* TaggedMoney */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedMoney;
+		};
+		2AB1DB502BF6C39100A5C3F4 /* TaggedTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = TaggedTime;
 		};
 		2AB238B32ABB8CBB008979F6 /* MyMacro */ = {
 			isa = XCSwiftPackageProductDependency;

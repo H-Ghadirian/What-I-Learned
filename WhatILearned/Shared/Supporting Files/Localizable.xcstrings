@@ -56,6 +56,9 @@
         }
       }
     },
+    "Border Less" : {
+
+    },
     "Bounce" : {
 
     },
@@ -185,6 +188,12 @@
     "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" : {
 
     },
+    "maxX: %lf" : {
+
+    },
+    "maxY: %lf" : {
+
+    },
     "medium" : {
 
     },
@@ -192,6 +201,12 @@
 
     },
     "Menu" : {
+
+    },
+    "minX: %lf" : {
+
+    },
+    "minY: %lf" : {
 
     },
     "My Github" : {
@@ -204,6 +219,9 @@
 
     },
     "New message" : {
+
+    },
+    "Next" : {
 
     },
     "Not support" : {
@@ -219,6 +237,9 @@
 
     },
     "Pick a mode" : {
+
+    },
+    "Plain Button" : {
 
     },
     "Please Authorize Health!" : {
@@ -391,6 +412,12 @@
 
     },
     "World!" : {
+
+    },
+    "X: %lf" : {
+
+    },
+    "Y: %lf" : {
 
     },
     "You can find the code on" : {
