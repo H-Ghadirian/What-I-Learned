@@ -181,11 +181,12 @@
 		2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6222A9D3D480001A30E /* MapView.swift */; };
 		2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */; };
 		2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6282A9F558C0001A30E /* TestTabView.swift */; };
+		2AE810242BF8193200039ED4 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE810232BF8193200039ED4 /* SyncUpsList.swift */; };
+		2AE810272BF8216900039ED4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE810262BF8216900039ED4 /* ComposableArchitecture */; };
 		2AED33402ACF65D4003FE39F /* View+ .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED333F2ACF65D4003FE39F /* View+ .swift */; };
 		2AED33442AD0B9AF003FE39F /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33432AD0B9AF003FE39F /* Show.swift */; };
 		2AED33612AD4A2B1003FE39F /* BookmarkTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33602AD4A2B1003FE39F /* BookmarkTip.swift */; };
 		2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED33622AD4A7E1003FE39F /* ProjectProtocol.swift */; };
-		2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AFA7A422A79280B0006BDDF /* ComposableArchitecture */; };
 		2AFA7A452A7AC1610006BDDF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A442A7AC1610006BDDF /* Colors.swift */; };
 		2AFA7A492A7C31E80006BDDF /* SchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A482A7C31E80006BDDF /* SchemeType.swift */; };
 		2AFA7A4F2A7D96560006BDDF /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA7A4C2A7D96560006BDDF /* MenuViewModel.swift */; };
@@ -427,6 +428,7 @@
 		2AE0F6222A9D3D480001A30E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		2AE0F6282A9F558C0001A30E /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
+		2AE810232BF8193200039ED4 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 		2AED333F2ACF65D4003FE39F /* View+ .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ .swift"; sourceTree = "<group>"; };
 		2AED33432AD0B9AF003FE39F /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		2AED33602AD4A2B1003FE39F /* BookmarkTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTip.swift; sourceTree = "<group>"; };
@@ -468,10 +470,10 @@
 			files = (
 				2A95C3502AC4DD0000E2DABD /* FirebaseAnalyticsSwift in Frameworks */,
 				2A95C3522AC4DD0000E2DABD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				2AE810272BF8216900039ED4 /* ComposableArchitecture in Frameworks */,
 				2A95C34C2AC4DD0000E2DABD /* FirebaseAnalytics in Frameworks */,
 				2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */,
 				2AAF65662AACE6C500B86F64 /* Alamofire in Frameworks */,
-				2AFA7A432A79280B0006BDDF /* ComposableArchitecture in Frameworks */,
 				2AB1DB4D2BF6C39100A5C3F4 /* Tagged in Frameworks */,
 				2AB1DB4F2BF6C39100A5C3F4 /* TaggedMoney in Frameworks */,
 				2AB238B42ABB8CBB008979F6 /* MyMacro in Frameworks */,
@@ -1287,6 +1289,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB1DB492BF6B9CD00A5C3F4 /* Models.swift */,
+				2AE810232BF8193200039ED4 /* SyncUpsList.swift */,
 			);
 			path = SyncUp;
 			sourceTree = "<group>";
@@ -1583,7 +1586,6 @@
 			);
 			name = WhatILearned;
 			packageProductDependencies = (
-				2AFA7A422A79280B0006BDDF /* ComposableArchitecture */,
 				2AAF65652AACE6C500B86F64 /* Alamofire */,
 				2AAF65682AAF35EA00B86F64 /* Lottie */,
 				2AB238B32ABB8CBB008979F6 /* MyMacro */,
@@ -1596,6 +1598,7 @@
 				2AB1DB4C2BF6C39100A5C3F4 /* Tagged */,
 				2AB1DB4E2BF6C39100A5C3F4 /* TaggedMoney */,
 				2AB1DB502BF6C39100A5C3F4 /* TaggedTime */,
+				2AE810262BF8216900039ED4 /* ComposableArchitecture */,
 			);
 			productName = WhatILearned;
 			productReference = 2A7875E2299D7264001450F6 /* WhatILearned.app */;
@@ -1676,13 +1679,13 @@
 			);
 			mainGroup = 2A7875D9299D7264001450F6;
 			packageReferences = (
-				2AFA7A412A79280B0006BDDF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				2AAF65642AACE6C500B86F64 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2AAF65672AAF35EA00B86F64 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				2AB238B12ABB8C29008979F6 /* XCLocalSwiftPackageReference "../MyMacro" */,
 				2A95C34A2AC4DD0000E2DABD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				2A379F572AE708B40085F2B2 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 				2AB1DB4B2BF6C39100A5C3F4 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+				2AE810252BF8216900039ED4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 2A7875E3299D7264001450F6 /* Products */;
 			projectDirPath = "";
@@ -1979,6 +1982,7 @@
 				2AAF65812AAF48E600B86F64 /* ShimmerModifier.swift in Sources */,
 				2A633F3C2AFADF6900BFD1D0 /* CustomizeButtonsView.swift in Sources */,
 				2A7D85F82AE4770B00ECCF31 /* EnvironmentValues+dismiss.swift in Sources */,
+				2AE810242BF8193200039ED4 /* SyncUpsList.swift in Sources */,
 				2AE0F6022A91728D0001A30E /* View+toastView.swift in Sources */,
 				2A7875E6299D7264001450F6 /* WhatILearnedApp.swift in Sources */,
 				2AAF65542AAB696F00B86F64 /* ChartsView.swift in Sources */,
@@ -2599,16 +2603,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
 			requirement = {
-				kind = upToNextMinorVersion;
+				kind = upToNextMajorVersion;
 				minimumVersion = 0.10.0;
 			};
 		};
-		2AFA7A412A79280B0006BDDF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		2AE810252BF8216900039ED4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
-				kind = exactVersion;
-				version = 1.1.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -2677,9 +2681,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = MyMacroClient;
 		};
-		2AFA7A422A79280B0006BDDF /* ComposableArchitecture */ = {
+		2AE810262BF8216900039ED4 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2AFA7A412A79280B0006BDDF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 2AE810252BF8216900039ED4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
