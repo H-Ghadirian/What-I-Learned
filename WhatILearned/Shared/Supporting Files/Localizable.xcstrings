@@ -77,6 +77,9 @@
     "Confirm" : {
 
     },
+    "Count: %lld" : {
+
+    },
     "Daily Sync-ups" : {
 
     },
@@ -258,9 +261,6 @@
 
     },
     "Present fullscreen cover!" : {
-
-    },
-    "Press" : {
 
     },
     "Profit" : {

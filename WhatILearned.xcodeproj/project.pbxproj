@@ -166,6 +166,9 @@
 		2AB238B62ABB8CBB008979F6 /* MyMacroClient in Frameworks */ = {isa = PBXBuildFile; productRef = 2AB238B52ABB8CBB008979F6 /* MyMacroClient */; };
 		2ABCEB7A2AD58E67003028A8 /* KeychainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */; };
 		2ABCEB7C2AD58EAF003028A8 /* KeychainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */; };
+		2ABE22262C45C20C008E58D0 /* RadialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE22252C45C20C008E58D0 /* RadialLayout.swift */; };
+		2ABE22322C47248D008E58D0 /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE22302C47248D008E58D0 /* TagLayout.swift */; };
+		2ABE22332C47248D008E58D0 /* AnimatedTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABE22312C47248D008E58D0 /* AnimatedTags.swift */; };
 		2ACF77F82B2523E800159E74 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF77F72B2523E800159E74 /* DataItem.swift */; };
 		2ACF77FA2B25AB7E00159E74 /* SwiftDataExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF77F92B25AB7E00159E74 /* SwiftDataExampleView.swift */; };
 		2AE0F5FA2A916F7D0001A30E /* FancyToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */; };
@@ -412,6 +415,9 @@
 		2AB238B22ABB8C94008979F6 /* MyMacro */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyMacro; sourceTree = SOURCE_ROOT; };
 		2ABCEB792AD58E67003028A8 /* KeychainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewModel.swift; sourceTree = "<group>"; };
 		2ABCEB7B2AD58EAF003028A8 /* KeychainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainView.swift; sourceTree = "<group>"; };
+		2ABE22252C45C20C008E58D0 /* RadialLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialLayout.swift; sourceTree = "<group>"; };
+		2ABE22302C47248D008E58D0 /* TagLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
+		2ABE22312C47248D008E58D0 /* AnimatedTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTags.swift; sourceTree = "<group>"; };
 		2ACF77F72B2523E800159E74 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		2ACF77F92B25AB7E00159E74 /* SwiftDataExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExampleView.swift; sourceTree = "<group>"; };
 		2AE0F5F92A916F7D0001A30E /* FancyToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyToastView.swift; sourceTree = "<group>"; };
@@ -1303,6 +1309,23 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		2ABE22242C45C1E8008E58D0 /* RadialLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2ABE22252C45C20C008E58D0 /* RadialLayout.swift */,
+			);
+			path = RadialLayout;
+			sourceTree = "<group>";
+		};
+		2ABE222D2C472440008E58D0 /* Animated Tags View */ = {
+			isa = PBXGroup;
+			children = (
+				2ABE22312C47248D008E58D0 /* AnimatedTags.swift */,
+				2ABE22302C47248D008E58D0 /* TagLayout.swift */,
+			);
+			path = "Animated Tags View";
+			sourceTree = "<group>";
+		};
 		2ACF77EE2B2521F600159E74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1437,6 +1460,8 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2ABE222D2C472440008E58D0 /* Animated Tags View */,
+				2ABE22242C45C1E8008E58D0 /* RadialLayout */,
 				2AB1DB482BF6B9B200A5C3F4 /* SyncUp */,
 				2AFE4BBD2BEC27EF00E4F6E2 /* Observation */,
 				2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */,
@@ -1853,6 +1878,7 @@
 				2A633F3E2AFC4A8D00BFD1D0 /* CheckboxToggleStyle.swift in Sources */,
 				2AA72AD82B28F45400C36D70 /* HealthKitManager.swift in Sources */,
 				2A633EA02AEF17F400BFD1D0 /* DismissKeyboardView.swift in Sources */,
+				2ABE22262C45C20C008E58D0 /* RadialLayout.swift in Sources */,
 				2AFA7A512A7D96560006BDDF /* MenuCoordinator.swift in Sources */,
 				2ACF77FA2B25AB7E00159E74 /* SwiftDataExampleView.swift in Sources */,
 				2A633F4B2B00407E00BFD1D0 /* Projects.swift in Sources */,
@@ -1909,6 +1935,7 @@
 				2A633F1C2AF8406400BFD1D0 /* MovieListSkeletonView.swift in Sources */,
 				2AAF657D2AAF486800B86F64 /* ShimmerConfiguration.swift in Sources */,
 				2AFD9E632B08FDA200EC6C37 /* PressSubmitButtonViewExample.swift in Sources */,
+				2ABE22322C47248D008E58D0 /* TagLayout.swift in Sources */,
 				2A633EE72AF8373500BFD1D0 /* AdjustableSheetStore.swift in Sources */,
 				2AAF65562AAB6DFA00B86F64 /* ControlsView.swift in Sources */,
 				2A633F032AF83B9600BFD1D0 /* MovieListViewModel.swift in Sources */,
@@ -1954,6 +1981,7 @@
 				2A95C35F2AC5B18D00E2DABD /* TestSheets.swift in Sources */,
 				2A633EFC2AF83B3500BFD1D0 /* ProductListMapper.swift in Sources */,
 				2ABCEB7C2AD58EAF003028A8 /* KeychainView.swift in Sources */,
+				2ABE22332C47248D008E58D0 /* AnimatedTags.swift in Sources */,
 				2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */,
 				2A633E812AEB019C00BFD1D0 /* KerningView.swift in Sources */,
 				2A633F052AF83BD300BFD1D0 /* MovieListItemViewModel.swift in Sources */,
@@ -2060,6 +2088,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -2215,6 +2244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -2275,6 +2305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

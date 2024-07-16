@@ -12,7 +12,7 @@ struct ProjectTags {
     var version: IOSVersionTag
 }
 
-enum Tag {
+enum Tag: String, CaseIterable {
     case animation
     case swiftui
     case userInterface

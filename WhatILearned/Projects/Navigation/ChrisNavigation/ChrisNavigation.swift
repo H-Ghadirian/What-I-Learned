@@ -7,9 +7,15 @@ struct ChrisNavigation: View {
     var body: some View {
         NavigationStack(path: $path) {
             List {
+                Image(.pexels7)
+
                 Section("People") {
-                    ForEach(Person.examples) { person in
-                        NavigationLink(value: person) {
+                    ForEach(
+                        Person.examples
+                    ) { person in
+                        NavigationLink(
+                            value: person
+                        ) {
                             VStack(alignment: .leading) {
                                 Text(person.name)
 
@@ -21,8 +27,12 @@ struct ChrisNavigation: View {
                 }
 
                 Section("Articles") {
-                    ForEach(Article.examples) { article in
-                        NavigationLink(value: article) {
+                    ForEach(
+                        Article.examples
+                    ) { article in
+                        NavigationLink(
+                            value: article
+                        ) {
                             VStack(alignment: .leading) {
                                 Text(article.title)
                                     .font(.headline)
