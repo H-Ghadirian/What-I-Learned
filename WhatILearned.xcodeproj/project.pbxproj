@@ -181,6 +181,7 @@
 		2AE0F6232A9D3D480001A30E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6222A9D3D480001A30E /* MapView.swift */; };
 		2AE0F6262A9F525D0001A30E /* PhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */; };
 		2AE0F6292A9F558C0001A30E /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F6282A9F558C0001A30E /* TestTabView.swift */; };
+		2AE4F8F02C4823FB004244F3 /* ProSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4F8EF2C4823FB004244F3 /* ProSwiftUIView.swift */; };
 		2AE810242BF8193200039ED4 /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE810232BF8193200039ED4 /* SyncUpsList.swift */; };
 		2AE810272BF8216900039ED4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE810262BF8216900039ED4 /* ComposableArchitecture */; };
 		2AED33402ACF65D4003FE39F /* View+ .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED333F2ACF65D4003FE39F /* View+ .swift */; };
@@ -428,6 +429,7 @@
 		2AE0F6222A9D3D480001A30E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2AE0F6252A9F525D0001A30E /* PhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerView.swift; sourceTree = "<group>"; };
 		2AE0F6282A9F558C0001A30E /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
+		2AE4F8EF2C4823FB004244F3 /* ProSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSwiftUIView.swift; sourceTree = "<group>"; };
 		2AE810232BF8193200039ED4 /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 		2AED333F2ACF65D4003FE39F /* View+ .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ .swift"; sourceTree = "<group>"; };
 		2AED33432AD0B9AF003FE39F /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
@@ -1366,6 +1368,14 @@
 			path = PhotosPicker;
 			sourceTree = "<group>";
 		};
+		2AE4F8EE2C4823D7004244F3 /* TestProSwiftUIHudsonBook */ = {
+			isa = PBXGroup;
+			children = (
+				2AE4F8EF2C4823FB004244F3 /* ProSwiftUIView.swift */,
+			);
+			path = TestProSwiftUIHudsonBook;
+			sourceTree = "<group>";
+		};
 		2AED335F2AD4A230003FE39F /* Tipps */ = {
 			isa = PBXGroup;
 			children = (
@@ -1437,6 +1447,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2AE4F8EE2C4823D7004244F3 /* TestProSwiftUIHudsonBook */,
 				2AB1DB482BF6B9B200A5C3F4 /* SyncUp */,
 				2AFE4BBD2BEC27EF00E4F6E2 /* Observation */,
 				2A0CCDF32B8E2E3B0093D239 /* MemoryLeak */,
@@ -1871,6 +1882,7 @@
 				2AAF65832AAF4CBB00B86F64 /* FakeNewsList.swift in Sources */,
 				2A633E842AEB052D00BFD1D0 /* OnTapGestureLocation.swift in Sources */,
 				2AFA7A992A818E580006BDDF /* Person.swift in Sources */,
+				2AE4F8F02C4823FB004244F3 /* ProSwiftUIView.swift in Sources */,
 				2AFD9E542B08256D00EC6C37 /* PressSubmitButtonView.swift in Sources */,
 				2AAF655F2AACDE4900B86F64 /* UserView.swift in Sources */,
 				2A2E16AA2AD89C8300A7FBA2 /* TheUIViewControllerRepresentable.swift in Sources */,
