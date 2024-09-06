@@ -102,6 +102,7 @@
 		2A8100242A8C0B230086B146 /* AsyncAwaitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */; };
 		2A8100272A8C0BD90086B146 /* RemoteFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100262A8C0BD90086B146 /* RemoteFile.swift */; };
 		2A8100292A8C0BFB0086B146 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8100282A8C0BFB0086B146 /* Message.swift */; };
+		2A81D7B82C8A6A58002BD053 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2A81D7B72C8A6A58002BD053 /* Documentation.docc */; };
 		2A95C34C2AC4DD0000E2DABD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C34B2AC4DD0000E2DABD /* FirebaseAnalytics */; };
 		2A95C34E2AC4DD0000E2DABD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C34D2AC4DD0000E2DABD /* FirebaseAnalyticsOnDeviceConversion */; };
 		2A95C3502AC4DD0000E2DABD /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2A95C34F2AC4DD0000E2DABD /* FirebaseAnalyticsSwift */; };
@@ -360,6 +361,7 @@
 		2A8100232A8C0B230086B146 /* AsyncAwaitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitRequest.swift; sourceTree = "<group>"; };
 		2A8100262A8C0BD90086B146 /* RemoteFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFile.swift; sourceTree = "<group>"; };
 		2A8100282A8C0BFB0086B146 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2A81D7B72C8A6A58002BD053 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		2A95C3562AC5A30800E2DABD /* JsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMenuListView.swift; sourceTree = "<group>"; };
 		2A95C3582AC5A4CD00E2DABD /* SecondJsonMenuListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondJsonMenuListView.swift; sourceTree = "<group>"; };
 		2A95C35B2AC5A9DA00E2DABD /* TestMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMacro.swift; sourceTree = "<group>"; };
@@ -981,6 +983,7 @@
 		2A7875D9299D7264001450F6 = {
 			isa = PBXGroup;
 			children = (
+				2A81D7B72C8A6A58002BD053 /* Documentation.docc */,
 				2A506F7A2B1D3EFA00EC4AD5 /* Config.xcconfig */,
 				2AB238B22ABB8C94008979F6 /* MyMacro */,
 				2A633FE02B00CCF100BFD1D0 /* MyFramework.xcodeproj */,
@@ -1984,6 +1987,7 @@
 				2A3C53FF2AE3165F00472FF4 /* RatingView.swift in Sources */,
 				2AED33442AD0B9AF003FE39F /* Show.swift in Sources */,
 				2A3AE1E22A8DF2710024EDC0 /* URLSession+noCache.swift in Sources */,
+				2A81D7B82C8A6A58002BD053 /* Documentation.docc in Sources */,
 				2AAF654A2AAB684B00B86F64 /* ChartContainerView.swift in Sources */,
 				2AA102B12B062216000B4DB6 /* TestSpinnerView.swift in Sources */,
 				2A7D85F52AE454E600ECCF31 /* RatingScreenView.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 import HealthKit
 
+/// It is used in ``HealthKitViewModel``
 class HealthKitManager {
 
     func setUpHealthRequest(healthStore: HKHealthStore, readSteps: @escaping () -> Void) {

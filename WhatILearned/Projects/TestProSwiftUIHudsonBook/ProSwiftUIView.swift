@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// It is from Hudson pro swiftui book!
 struct ProSwiftUIView: View {
     var body: some View {
         VStack(spacing: 16) {

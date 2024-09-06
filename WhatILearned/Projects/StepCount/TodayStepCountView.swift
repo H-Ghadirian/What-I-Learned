@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// This read ``HealthKitViewModel/readStepsTakenToday()``
 struct TodayStepCountView: View {
     @State var viewModel: HealthKitViewModel = HealthKitViewModel()
 //    public init(viewModel: HealthKitViewModel) {
