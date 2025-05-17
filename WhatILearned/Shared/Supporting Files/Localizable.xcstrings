@@ -19,6 +19,9 @@
     "+" : {
 
     },
+    "🔎 Watch me" : {
+
+    },
     "Add a new article" : {
 
     },
@@ -99,6 +102,9 @@
 
     },
     "Disable" : {
+
+    },
+    "Displaying overlay: %@" : {
 
     },
     "Email :" : {
@@ -399,6 +405,9 @@
 
     },
     "View for Item %@" : {
+
+    },
+    "Visible: %@" : {
 
     },
     "warning" : {

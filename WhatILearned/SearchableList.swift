@@ -80,7 +80,7 @@ struct SearchableListView: View {
     }
 
     private func getButtonFullscreenSheet(_ index: Int) -> some View {
-        print("Hamed Before Button: \(index)")
+//        print("Hamed Before Button: \(index)")
         return Button {
             fullscreenModalSheet[index] = true
         } label: {
@@ -88,7 +88,7 @@ struct SearchableListView: View {
                 .foregroundStyle(viewModel.colorOf(project: index))
         }
         .fullScreenCover(isPresented: $fullscreenModalSheet[index]) {
-            print("Hamed fullScreenCover: \(index)")
+//            print("Hamed fullScreenCover: \(index)")
             return viewModel.viewOf(project: index)
         }
     }

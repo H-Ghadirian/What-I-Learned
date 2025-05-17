@@ -17,6 +17,8 @@
 		2A0CCDF92B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */; };
 		2A11E64D2B4490D6000F5FF2 /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11E64C2B4490D6000F5FF2 /* Logger+.swift */; };
 		2A139BE02DDCB42400FF352D /* VisibilityModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A139BDF2DDCB41700FF352D /* VisibilityModifier.swift */; };
+		2A139BE32DDCC0F500FF352D /* VisibilityModifierAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A139BE22DDCC0F400FF352D /* VisibilityModifierAnimationView.swift */; };
+		2A139BE52DDCC24600FF352D /* PhoneCallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A139BE42DDCC23D00FF352D /* PhoneCallList.swift */; };
 		2A14DFDA2B0D5F9A00A4C60A /* AnimatedSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */; };
 		2A1E641D2AA35CF3004D4498 /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E641C2AA35CF3004D4498 /* CounterApp.swift */; };
 		2A2E16A62AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */; };
@@ -273,6 +275,8 @@
 		2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMemoryLeakUIViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		2A11E64C2B4490D6000F5FF2 /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
 		2A139BDF2DDCB41700FF352D /* VisibilityModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityModifier.swift; sourceTree = "<group>"; };
+		2A139BE22DDCC0F400FF352D /* VisibilityModifierAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityModifierAnimationView.swift; sourceTree = "<group>"; };
+		2A139BE42DDCC23D00FF352D /* PhoneCallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCallList.swift; sourceTree = "<group>"; };
 		2A14DFD92B0D5F9A00A4C60A /* AnimatedSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSymbolsView.swift; sourceTree = "<group>"; };
 		2A1E641C2AA35CF3004D4498 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		2A2E16A42AD89BE100A7FBA2 /* PresentSwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSwiftUIViewController.swift; sourceTree = "<group>"; };
@@ -568,6 +572,15 @@
 				2A0CCDF82B8E2F7E0093D239 /* TheMemoryLeakUIViewControllerRepresentable.swift */,
 			);
 			path = MemoryLeak;
+			sourceTree = "<group>";
+		};
+		2A139BE12DDCC0B600FF352D /* VisibilityModifierUsage */ = {
+			isa = PBXGroup;
+			children = (
+				2A139BE42DDCC23D00FF352D /* PhoneCallList.swift */,
+				2A139BE22DDCC0F400FF352D /* VisibilityModifierAnimationView.swift */,
+			);
+			path = VisibilityModifierUsage;
 			sourceTree = "<group>";
 		};
 		2A1E641A2AA352CC004D4498 /* Pointfree */ = {
@@ -1453,6 +1466,7 @@
 		2AFA7A9F2A818F820006BDDF /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				2A139BE12DDCC0B600FF352D /* VisibilityModifierUsage */,
 				2AE4F8EE2C4823D7004244F3 /* TestProSwiftUIHudsonBook */,
 				2AB1DB482BF6B9B200A5C3F4 /* SyncUp */,
 				2AFE4BBD2BEC27EF00E4F6E2 /* Observation */,
@@ -1878,6 +1892,7 @@
 				2A633ECA2AF45D0400BFD1D0 /* AsyncAwaitRequestView.swift in Sources */,
 				2AA72ADC2B28F70500C36D70 /* TodayStepCountView.swift in Sources */,
 				2A633EE22AF836FB00BFD1D0 /* AdjustableSheetFont.swift in Sources */,
+				2A139BE32DDCC0F500FF352D /* VisibilityModifierAnimationView.swift in Sources */,
 				2A7D85F32AE4548100ECCF31 /* RatingScreenView+ProjectProtocol.swift in Sources */,
 				2AA102B42B062466000B4DB6 /* SpinnerView.swift in Sources */,
 				2A05DCA02ABE3D6B00C78FCF /* TestMyViewModifiers.swift in Sources */,
@@ -2015,6 +2030,7 @@
 				2AAF65752AAF408800B86F64 /* ShimmeringView.swift in Sources */,
 				2A633F402AFC4B2B00BFD1D0 /* ToggleExperiment.swift in Sources */,
 				2A633ECC2AF45E1A00BFD1D0 /* AsyncAwaitRequestViewModel.swift in Sources */,
+				2A139BE52DDCC24600FF352D /* PhoneCallList.swift in Sources */,
 				2AAF65632AACE2CB00B86F64 /* UsersViewModel.swift in Sources */,
 				2A633F0C2AF83F1500BFD1D0 /* MovieListColors.swift in Sources */,
 				2AED33632AD4A7E1003FE39F /* ProjectProtocol.swift in Sources */,
