@@ -4,13 +4,24 @@
 //
 //  Created by Ghadirian, Hamed, HSE DE on 17.07.24.
 //
-
+import MessageUI
 import SwiftUI
 
 /// It is from Hudson pro swiftui book!
 struct ProSwiftUIView: View {
+    @State var canSendEmail: Bool = false
     var body: some View {
         VStack(spacing: 16) {
+            Button("Can send e-mail?") {
+//                let mail = MFMailComposeViewController()
+//                        mail.mailComposeDelegate = self
+//                        mail.setToRecipients(["you@yoursite.com"])
+//                        mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+
+//                present(mail, animated: true)
+                canSendEmail = MFMailComposeViewController.canSendMail()
+            }
+            Text(canSendEmail ? "Yes" : "No")
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                 .frame(idealWidth: 300, idealHeight: 300)
                 .border(Color.blue)

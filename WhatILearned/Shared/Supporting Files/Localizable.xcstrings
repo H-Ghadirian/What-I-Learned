@@ -28,6 +28,9 @@
     "Adjust the amount of spacing" : {
 
     },
+    "Another one" : {
+
+    },
     "Article Category" : {
 
     },
@@ -63,6 +66,9 @@
 
     },
     "Calculate" : {
+
+    },
+    "Can send e-mail?" : {
 
     },
     "Cancel" : {
@@ -225,6 +231,9 @@
 
     },
     "Next" : {
+
+    },
+    "No" : {
 
     },
     "Not support" : {
@@ -421,6 +430,9 @@
 
     },
     "Y: %lf" : {
+
+    },
+    "Yes" : {
 
     },
     "You can find the code on" : {
