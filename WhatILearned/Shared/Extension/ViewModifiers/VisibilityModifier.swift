@@ -34,3 +34,16 @@ public struct VisibilityModifier: ViewModifier {
             }
     }
 }
+extension View {
+    func onVisibilityChanged(
+        visibilityUpdated: @escaping (Bool) -> Void,
+        displayingUpdated: @escaping (Bool) -> Void
+    ) -> some View {
+        self.modifier(
+            VisibilityModifier(
+                visibilityUpdated: visibilityUpdated,
+                displayingUpdated: displayingUpdated
+            )
+        )
+    }
+}

@@ -20,21 +20,18 @@ struct PhotoCell: View, Identifiable {
                 Color.gray // placeholder
             }
         }
+        .onVisibilityChanged(
+            visibilityUpdated: { visible in
+                print("PhotoCell visibilityUpdated \(visible) id: \(id)")
+                if visible && image == nil {
+                    loadImage()
+                }
+            }, displayingUpdated: { displaying in
+                print("PhotoCell displayingUpdated \(displaying) id: \(id)")
+            }
+        )
         .frame(height: 200)
         .clipped()
-        .modifier(
-            VisibilityModifier(
-                visibilityUpdated: { visible in
-                    print("PhotoCell visibilityUpdated \(visible) id: \(id)")
-                    if visible && image == nil {
-                        loadImage()
-                    }
-                },
-                displayingUpdated: { displaying in
-                    print("PhotoCell displayingUpdated \(displaying) id: \(id)")
-                }
-            )
-        )
     }
 
     private func loadImage() {
